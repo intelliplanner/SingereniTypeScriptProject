@@ -1,0 +1,19 @@
+1. If Vehicle is going from unloading to Loading Then lattitude always 300+.
+2.
+
+
+
+
+
+
+
+
+
+For Installing npm
+npm install -g typescript
+..............................
+
+Check  Version
+tsc --version
+
+

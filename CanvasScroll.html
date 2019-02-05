@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+        #canvasOne
+        {
+            border: 1px solid black;
+        }
+    </style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js" type="text/javascript"></script>
+</head>
+<body>
+<div align="center">
+    <canvas id="canvasOne">
+    </canvas>
+</div>
+
+<script type="text/javascript">
+
+    var myCanvas = document.getElementById("canvasOne");
+    var myContext = myCanvas.getContext("2d");
+
+    var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+
+    init();
+
+    var numShapes;
+    var shapes;
+    var dragIndex;
+    var dragging;
+    var mouseX;
+    var mouseY;
+    var dragHoldX;
+    var dragHoldY;
+    var timer;
+    var targetX;
+    var targetY;
+    var easeAmount;
+    var bgColor;
+    var nodes;
+    var colorArr;
+
+    function init()
+    {
+        myCanvas.width = $(window).width() - 200;
+        myCanvas.height = $(window).height() - 200;
+
+        shapes = [];
+        nodes = ["0;Person;24828760;Alok Kumar;Gorakhpur;#F44336;28",
+            "0;Suspect;04/Dec/2016;4;Suman_Biswas;#3F51B5;20","1;Rule;4;Apparent Means;3 Parameter;#EEFF41;20",
+            "0;Policy;36QA649749;In-Force;Quarterly;#FF9800;20","3;Product;Pension;Saral Pension;SRPEN;#795548;20","3;Payment;Cheque;Realized;Lucknow;#0091EA;20",
+            "0;Policy;162348873;Lapsed;Quarterly;#FF9800;20","6;Product;Pension;Life-Long Pension;LLPP;#795548;20","6;Payment;Cheque;Realized;Gorakhpur;#0091EA;20",
+            "0;Policy;1EQF178639;Lapsed;Monthly;#FF9800;20","9;Product;Life;Shield;SHIELDA;#795548;20","9;Payment;Demand Draft;Realized;Lucknow;#0091EA;20"];
+
+        numShapes = nodes.length;
+
+        makeShapes();
+
+        drawScreen();
+
+        myCanvas.addEventListener("mousedown", mouseDownListener, false);
+    }
+
+    //drawing
+    function makeShapes()
+    {
+        var tempX;
+        var tempY;
+
+        for(var i = 0; i < numShapes; i++)
+        {
+            var centerX = myCanvas.width/2;
+            var centerY = myCanvas.height/2;
+
+            var nodeColor = nodes[i].split(";")[5];
+
+            var nodeRadius = nodes[i].split(";")[6];
+
+            var nodeConnect = nodes[i].split(";")[0];
+
+            if(i == 0)//center of circle
+            {
+                tempX = centerX
+                tempY = centerY;
+            }
+            else
+            {
+                //tempX = Math.random() * (myCanvas.width - tempRadius);
+                //tempY = Math.random() * (myCanvas.height - tempRadius);
+
+                //var x = x0 + r * Math.cos(2 * Math.PI * i / items);
+                //var y = y0 + r * Math.sin(2 * Math.PI * i / items);
+
+
+                //250 is the distance from center node to outside nodes it can be actual radius in degrees
+                tempX = shapes[nodeConnect].x + 300 * Math.cos(2 * Math.PI * i / numShapes);
+                tempY = shapes[nodeConnect].y + 300 * Math.sin(2 * Math.PI * i / numShapes);
+            }
+
+            tempShape = {x: tempX, y: tempY, rad: nodeRadius, color: nodeColor, text: nodes[i]};
+
+            shapes.push(tempShape);
+        }
+    }
+
+    //drawing both shape (line and circle) and screen
+
+    function drawScreen()
+    {
+        myContext.fillStyle = "#ffffff";
+        myContext.fillRect(0, 0, myCanvas.width, myCanvas.height);
+        drawShapes();
+    }
+
+    function drawShapes()
+    {
+        //line
+        for(var i = 1; i < numShapes; i++)
+        {
+            myContext.beginPath();
+            myContext.strokeStyle = "#B2B19D";
+
+            var nodeConnect = nodes[i].split(";")[0];
+
+            myContext.moveTo(shapes[nodeConnect].x, shapes[nodeConnect].y);
+            myContext.lineTo(shapes[i].x, shapes[i].y);
+            myContext.stroke();
+        }
+
+        //circle
+        for(var i = 0; i < numShapes; i++)
+        {
+            myContext.fillStyle = shapes[i].color;
+            myContext.beginPath();
+            myContext.arc(shapes[i].x, shapes[i].y, shapes[i].rad, 0, 2*Math.PI, false);
+            myContext.closePath();
+            myContext.fill();
+        }
+
+        //text
+        for(var i = 0; i < numShapes; i++)
+        {
+            myContext.beginPath();
+            myContext.font = '10pt Arial';
+            myContext.fillStyle = 'black';
+            var textarr = shapes[i].text.split(";");
+
+            myContext.fillText(textarr[1], shapes[i].x + 30, shapes[i].y - 24);
+            /*myContext.fillText(textarr[2], shapes[i].x + 30, shapes[i].y + 1);
+             myContext.fillText(textarr[3], shapes[i].x + 30, shapes[i].y + 22);
+             myContext.fillText(textarr[4], shapes[i].x + 30, shapes[i].y + 44);*/
+            myContext.closePath();
+            myContext.fill();
+        }
+
+
+    }
+
+    //animation
+
+    function mouseDownListener(evt)
+    {
+        var highestIndex = -1;
+
+        var bRect = myCanvas.getBoundingClientRect();
+        mouseX = (evt.clientX - bRect.left) * (myCanvas.width/bRect.width);
+        mouseY = (evt.clientY - bRect.top) * (myCanvas.height/bRect.height);
+
+        for(var i = 0; i < numShapes; i++)
+        {
+            if(hitTest(shapes[i], mouseX, mouseY))
+            {
+                dragging = true;
+                if(i > highestIndex)
+                {
+                    dragHoldX = mouseX - shapes[i].x;
+                    dragHoldY = mouseY - shapes[i].y;
+                    highestIndex = i;
+                    dragIndex = i;
+                }
+            }
+        }
+
+        if(dragging)
+        {
+            window.addEventListener("mousemove", mouseMoveListener, false);
+        }
+
+        myCanvas.removeEventListener("mousedown", mouseDownListener, false);
+        window.addEventListener("mouseup", mouseUpListener, false);
+
+        if(evt.preventDefault)
+        {
+            evt.preventDefault;
+        }
+
+        return false;
+    }
+
+    function mouseMoveListener(evt)
+    {
+        var shapeRad = shapes[dragIndex].rad;
+
+        var minX = shapeRad;
+        var maxX = myCanvas.width - shapeRad;
+
+        var minY = shapeRad;
+        var maxY = myCanvas.height - shapeRad;
+
+        //get mouse position correctly
+        var bRect = myCanvas.getBoundingClientRect();
+        mouseX = (evt.clientX - bRect.left)*(myCanvas.width / bRect.width);
+        mouseY = (evt.clientY - bRect.top)*(myCanvas.height / bRect.height);
+
+        //clamp x and y position to prevent object from dragging outside canvas
+        posX = mouseX - dragHoldX;
+        posX = (posX < minX) ? minX : ((posX > maxX) ? maxX : posX);
+        posY = mouseY - dragHoldY;
+        posY = (posY < minY) ? minY : ((posY > maxY) ? maxY : posY);
+
+        shapes[dragIndex].x = posX;
+        shapes[dragIndex].y = posY;
+
+        drawScreen();
+    }
+
+    function mouseUpListener(evt)
+    {
+        myCanvas.addEventListener("mousedown", mouseDownListener, false);
+        window.removeEventListener("mouseup", mouseUpListener, false);
+
+        if(dragging)
+        {
+            dragging = false;
+            window.removeEventListener("mousemove", mouseMoveListener, false);
+        }
+    }
+
+    function hitTest(shape, mx, my)
+    {
+        var dx = mx - shape.x;
+        var dy = my - shape.y;
+
+        return(dx * dx + dy * dy < shape.rad * shape.rad);
+    }
+
+</script>
+</body>
+</html>

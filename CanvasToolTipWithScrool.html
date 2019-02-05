@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" media="all" href="css/reset.css" /> <!-- reset css -->
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+
+    <style>
+        body{ background-color: ivory; }
+        div, canvas {
+            position:absolute;
+        }
+        .wrapper {
+            top:10px;
+            left:10px;
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            margin:30px 0 2;
+            overflow: hidden;
+            background-color:green;
+        }
+        .vertical-scroll {
+            left:320px;
+            top:10px;
+            border: 1px solid green;
+            width: 20px;
+            height: 300px;
+        }
+        .vertical-scroll div.bar {
+            left:0px;
+            top:0px;
+            width: 20px;
+            background-color: blue;
+            height: 20px;
+        }
+        #mycanvas {
+            left:0px;
+            top:0px;
+        }
+
+    </style>
+
+    <script>
+        $(function(){
+
+            var canvas=document.getElementById("mycanvas");
+            var ctx=canvas.getContext("2d");
+
+            var wrapper;
+            var canvasHeight;
+            var vScrollHeight;
+            var canvasWrapperHeight=300;
+
+            $(".bar").draggable({
+                containment: "parent"
+            });
+
+            $(".bar").on("drag", function (event, ui) {
+                var ctop=(-ui.position.top * canvasHeight / canvasWrapperHeight);
+                canvas.style.top = ctop + "px"
+            });
+
+            var img=new Image();
+            img.onload=function(){
+                canvas.width=this.width;
+                canvas.height=this.height;
+                canvasHeight=this.height;
+                vbarHeight=canvasWrapperHeight*canvasWrapperHeight/canvasHeight;
+                document.getElementById("vbar").style.height=vbarHeight+"px";
+                ctx.drawImage(this,260,0,300,this.height,0,0,300,this.height);
+            }
+            img.src="http://sciencedude.blog.ocregister.com/files/2008/02/zot1-copy.jpg";
+
+        }); // end $(function(){});
+    </script>
+
+</head>
+
+<body>
+<div class="wrapper" id="wrap1">
+    <canvas id="mycanvas" width="300px" height="300px" />
+</div>
+<div class="vertical-scroll" id="vscroll">
+    <div class="bar" id="vbar"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,428 @@
+/*region Description*/
+
+.divSideMenuContainer {
+    position: relative;
+    top: 0px;
+    border: 0px solid grey;
+    width: 99%;
+    height: 23px;
+}
+
+.mainContainer {
+    position: relative;
+    width: 100%;
+    margin-top: 2px;
+    margin-bottom: 0em;
+    margin-left: 0;
+    margin-right: 0;
+    border-top: 0px solid #808080;
+}
+
+.divLaneContainer {
+    position: relative;
+    top: 0px;
+    border: 0px solid grey;
+    border-bottom: 1px solid #708090;
+    /*width: 100%;*/
+    /* height: 650px; */
+    float: left;
+    /* overflow-y: auto; */
+    /* scroll:auto; */
+}
+
+.divSideNavigation {
+    border: 0px solid grey;
+    width: 269.8px;
+    float: right;
+    height: 617px;
+    position: fixed;
+    /* overflow-y: auto;*/
+    top: 25px;
+    right: 0px;
+    z-index: 1;
+    /* Stay on top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the divContainer2 */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+}
+
+.divSideNavigation a:hover, .offcanvas a:focus {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+
+.divSideNavigation .closebtn {
+    position: absolute;
+    top: 2px;
+    right: 7px;
+    font-size: 25px;
+    margin-left: 0px;
+    color: #000000;
+}
+
+.divLeftSource {
+    position: relative;
+    border: 0px solid black;
+    /* border-bottom: 1px solid #708090; */
+    border-top: 1px solid #708090;
+    width: 120px;
+    /*height: 60px;*/
+    float: left;
+}
+
+.divLeftCanvas {
+    position: relative;
+    border-left: 1px solid #708090;
+    /* border-bottom: 1px solid #708090; */
+    border-top: 1px solid #708090;
+    /*width: 499px;*/
+    width: 450px;
+    /*height: 60px;*/
+    display: inline-grid;
+    float: left;
+}
+
+.divLeftCanvasNew {
+    position: relative;
+    border-left: 1px solid #708090;
+    /* border-bottom: 1px solid #708090; */
+    border-top: 1px solid #708090;
+    width: 1160px;
+    height: 60px;
+    display: inline-grid;
+    float: left;
+}
+
+.divZizagPartition {
+    position: relative;
+    border: 0px solid black;
+    /* border-bottom: 1px solid #708090; */
+    border-top: 1px solid #708090;
+    border-right: 1px solid #708090;
+    width: 12px;
+    /* height: 60px; */
+    float: left;
+}
+
+.divRightCanvas {
+    position: relative;
+    border-left: 1px solid #708090;
+    /* border-bottom: 1px solid #708090; */
+    border-top: 1px solid #708090;
+    /*width: 499px;*/
+    width: 450px;
+    /*height: 60px;*/
+    display: inline-grid;
+    float: left;
+}
+
+.divRightCanvasNew {
+    position: relative;
+    border-left: 1px solid #708090;
+    border-bottom: 1px solid #708090;
+    width: 1160px;
+    height: 60px;
+    display: inline-grid;
+    float: left;
+}
+
+.divLeftDestination {
+    position: relative;
+    text-align: center;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    /* border-bottom: 1px solid #708090; */
+    border-top: 1px solid #708090;
+    border-left: 1px solid #708090;
+    border-right: 1px solid #708090;
+    /*width: 26px;*/
+    width: 70px;
+    /*height: 60px;*/
+    display: inline-grid;
+    float: left;
+    padding: 0px 0px 0px 0px;
+    /*display: inline;*/
+    /*background-color: #FFFFFF;*/
+}
+
+.divLeftDestination-content {
+    display: inline;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #FFFFFF;
+}
+
+.divLeftDestination-content:hover {
+    color: #cd0a0a;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline #cd0a0a;
+    /*background-color: ;*/
+}
+
+.leftCanvas {
+    width: 499px;
+    height: 60px;
+}
+
+.leftCanvasNew {
+    width: 1160px;
+    height: 60px;
+}
+
+.rightCanvas {
+    width: 499px;
+    height: 60px;
+}
+
+.rightCanvasNew {
+    width: 1160px;
+    height: 60px;
+}
+
+.divLeftSource-leftSourceTable {
+    border: 0px;
+    width: 60px;
+    /* cellspacing:0; */
+    /* cellpadding:3; */
+    border-color: #003366;
+}
+
+.leftSourceTable-leftSourcetableDataCell {
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    border-style: solid;
+    border-color: #FFFFFF;
+    /*background-color: #ECE6E6;*/
+    font-weight: normal;
+    color: black;
+    text-align: left;
+}
+
+.divLeftSource-div1 {
+    border-bottom: 1px solid grey;
+    display: inline-grid;
+    position: absolute;
+    margin-top: 0px;
+    width: 120px;
+    height: 14px;
+    font-style: normal;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.divLeftSource-div2 {
+    margin-left: 2px;
+    display: inline-grid;
+    position: absolute;
+    margin-top: 16px;
+    float: left;
+    width: 80px;
+    height: 40px;
+}
+
+.divLeftSource-div3 {
+    display: inline-grid;
+    position: absolute;
+    margin-top: 15px;
+    float: right;
+    width: 38px;
+    height: 18px;
+    font-size: 16px;
+    margin-left: 82px;
+    background-color: #FFCC00;
+    text-align: center;
+}
+
+.divLeftSource-div-span {
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: #000066;
+    background-color: #FFFFFF;
+    float: right;
+}
+
+.divRightDestination-div1 {
+    border-bottom: 1px solid grey;
+    display: inline-grid;
+    position: absolute;
+    margin-top: 0px;
+    width: 117px;
+    height: 14px;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.divRightDestination-div2 {
+    margin-left: 2px;
+    display: inline-grid;
+    position: absolute;
+    margin-top: 16px;
+    float: left;
+    width: 80px;
+    height: 40px;
+}
+
+.divRightDestination-div3 {
+    display: inline-grid;
+    position: absolute;
+    margin-top: 20px;
+    float: right;
+    /* width: 30px; */
+    margin-left: 82px;
+}
+
+.divDestinationSource-rightDestinationTable {
+    border: 0px;
+    width: 60px;
+    /* cellspacing:0; */
+    /* cellpadding:3; */
+    border-color: #003366;
+}
+
+.divDestinationSource-rightDestinationTableDataCell {
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    border-style: solid;
+    border-color: #FFFFFF;
+    /*background-color: #ECE6E6;*/
+    font-weight: normal;
+    color: black;
+    text-align: left;
+}
+
+.divRightDestination-div {
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    right: 2px;
+}
+
+.divRightDestination-div-span {
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: #000066;
+    background-color: #FFFFFF;
+    float: right;
+}
+
+.divContainerSettingImagePosition {
+    position: relative;
+    border-bottom: 1px solid #2E2EFE;
+    width: 1%;
+    height: 20px;
+    float: right;
+    display: inline-grid;
+}
+
+/*endregion*/
+
+.vehicleToolTip {
+    background-color: white;
+    border: 1px solid grey;
+    position: absolute;
+    left: -200px;
+    top: 100px;
+}
+
+/*.header {*/
+
+/*width:250px;*/
+
+/*position:fixed;*/
+
+/*top:25px;*/
+
+/*}*/
+
+.divRightSource {
+    position: relative;
+    /* border-bottom: 1px solid #708090; */
+    border-top: 1px solid #708090;
+    border-left: 1px solid #708090;
+    /*width: 27px;*/
+    width: 70px;
+    /*height: 60px;*/
+    display: inline-grid;
+    float: left;
+    /*display: inline;*/
+    text-align: center;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    /* color :gray; */
+    /*background-color: #FFFFFF;*/
+}
+
+.divRightDestination {
+    position: relative;
+    border: 0px solid black;
+    /* border-bottom: 0px solid #708090; */
+    /* border-top: 1px solid #708090; */
+    border-left: 1px solid #708090;
+    border-right: 1px solid #708090;
+    width: 117px;
+    /*height: 60px;*/
+    float: left;
+}
+
+.divRightDestination-content {
+    display: inline;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #FFFFFF;
+}
+
+.divRightDestination-content:hover {
+    color: #cd0a0a;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline #cd0a0a;
+}
+
+.divLeftSource-content {
+    color: #000080;
+    font-size: 11.7px;
+    font-weight: normal;
+    font-family: "Times New Roman";
+}
+
+.divLeftDestinationNew-content {
+    color: #000080;
+    font-size: 11.7px;
+    font-weight: normal;
+    font-family: "Times New Roman";
+}
+
+.divRightSource-content {
+    color: #000080;
+    font-size: 11.7px;
+    font-weight: normal;
+    font-family: "Times New Roman";
+}
+
+.divRightDestinationNew-content {
+    color: #000080;
+    font-size: 11.7px;
+    font-weight: normal;
+    font-family: "Times New Roman";
+}
+
+
+
+
+
+/* ----------------------------------------------------------------------------------- */
+
