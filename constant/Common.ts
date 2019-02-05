@@ -9,6 +9,10 @@
    // public static canvasHeightDefault:number=0;
     public static dumperImageWidth = 20;
     public static dumperImageHeight = 20;
+
+    public static leftSourceImageWidth = 32;
+    public static leftSourceImageHeight = 27;
+
     public static laneDivId: string= "LANE";
     public static leftSource: string= "LEFT_SOURCE";
     public static leftCanvasDivId: string= "LEFT_CANVAS_DIV";
@@ -26,6 +30,9 @@
     public static rightDestImageId : string= "RIGHT_DESTINATION_IMAGE";
     public static isDirectionLeft: boolean = false ;
     private static srcId : string = "";
+
+
+
     public static getDivId(laneId : string,src : string):string{
         if(laneId == null)
             return "";

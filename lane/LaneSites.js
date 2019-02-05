@@ -54,7 +54,7 @@ var LaneSites = /** @class */ (function () {
                 data = data + "<div class='tooltipRightLeftSource'><span class='tooltipContent'>" + sourceObj.iconInformation.iconHoverText + "</span>";
                 data = data + "<a href='#'>";
                 data = data + "<img  title='' id='" + this.leftSourceImageId + "' title='' oncontextmenu ='" + mouseEvent.addMenuList(this.leftSourceImageId, this.laneBeanObj.loadToUnload.sourceLeft.iconInformation.pane, this.laneBeanObj.loadToUnload.sourceLeft.iconInformation.menu) + "'";
-                data = data + " style='width:32px;height:27px;'     src='" + Common.getSourceImage(sourceObj.iconInformation.icon) + "'></a>";
+                data = data + " style='width:" + Common.leftSourceImageWidth + "px;height:" + Common.leftSourceImageHeight + "px;'  src='" + Common.getSourceImage(sourceObj.iconInformation.icon) + "'></a>";
                 data = data + "</div>";
             }
             innerData.innerHTML = data;
