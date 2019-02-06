@@ -89,7 +89,7 @@
     border-left: 1px solid #708090;
     /* border-bottom: 1px solid #708090; */
     border-top: 1px solid #708090;
-    width: 1103px;
+    width: 1107px;
     height: 60px;
     display: inline-grid;
     float: left;
@@ -122,7 +122,7 @@
     position: relative;
     border-left: 1px solid #708090;
     border-bottom: 1px solid #708090;
-    width: 1160px;
+    width: 1107px;
     height: 60px;
     display: inline-grid;
     float: left;
@@ -336,16 +336,6 @@
     top: 100px;
 }
 
-/*.header {*/
-
-/*width:250px;*/
-
-/*position:fixed;*/
-
-/*top:25px;*/
-
-/*}*/
-
 .divRightSource {
     position: relative;
     /* border-bottom: 1px solid #708090; */
@@ -420,9 +410,4 @@
     font-family: "Times New Roman";
 }
 
-
-
-
-
-/* ----------------------------------------------------------------------------------- */
-
+/* -----------------------------------------------------------------------------------
