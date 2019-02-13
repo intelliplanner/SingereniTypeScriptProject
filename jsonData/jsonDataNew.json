@@ -3,8 +3,8 @@
     "id": "1",
     "loadToUnload": {
       "sourceLeft": {
-        "laneId": "1",
-        "loadSiteId": "A",
+        "loadSiteId": "161",
+        "laneId": "PC274856",
         "iconInformation": {
           "icon": "shovel_gray.png",
           "iconHoverText": "# Veh Assigned   :67<br/>Curr QLen            :0<br/>Cycle time(s)       :N/A<br/>Curr Disp (T/hr)  :0.0<br/>Curr Trips (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last desp at         :N/A<br/>Exp Q next cycle  :0<br/>",
@@ -28,7 +28,7 @@
             "hoverText": "",
             "textStyle": "divLeftSource-content"
           }
-        }
+        } 
       },
       "destinationLeft": [
         {
@@ -37,36 +37,70 @@
           "textStyle": "divLeftDestinationNew-content",
           "dumpers": [
             {
-              "icon": "HD-10",
+              "icon": "HD_101",
               "imageName": "dumper_right_gray_cross_blink.png",
               "iconText": "dumper_right_gray_cross_blink.png",
-              "iconHoverText": "HD-10",
-              "pophover": "HD-10,Load Status        :N/A,Last Op Time     :N/AFuel level            :N/A,Refuel at            :N/A,Pos at                  :23082017 L-25 BS E,0.12KM NW,Recent Data at :06:48:32,Engine On           :N/A,Shift # Trips          :0,Load KM               :0.0,Wrong Route:On Diff Route:N/A,Other Event:,",
+              "iconHoverText": "HD_101",
+              "pophover": "HD_101,Load Status        :N/A,Last Op Time     :N/AFuel level            :N/A,Refuel at            :N/A,Pos at                  :23082017 L-25 BS E,0.12KM NW,Recent Data at :06:48:32,Engine On           :N/A,Shift # Trips          :0,Load KM               :0.0,Wrong Route:On Diff Route:N/A,Other Event:,",
               "pane": "RIGHT",
-              "percentLegCompleted": "40",
+              "percentLegCompleted": "50",
               "blinkSpeed": "600",
               "loadStatus": "2",
               "menu": {
-                "HD-11,0": {
+                "HD_101,0": {
                   "id": "0",
                   "name": "Re-Assign",
                   "icon": "play",
-                  "value": "HD-11",
-                  "url": ""
+                  "value": "HD_101",
+                  "url": "http://localhost:8080/LocTracker/TempleDashboardData.jsp?action_p=dismiss&vid=27377&dur=15"
                 },
-                "HD-11,1": {
+                "HD_101,1": {
                   "id": "1",
                   "name": "Reminder in 10 Min",
                   "icon": "edit",
-                  "value": "HD-11",
-                  "url": ""
+                  "value": "HD_101",
+                  "url": "http://localhost:8080/LocTracker/TempleDashboardData.jsp?action_p=dismiss&vid=27377&dur=15"
                 },
-                "HD-11,2": {
+                "HD_101,2": {
                   "id": "2",
                   "name": "Dismiss",
                   "icon": "refresh",
-                  "value": "HD-11",
-                  "url": ""
+                  "value": "HD_101",
+                  "url": "http://localhost:8080/LocTracker/TempleDashboardData.jsp?action_p=dismiss&vid=27377&dur=15"
+                }
+              }
+            },
+            {
+              "icon": "HD_102",
+              "imageName": "dumper_right_gray_cross_blink.png",
+              "iconText": "dumper_right_gray_cross_blink.png",
+              "iconHoverText": "HD_102",
+              "pophover": "HD_102,Load Status        :N/A,Last Op Time     :N/AFuel level            :N/A,Refuel at            :N/A,Pos at                  :23082017 L-25 BS E,0.12KM NW,Recent Data at :06:48:32,Engine On           :N/A,Shift # Trips          :0,Load KM               :0.0,Wrong Route:On Diff Route:N/A,Other Event:,",
+              "pane": "RIGHT",
+              "percentLegCompleted": "60",
+              "blinkSpeed": "600",
+              "loadStatus": "2",
+              "menu": {
+                "HD_102,0": {
+                  "id": "0",
+                  "name": "Re-Assign",
+                  "icon": "play",
+                  "value": "HD_102",
+                  "url": "http://localhost:8080/LocTracker/TempleDashboardData.jsp?action_p=dismiss&vid=27377&dur=15"
+                },
+                "HD_102,1": {
+                  "id": "1",
+                  "name": "Reminder in 10 Min",
+                  "icon": "edit",
+                  "value": "HD_102",
+                  "url": "http://localhost:8080/LocTracker/TempleDashboardData.jsp?action_p=dismiss&vid=27377&dur=15"
+                },
+                "HD_102,2": {
+                  "id": "2",
+                  "name": "Dismiss",
+                  "icon": "refresh",
+                  "value": "HD_102",
+                  "url": "http://localhost:8080/LocTracker/TempleDashboardData.jsp?action_p=dismiss&vid=27377&dur=15"
                 }
               }
             }
@@ -82,172 +116,70 @@
           "textStyle": "divRightSource-content",
           "dumpers": [
             {
-              "icon": "HD-9",
-              "imageName": "dumper_right_gray_cross_blink.png",
-              "iconText": "dumper_right_gray_cross_blink.png",
-              "iconHoverText": "HD-9",
-              "pophover": "HD-9,Load Status:N/A,Last Op Time:N/AFuel level:N/A,Refuel at:N/A",
+              "icon": "HD_201",
+              "imageName": "dumper_left_gray_cross_blink.png",
+              "iconText": "dumper_left_gray_cross_blink.png",
+              "iconHoverText": "HD_201",
+              "pophover": "HD_201,Load Status:N/A,Last Op Time:N/AFuel level:N/A,Refuel at:N/A",
               "pane": "RIGHT",
-              "percentLegCompleted": "30",
+              "percentLegCompleted": "60",
               "blinkSpeed": "0",
               "loadStatus": "5",
               "menu": {
-                "HD-11,1": {
-                  "id": "1",
-                  "name": "Reminder in 10 Min",
-                  "icon": "edit",
-                  "value": "HD-11",
-                  "url": ""
-                },
-                "HD-11,2": {
-                  "id": "2",
-                  "name": "Dismiss",
-                  "icon": "refresh",
-                  "value": "HD-11",
-                  "url": ""
-                },
-                "HD-11,0": {
+                "HD_201,0": {
                   "id": "0",
                   "name": "Re-Assign",
                   "icon": "play",
-                  "value": "HD-11",
-                  "url": ""
+                  "value": "HD_201",
+                  "url": "http://localhost:8080/LocTracker/TempleDashboardData.jsp?action_p=dismiss&vid=27377&dur=15"
+                },
+                "HD_201,1": {
+                  "id": "1",
+                  "name": "Reminder in 10 Min",
+                  "icon": "edit",
+                  "value": "HD_201",
+                  "url": "http://localhost:8080/LocTracker/TempleDashboardData.jsp?action_p=dismiss&vid=27377&dur=15"
+                },
+                "HD_201,2": {
+                  "id": "2",
+                  "name": "Dismiss",
+                  "icon": "refresh",
+                  "value": "HD_201",
+                  "url": "http://localhost:8080/LocTracker/TempleDashboardData.jsp?action_p=dismiss&vid=27377&dur=15"
                 }
               }
             },
             {
-              "icon": "HD-12",
-              "imageName": "dumper_right_gray_cross_blink.png",
-              "iconText": "dumper_right_gray_cross_blink.png",
-              "iconHoverText": "HD-12",
-              "pophover": "HD-12,Load Status:N/A,Last Op Time:N/AFuel level:N/A,Refuel at:N/A,Pos at:23082017 L-25 BS E,Recent Data at:06:48:32,Engine On:N/A,Shift # Trips:0,Load KM:0.0,Wrong Route:On Diff Route:N/A,Other Event:,",
+              "icon": "HD_202",
+              "imageName": "dumper_left_gray_cross_blink.png",
+              "iconText": "dumper_left_gray_cross_blink.png",
+              "iconHoverText": "HD_202",
+              "pophover": "HD_202,Load Status:N/A,Last Op Time:N/AFuel level:N/A,Refuel at:N/A",
               "pane": "RIGHT",
-              "percentLegCompleted": "40",
+              "percentLegCompleted": "80",
               "blinkSpeed": "0",
-              "loadStatus": "4",
+              "loadStatus": "5",
               "menu": {
-                "HD-11,0": {
+                "HD_202,0": {
                   "id": "0",
                   "name": "Re-Assign",
                   "icon": "play",
-                  "value": "HD-11",
-                  "url": ""
+                  "value": "HD_202",
+                  "url": "http://localhost:8080/LocTracker/TempleDashboardData.jsp?action_p=dismiss&vid=27377&dur=15"
                 },
-                "HD-11,1": {
+                "HD_202,1": {
                   "id": "1",
-                  "name": "Reminder in 10 Min",
+                  "name": "RESUME_WORK",
                   "icon": "edit",
-                  "value": "HD-11",
-                  "url": ""
+                  "value": "HD_202",
+                  "url": "http://localhost:8080/LocTracker/TempleDashboardData.jsp?action_p=dismiss&vid=27377&dur=15"
                 },
-                "HD-11,2": {
+                "HD_202,2": {
                   "id": "2",
                   "name": "Dismiss",
                   "icon": "refresh",
-                  "value": "HD-11",
-                  "url": ""
-                }
-              }
-            },
-            {
-              "icon": "HD-13",
-              "imageName": "dumper_right_gray_cross_blink.png",
-              "iconText": "dumper_right_gray_cross_blink.png",
-              "iconHoverText": "HD-13",
-              "pophover": "HD-13,Load Status:N/A,Last Op Time:N/A,Fuel level:N/A,Refuel at:N/A,Pos at:23082017 L-25 BS E,Recent Data at:06:48:32,Engine On :N/A,Shift # Trips          :0,Load KM               :0.0,Wrong Route:On Diff Route:N/A,Other Event:,",
-              "pane": "RIGHT",
-              "percentLegCompleted": "35",
-              "blinkSpeed": "0",
-              "loadStatus": "4",
-              "menu": {
-                "HD-11,0": {
-                  "id": "0",
-                  "name": "Re-Assign",
-                  "icon": "play",
-                  "value": "HD-11",
-                  "url": ""
-                },
-                "HD-11,1": {
-                  "id": "1",
-                  "name": "Reminder in 10 Min",
-                  "icon": "edit",
-                  "value": "HD-11",
-                  "url": ""
-                },
-                "HD-11,2": {
-                  "id": "2",
-                  "name": "Dismiss",
-                  "icon": "refresh",
-                  "value": "HD-11",
-                  "url": ""
-                }
-              }
-            },
-            {
-              "icon": "HD-14",
-              "imageName": "dumper_right_gray_cross_blink.png",
-              "iconText": "dumper_right_gray_cross_blink.png",
-              "iconHoverText": "HD-13",
-              "pophover": "HD-14,Load Status:N/A,Last Op Time:N/A,Fuel level:N/A,Refuel at:N/A,Pos at:23082017 L-25 BS E,Recent Data at:06:48:32,Engine On :N/A,Shift # Trips          :0,Load KM               :0.0,Wrong Route:On Diff Route:N/A,Other Event:,",
-              "pane": "RIGHT",
-              "percentLegCompleted": "40",
-              "blinkSpeed": "0",
-              "loadStatus": "4",
-              "menu": {
-                "HD-11,0": {
-                  "id": "0",
-                  "name": "Re-Assign",
-                  "icon": "play",
-                  "value": "HD-11",
-                  "url": ""
-                },
-                "HD-11,1": {
-                  "id": "1",
-                  "name": "Reminder in 10 Min",
-                  "icon": "edit",
-                  "value": "HD-11",
-                  "url": ""
-                },
-                "HD-11,2": {
-                  "id": "2",
-                  "name": "Dismiss",
-                  "icon": "refresh",
-                  "value": "HD-11",
-                  "url": ""
-                }
-              }
-            },
-            {
-              "icon": "HD-15",
-              "imageName": "dumper_right_gray_cross_blink.png",
-              "iconText": "dumper_right_gray_cross_blink.png",
-              "iconHoverText": "HD-13",
-              "pophover": "HD-15,Load Status:N/A,Last Op Time:N/A,Fuel level:N/A,Refuel at:N/A,Pos at:23082017 L-25 BS E,Recent Data at:06:48:32,Engine On :N/A,Shift # Trips          :0,Load KM               :0.0,Wrong Route:On Diff Route:N/A,Other Event:,",
-              "pane": "RIGHT",
-              "percentLegCompleted": "40",
-              "blinkSpeed": "0",
-              "loadStatus": "4",
-              "menu": {
-                "HD-11,0": {
-                  "id": "0",
-                  "name": "Re-Assign",
-                  "icon": "play",
-                  "value": "HD-11",
-                  "url": ""
-                },
-                "HD-11,1": {
-                  "id": "1",
-                  "name": "Reminder in 10 Min",
-                  "icon": "edit",
-                  "value": "HD-11",
-                  "url": ""
-                },
-                "HD-11,2": {
-                  "id": "2",
-                  "name": "Dismiss",
-                  "icon": "refresh",
-                  "value": "HD-11",
-                  "url": ""
+                  "value": "HD_202",
+                  "url": "http://localhost:8080/LocTracker/TempleDashboardData.jsp?action_p=dismiss&vid=27377&dur=15"
                 }
               }
             }

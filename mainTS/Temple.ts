@@ -6,13 +6,14 @@ class Temple {
     public static laneBeanListObj: Lane[];
     public static laneParserObj: Parser;
     public static vehiclePositionList = [];
+    public static showelList: Showel[];
 
     public static start(): void {
         //var objTimers = new TimerTask(this._interval);
         //   objTimers.scheduleRequest();
-        // TimerTask.getData();
-        TimerTask.getDataJson();
-        //  document.getElementById("testId").innerHTML = jsonObj;
+        TimerTask.getDataFromServer();
+
+        // TimerTask.getDataFromJsonFile();
     }
 
     public static setJsonToTypeScriptObject(): boolean {
@@ -27,7 +28,6 @@ class Temple {
 
     public static refreshLanes() {
         var laneBean: Lane;
-
         if (Temple.laneParserObj != null) {
             LaneAction.removeAllLane(Temple.laneBeanListObj);
             VehicleAction.removeVehicleList();
@@ -40,7 +40,4 @@ class Temple {
             VehicleAction.addVehicleList(Temple.vehiclePositionList);
         }
     }
-
-
-
 }

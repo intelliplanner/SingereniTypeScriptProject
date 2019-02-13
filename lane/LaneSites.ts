@@ -24,7 +24,7 @@ class LaneSites {
         var data = "";
 
         if (sourceObj.sourceInformation != null) {
-            data =  "<div class='divLeftSource-div1'  >" + Misc.getSubString(this.laneBeanObj.loadToUnload.sourceLeft.loadSiteId, 13) + "</div>";
+            data =  "<div class='divLeftSource-div1'  >" + Misc.getSubString(this.laneBeanObj.loadToUnload.sourceLeft.laneId, 13) + "</div>";
             data += "<div class='divLeftSource-div2' id=' " + tableId + "'> ";
 
             var text1 = sourceObj.sourceInformation.text1;
@@ -149,8 +149,6 @@ class LaneSites {
         innerData.style.borderTop = "1px solid grey";
 
         var data = "<div class='divRightDestination-div1' >" + Misc.getSubString(this.laneBeanObj.unloadToLoad.destinationRight.unloadSiteId, 15) + "</div>";
-
-
 
         data += "<div class='divRightDestination-div2' id='" + tableId + "'> ";
 

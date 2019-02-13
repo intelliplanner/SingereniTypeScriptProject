@@ -3,7 +3,7 @@
  */
 class SourceLeft {
     private _loadSiteId:string;
-    private _sourceLeftId: string;
+    private _laneId: string;
     private _iconInformation: IconInformation;
     private _sourceInformation: TextInformation;
 
@@ -22,12 +22,12 @@ class SourceLeft {
         this._iconInformation = value;
     }
 
-    get sourceLeftId(): string {
-        return this._sourceLeftId;
+    get laneId(): string {
+        return this._laneId;
     }
 
-    set sourceLeftId(value: string) {
-        this._sourceLeftId = value;
+    set laneId(value: string) {
+        this._laneId = value;
     }
 
 

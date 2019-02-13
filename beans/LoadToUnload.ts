@@ -20,5 +20,4 @@ class LoadToUnload{
         this._sourceLeft = value;
     }
 
-
 }

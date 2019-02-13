@@ -1,0 +1,3979 @@
+[
+    {
+      "id": "0",
+      "loadToUnload": {
+        "sourceLeft": {
+          "loadSiteId": "161",
+          "laneId": "PC274856",
+          "iconInformation": {
+            "icon": "shovel_green.png",
+            "iconHoverText": "# Veh Assigned   :5<br/>Curr QLen            :0<br/>Cycle time(s)       :17<br/>Curr Disp (T/hr)  :0.0<br/>Curr Trips (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last desp at         :N/A<br/><hr noshade size=\"1\" width=\"100%\"><b>PC274856</b><br/>Capacity             :3.0 cu m<br/>Fuel level            :0.0<br/>Refuel at            :N/A<br/>Pos at                  :0<br/>Recent Data at:16:46:27<br/>Engine On          :Off<br/>Other Evt:<br/>false",
+            "pane": "RIGHT",
+            "menu": {
+              "Menu1": {
+                "name": "PC274856",
+                "items": {
+                  "27358,0": {
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "id": "27358",
+                    "value": "PC274856",
+                    "url": ""
+                  },
+                  "27358,1": {
+                    "name": "Reminder in 10 Min",
+                    "icon": "cut",
+                    "id": "27358",
+                    "value": "PC274856",
+                    "url": ""
+                  },
+                  "27358,2": {
+                    "name": "Dismiss",
+                    "icon": "edit",
+                    "id": "27358",
+                    "value": "PC274856",
+                    "url": ""
+                  }
+                }
+              }
+            },
+            "shovelWaiting": "1"
+          },
+          "sourceInformation": {
+            "text1": {
+              "name": "6th Bench E2",
+              "hoverText": "Shovel Name<hr noshade size=\"1\" width=\"100%\">Site name [Pit Name] if diff from shovel<hr noshade size=\"1\" width=\"100%\"># Vehicles Assigned / # of Vehicles in Wait / Recent Avg cycle time(s)<hr noshade size=\"1\" width=\"100%\"># Wait when current loaded comes back / Recent Tonnes/Hr Desp / Shift Tonnage Desp",
+              "textStyle": "divLeftSource-content"
+            },
+            "text2": {
+              "name": "5 / 0 / 17s ",
+              "hoverText": "",
+              "textStyle": "divLeftSource-content"
+            },
+            "text3": {
+              "name": "0 / 0.0 / 0.0",
+              "hoverText": "",
+              "textStyle": "divLeftSource-content"
+            }
+          }
+        },
+        "destinationLeft": [
+          {
+            "name": "OB5",
+            "hoverText": "Site Name<hr noshade size=\"1\" width=\"100%\"># Vehicles Assigned / # of Vehicles inside / Recent Avg Turnaround time(s)<hr noshade size=\"1\" width=\"100%\">Recent Tonnes/Hr recvd / Shift Tonnage Desp",
+            "textStyle": "divLeftDestinationNew-content",
+            "dumpers": [
+              null,
+              null,
+              null,
+              {
+                "icon": "CG12AT2603[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12AT2603[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT2603[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Unload,Last Op Time:N/A,Pos at:5th Bench M4,0.04KM NE on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:On,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "93.91387874336716",
+                "blinkSpeed": "0",
+                "loadStatus": 4,
+                "menu": {
+                  "CG12AT2603[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT2603[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27381&shovel_id="
+                  },
+                  "CG12AT2603[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT2603[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27381"
+                  },
+                  "CG12AT2603[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT2603[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27381&dur=15"
+                  }
+                }
+              },
+              {
+                "icon": "CG12S5705[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12S5705[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12S5705[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Unload,Last Op Time:N/A,Pos at:8th Bench M1,0.05KM SE on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:On,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "95.0",
+                "blinkSpeed": "0",
+                "loadStatus": 4,
+                "menu": {
+                  "CG12S5705[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12S5705[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27382&shovel_id="
+                  },
+                  "CG12S5705[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12S5705[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27382"
+                  },
+                  "CG12S5705[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12S5705[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27382&dur=15"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "unloadToLoad": {
+        "sourceRight": [
+          {
+            "name": "PC274856",
+            "hoverText": "# Veh Assigned   :5<br/>Curr QLen            :0<br/>Cycle time(s)       :17<br/>Curr Disp (T/hr)  :0.0<br/>Curr Trips (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last desp at         :N/A<br/><hr noshade size=\"1\" width=\"100%\"><b>PC274856</b><br/>Capacity             :3.0 cu m<br/>Fuel level            :0.0<br/>Refuel at            :N/A<br/>Pos at                  :0<br/>Recent Data at:16:46:27<br/>Engine On          :Off<br/>Other Evt:<br/>false",
+            "textStyle": "divRightSource-content",
+            "dumpers": [
+              {
+                "icon": "CG12AT2043[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12AT2043[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT2043[SMAS],Capacity :19.0 Tonnes,Load Status:Going to Unload,Last Op Time:N/A,Pos at:OB DUMP 5,0.02KM NW on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:On,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "59.601307029829755",
+                "blinkSpeed": "0",
+                "loadStatus": 3,
+                "menu": {
+                  "CG12AT2043[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT2043[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27376&shovel_id="
+                  },
+                  "CG12AT2043[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT2043[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27376"
+                  },
+                  "CG12AT2043[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT2043[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27376&dur=15"
+                  }
+                }
+              },
+              {
+                "icon": "CG12AT2605[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12AT2605[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT2605[SMAS],Capacity :19.0 Tonnes,Load Status:Going to Unload,Last Op Time:N/A,Pos at:8th Bench M1,0.05KM SE on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:On,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "82.18874421849522",
+                "blinkSpeed": "0",
+                "loadStatus": 3,
+                "menu": {
+                  "CG12AT2605[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT2605[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27377&shovel_id="
+                  },
+                  "CG12AT2605[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT2605[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27377"
+                  },
+                  "CG12AT2605[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT2605[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27377&dur=15"
+                  }
+                }
+              },
+              {
+                "icon": "CG12AT3966[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12AT3966[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT3966[SMAS],Capacity :19.0 Tonnes,Load Status:Going to Unload,Last Op Time:N/A,Pos at:OB Dump-3, Gevra,0.02KM NE on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:On,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "57.58544236414469",
+                "blinkSpeed": "0",
+                "loadStatus": 3,
+                "menu": {
+                  "CG12AT3966[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT3966[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27380&shovel_id="
+                  },
+                  "CG12AT3966[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT3966[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27380"
+                  },
+                  "CG12AT3966[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT3966[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27380&dur=15"
+                  }
+                }
+              },
+              null,
+              null
+            ]
+          }
+        ],
+        "destinationRight": {
+          "unloadSiteId": "OB5",
+          "destinationInformation": [
+            {
+              "name": "0.0 / 0.0",
+              "hoverText": "OB5# Veh Assigned   :0<br/>Curr QLen            :0<br/>Cycle time(s)       :0<br/>Curr Recv (T/hr)  :0.0<br/>Curr Recv (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last Exit at         :N/A<br/>",
+              "textStyle": "divRightDestinationNew-content"
+            },
+            {
+              "name": "",
+              "hoverText": "",
+              "textStyle": "divRightDestinationNew-content"
+            },
+            {
+              "name": "",
+              "hoverText": "",
+              "textStyle": "divRightDestinationNew-content"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "1",
+      "loadToUnload": {
+        "sourceLeft": {
+          "loadSiteId": "161",
+          "iconInformation": {
+            "icon": "shovel_green.png",
+            "iconHoverText": "# Veh Assigned   :5<br/>Curr QLen            :0<br/>Cycle time(s)       :14<br/>Curr Disp (T/hr)  :0.0<br/>Curr Trips (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last desp at         :N/A<br/><hr noshade size=\"1\" width=\"100%\"><b>PC274828</b><br/>Capacity             :3.0 cu m<br/>Fuel level            :0.0<br/>Refuel at            :N/A<br/>Pos at                  :0<br/>Recent Data at:16:46:27<br/>Engine On          :Off<br/>Other Evt:<br/>false",
+            "pane": "RIGHT",
+            "menu": {
+              "Menu1": {
+                "name": "PC274828",
+                "items": {
+                  "27356,0": {
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "id": "27356",
+                    "value": "PC274828",
+                    "url": ""
+                  },
+                  "27356,1": {
+                    "name": "Reminder in 10 Min",
+                    "icon": "cut",
+                    "id": "27356",
+                    "value": "PC274828",
+                    "url": ""
+                  },
+                  "27356,2": {
+                    "name": "Dismiss",
+                    "icon": "edit",
+                    "id": "27356",
+                    "value": "PC274828",
+                    "url": ""
+                  }
+                }
+              }
+            },
+            "shovelWaiting": "1"
+          },
+          "sourceInformation": {
+            "text1": {
+              "name": "6th Bench E2",
+              "hoverText": "Shovel Name<hr noshade size=\"1\" width=\"100%\">Site name [Pit Name] if diff from shovel<hr noshade size=\"1\" width=\"100%\"># Vehicles Assigned / # of Vehicles in Wait / Recent Avg cycle time(s)<hr noshade size=\"1\" width=\"100%\"># Wait when current loaded comes back / Recent Tonnes/Hr Desp / Shift Tonnage Desp",
+              "textStyle": "divLeftSource-content"
+            },
+            "text2": {
+              "name": "5 / 0 / 14s ",
+              "hoverText": "",
+              "textStyle": "divLeftSource-content"
+            },
+            "text3": {
+              "name": "0 / 0.0 / 0.0",
+              "hoverText": "",
+              "textStyle": "divLeftSource-content"
+            }
+          },
+          "laneId": "PC274828"
+        },
+        "destinationLeft": [
+          {
+            "name": "OB5",
+            "hoverText": "Site Name<hr noshade size=\"1\" width=\"100%\"># Vehicles Assigned / # of Vehicles inside / Recent Avg Turnaround time(s)<hr noshade size=\"1\" width=\"100%\">Recent Tonnes/Hr recvd / Shift Tonnage Desp",
+            "textStyle": "divLeftDestinationNew-content",
+            "dumpers": [
+              {
+                "icon": "CG12AT3016[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12AT3016[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT3016[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Unload,Last Op Time:N/A,Pos at:9th Bench W2,0.03KM SE on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:On,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "95.0",
+                "blinkSpeed": "0",
+                "loadStatus": 4,
+                "menu": {
+                  "CG12AT3016[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT3016[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27372&shovel_id="
+                  },
+                  "CG12AT3016[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT3016[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27372"
+                  },
+                  "CG12AT3016[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT3016[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27372&dur=15"
+                  }
+                }
+              },
+              {
+                "icon": "CG12AT2601[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12AT2601[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT2601[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Unload,Last Op Time:N/A,Pos at:2nd Bench M1,0.05KM SW on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:On,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "95.0",
+                "blinkSpeed": "0",
+                "loadStatus": 4,
+                "menu": {
+                  "CG12AT2601[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT2601[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27373&shovel_id="
+                  },
+                  "CG12AT2601[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT2601[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27373"
+                  },
+                  "CG12AT2601[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT2601[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27373&dur=15"
+                  }
+                }
+              },
+              null,
+              null,
+              {
+                "icon": "CG12AT2642[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12AT2642[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT2642[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Unload,Last Op Time:N/A,Pos at:1st Bench M2,0.04KM E on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:On,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "95.0",
+                "blinkSpeed": "0",
+                "loadStatus": 4,
+                "menu": {
+                  "CG12AT2642[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT2642[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27379&shovel_id="
+                  },
+                  "CG12AT2642[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT2642[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27379"
+                  },
+                  "CG12AT2642[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT2642[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27379&dur=15"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "unloadToLoad": {
+        "sourceRight": [
+          {
+            "name": "PC274828",
+            "hoverText": "# Veh Assigned   :5<br/>Curr QLen            :0<br/>Cycle time(s)       :14<br/>Curr Disp (T/hr)  :0.0<br/>Curr Trips (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last desp at         :N/A<br/><hr noshade size=\"1\" width=\"100%\"><b>PC274828</b><br/>Capacity             :3.0 cu m<br/>Fuel level            :0.0<br/>Refuel at            :N/A<br/>Pos at                  :0<br/>Recent Data at:16:46:27<br/>Engine On          :Off<br/>Other Evt:<br/>false",
+            "textStyle": "divRightSource-content",
+            "dumpers": [
+              null,
+              null,
+              {
+                "icon": "CG12AT2044[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12AT2044[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT2044[SMAS],Capacity :19.0 Tonnes,Load Status:Going to Unload,Last Op Time:N/A,Pos at:Rest Area Near PC Section,0.09KM W on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:On,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "82.16613194488195",
+                "blinkSpeed": "0",
+                "loadStatus": 3,
+                "menu": {
+                  "CG12AT2044[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT2044[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27375&shovel_id="
+                  },
+                  "CG12AT2044[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT2044[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27375"
+                  },
+                  "CG12AT2044[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT2044[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27375&dur=15"
+                  }
+                }
+              },
+              {
+                "icon": "CG12AT2042[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12AT2042[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT2042[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Unload,Last Op Time:N/A,Pos at:OB Dump 4,0.03KM SE on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:On,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "5.0",
+                "blinkSpeed": "0",
+                "loadStatus": 4,
+                "menu": {
+                  "CG12AT2042[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT2042[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27378&shovel_id="
+                  },
+                  "CG12AT2042[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT2042[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27378"
+                  },
+                  "CG12AT2042[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT2042[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27378&dur=15"
+                  }
+                }
+              },
+              null
+            ]
+          }
+        ],
+        "destinationRight": null
+      }
+    },
+    {
+      "id": "2",
+      "loadToUnload": {
+        "sourceLeft": {
+          "loadSiteId": "161",
+          "iconInformation": {
+            "icon": "shovel_green.png",
+            "iconHoverText": "# Veh Assigned   :4<br/>Curr QLen            :0<br/>Cycle time(s)       :21<br/>Curr Disp (T/hr)  :0.0<br/>Curr Trips (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last desp at         :N/A<br/><hr noshade size=\"1\" width=\"100%\"><b>PC274767</b><br/>Capacity             :3.0 cu m<br/>Fuel level            :0.0<br/>Refuel at            :N/A<br/>Pos at                  :0<br/>Recent Data at:16:46:27<br/>Engine On          :Off<br/>Other Evt:<br/>false",
+            "pane": "RIGHT",
+            "menu": {
+              "Menu1": {
+                "name": "PC274767",
+                "items": {
+                  "27357,0": {
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "id": "27357",
+                    "value": "PC274767",
+                    "url": ""
+                  },
+                  "27357,1": {
+                    "name": "Reminder in 10 Min",
+                    "icon": "cut",
+                    "id": "27357",
+                    "value": "PC274767",
+                    "url": ""
+                  },
+                  "27357,2": {
+                    "name": "Dismiss",
+                    "icon": "edit",
+                    "id": "27357",
+                    "value": "PC274767",
+                    "url": ""
+                  }
+                }
+              }
+            },
+            "shovelWaiting": "1"
+          },
+          "sourceInformation": {
+            "text1": {
+              "name": "6th Bench E2",
+              "hoverText": "Shovel Name<hr noshade size=\"1\" width=\"100%\">Site name [Pit Name] if diff from shovel<hr noshade size=\"1\" width=\"100%\"># Vehicles Assigned / # of Vehicles in Wait / Recent Avg cycle time(s)<hr noshade size=\"1\" width=\"100%\"># Wait when current loaded comes back / Recent Tonnes/Hr Desp / Shift Tonnage Desp",
+              "textStyle": "divLeftSource-content"
+            },
+            "text2": {
+              "name": "4 / 0 / 21s ",
+              "hoverText": "",
+              "textStyle": "divLeftSource-content"
+            },
+            "text3": {
+              "name": "0 / 0.0 / 0.0",
+              "hoverText": "",
+              "textStyle": "divLeftSource-content"
+            }
+          },
+          "laneId": "PC274767"
+        },
+        "destinationLeft": [
+          {
+            "name": "OB5",
+            "hoverText": "Site Name<hr noshade size=\"1\" width=\"100%\"># Vehicles Assigned / # of Vehicles inside / Recent Avg Turnaround time(s)<hr noshade size=\"1\" width=\"100%\">Recent Tonnes/Hr recvd / Shift Tonnage Desp",
+            "textStyle": "divLeftDestinationNew-content",
+            "dumpers": [
+              null,
+              null,
+              {
+                "icon": "CG12AT3017[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12AT3017[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT3017[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Unload,Last Op Time:N/A,Pos at:9th Bench M2,0.03KM W on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:On,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "84.43320592176966",
+                "blinkSpeed": "0",
+                "loadStatus": 4,
+                "menu": {
+                  "CG12AT3017[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT3017[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27371&shovel_id="
+                  },
+                  "CG12AT3017[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT3017[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27371"
+                  },
+                  "CG12AT3017[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT3017[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27371&dur=15"
+                  }
+                }
+              },
+              {
+                "icon": "CG12S5704[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12S5704[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12S5704[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Unload,Last Op Time:N/A,Pos at:8th Bench E3,0.04KM SE on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:On,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "76.35235856481948",
+                "blinkSpeed": "0",
+                "loadStatus": 4,
+                "menu": {
+                  "CG12S5704[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12S5704[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27374&shovel_id="
+                  },
+                  "CG12S5704[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12S5704[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27374"
+                  },
+                  "CG12S5704[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12S5704[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27374&dur=15"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "unloadToLoad": {
+        "sourceRight": [
+          {
+            "name": "PC274767",
+            "hoverText": "# Veh Assigned   :4<br/>Curr QLen            :0<br/>Cycle time(s)       :21<br/>Curr Disp (T/hr)  :0.0<br/>Curr Trips (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last desp at         :N/A<br/><hr noshade size=\"1\" width=\"100%\"><b>PC274767</b><br/>Capacity             :3.0 cu m<br/>Fuel level            :0.0<br/>Refuel at            :N/A<br/>Pos at                  :0<br/>Recent Data at:16:46:27<br/>Engine On          :Off<br/>Other Evt:<br/>false",
+            "textStyle": "divRightSource-content",
+            "dumpers": [
+              {
+                "icon": "CG12S5703[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12S5703[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12S5703[SMAS],Capacity :19.0 Tonnes,Load Status:Going to Unload,Last Op Time:N/A,Pos at:OB Dump 4,0.1KM NE on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "63.212410086503525",
+                "blinkSpeed": "0",
+                "loadStatus": 3,
+                "menu": {
+                  "CG12S5703[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12S5703[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27346&shovel_id="
+                  },
+                  "CG12S5703[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12S5703[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27346"
+                  },
+                  "CG12S5703[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12S5703[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27346&dur=15"
+                  }
+                }
+              },
+              {
+                "icon": "CG12AT2625[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12AT2625[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT2625[SMAS],Capacity :19.0 Tonnes,Load Status:Going to Unload,Last Op Time:N/A,Pos at:Bahanpath Garage, Gevra,0.02KM SE on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "76.42455248510744",
+                "blinkSpeed": "0",
+                "loadStatus": 3,
+                "menu": {
+                  "CG12AT2625[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT2625[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27369&shovel_id="
+                  },
+                  "CG12AT2625[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT2625[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27369"
+                  },
+                  "CG12AT2625[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT2625[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27369&dur=15"
+                  }
+                }
+              },
+              null,
+              null
+            ]
+          }
+        ],
+        "destinationRight": null
+      }
+    },
+    {
+      "id": "3",
+      "loadToUnload": {
+        "sourceLeft": {
+          "loadSiteId": "156",
+          "iconInformation": {
+            "icon": "shovel_green.png",
+            "iconHoverText": "# Veh Assigned   :5<br/>Curr QLen            :0<br/>Cycle time(s)       :22<br/>Curr Disp (T/hr)  :0.0<br/>Curr Trips (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last desp at         :N/A<br/><hr noshade size=\"1\" width=\"100%\"><b>PC274768</b><br/>Capacity             :3.0 cu m<br/>Fuel level            :0.0<br/>Refuel at            :N/A<br/>Pos at                  :0<br/>Recent Data at:16:46:27<br/>Engine On          :Off<br/>Other Evt:<br/>false",
+            "pane": "RIGHT",
+            "menu": {
+              "Menu1": {
+                "name": "PC274768",
+                "items": {
+                  "27354,0": {
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "id": "27354",
+                    "value": "PC274768",
+                    "url": ""
+                  },
+                  "27354,1": {
+                    "name": "Reminder in 10 Min",
+                    "icon": "cut",
+                    "id": "27354",
+                    "value": "PC274768",
+                    "url": ""
+                  },
+                  "27354,2": {
+                    "name": "Dismiss",
+                    "icon": "edit",
+                    "id": "27354",
+                    "value": "PC274768",
+                    "url": ""
+                  }
+                }
+              }
+            },
+            "shovelWaiting": "1"
+          },
+          "sourceInformation": {
+            "text1": {
+              "name": "4th Bench E3",
+              "hoverText": "Shovel Name<hr noshade size=\"1\" width=\"100%\">Site name [Pit Name] if diff from shovel<hr noshade size=\"1\" width=\"100%\"># Vehicles Assigned / # of Vehicles in Wait / Recent Avg cycle time(s)<hr noshade size=\"1\" width=\"100%\"># Wait when current loaded comes back / Recent Tonnes/Hr Desp / Shift Tonnage Desp",
+              "textStyle": "divLeftSource-content"
+            },
+            "text2": {
+              "name": "5 / 0 / 22s ",
+              "hoverText": "",
+              "textStyle": "divLeftSource-content"
+            },
+            "text3": {
+              "name": "0 / 0.0 / 0.0",
+              "hoverText": "",
+              "textStyle": "divLeftSource-content"
+            }
+          },
+          "laneId": "PC274768"
+        },
+        "destinationLeft": [
+          {
+            "name": "OB4",
+            "hoverText": "Site Name<hr noshade size=\"1\" width=\"100%\"># Vehicles Assigned / # of Vehicles inside / Recent Avg Turnaround time(s)<hr noshade size=\"1\" width=\"100%\">Recent Tonnes/Hr recvd / Shift Tonnage Desp",
+            "textStyle": "divLeftDestinationNew-content",
+            "dumpers": [
+              null,
+              {
+                "icon": "CG12S5680[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12S5680[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12S5680[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Unload,Last Op Time:N/A,Pos at:9th Bench E3,0.03KM SE on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "90.8703807510223",
+                "blinkSpeed": "0",
+                "loadStatus": 4,
+                "menu": {
+                  "CG12S5680[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12S5680[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27341&shovel_id="
+                  },
+                  "CG12S5680[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12S5680[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27341"
+                  },
+                  "CG12S5680[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12S5680[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27341&dur=15"
+                  }
+                }
+              },
+              {
+                "icon": "CG12S5681[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12S5681[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12S5681[SMAS],Capacity :19.0 TonnesStopped Since:05:30:00,Load Status:Wait For Unload,Last Op Time:N/A,Pos at:Bahanpath Garage, Gevra,0.02KM SE on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "95.0",
+                "blinkSpeed": "0",
+                "loadStatus": 4,
+                "menu": {
+                  "CG12S5681[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12S5681[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27342&shovel_id="
+                  },
+                  "CG12S5681[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12S5681[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27342"
+                  },
+                  "CG12S5681[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12S5681[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27342&dur=15"
+                  }
+                }
+              },
+              null,
+              null
+            ]
+          }
+        ]
+      },
+      "unloadToLoad": {
+        "sourceRight": [
+          {
+            "name": "PC274768",
+            "hoverText": "# Veh Assigned   :5<br/>Curr QLen            :0<br/>Cycle time(s)       :22<br/>Curr Disp (T/hr)  :0.0<br/>Curr Trips (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last desp at         :N/A<br/><hr noshade size=\"1\" width=\"100%\"><b>PC274768</b><br/>Capacity             :3.0 cu m<br/>Fuel level            :0.0<br/>Refuel at            :N/A<br/>Pos at                  :0<br/>Recent Data at:16:46:27<br/>Engine On          :Off<br/>Other Evt:<br/>false",
+            "textStyle": "divRightSource-content",
+            "dumpers": [
+              {
+                "icon": "CG12S5679[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12S5679[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12S5679[SMAS],Capacity :19.0 Tonnes,Load Status:Going to Unload,Last Op Time:N/A,Pos at:OB DUMP 4,0.04KM E on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "95.0",
+                "blinkSpeed": "0",
+                "loadStatus": 3,
+                "menu": {
+                  "CG12S5679[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12S5679[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27340&shovel_id="
+                  },
+                  "CG12S5679[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12S5679[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27340"
+                  },
+                  "CG12S5679[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12S5679[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27340&dur=15"
+                  }
+                }
+              },
+              null,
+              null,
+              {
+                "icon": "CG12S5682[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_left_green.png",
+                "iconText": "dumper_left_green.png",
+                "iconHoverText": "CG12S5682[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12S5682[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Load,Last Op Time:N/A,Pos at:7th Bench M2,0.02KM N on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "95.0",
+                "blinkSpeed": "0",
+                "loadStatus": 0,
+                "menu": {
+                  "CG12S5682[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12S5682[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27343&shovel_id="
+                  },
+                  "CG12S5682[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12S5682[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27343"
+                  },
+                  "CG12S5682[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12S5682[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27343&dur=15"
+                  }
+                }
+              },
+              {
+                "icon": "CG12S5702[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_left_green.png",
+                "iconText": "dumper_left_green.png",
+                "iconHoverText": "CG12S5702[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12S5702[SMAS],Capacity :19.0 TonnesStopped Since:05:30:07,Load Status:Waitng After Unload,Last Op Time:N/A,Pos at:Bahanpath Garage, Gevra on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "0.0",
+                "blinkSpeed": "0",
+                "loadStatus": 6,
+                "menu": {
+                  "CG12S5702[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12S5702[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27345&shovel_id="
+                  },
+                  "CG12S5702[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12S5702[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27345"
+                  },
+                  "CG12S5702[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12S5702[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27345&dur=15"
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "destinationRight": {
+          "unloadSiteId": "OB4",
+          "destinationInformation": [
+            {
+              "name": "0.0 / 0.0",
+              "hoverText": "OB4# Veh Assigned   :0<br/>Curr QLen            :0<br/>Cycle time(s)       :0<br/>Curr Recv (T/hr)  :0.0<br/>Curr Recv (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last Exit at         :N/A<br/>",
+              "textStyle": "divRightDestinationNew-content"
+            },
+            {
+              "name": "",
+              "hoverText": "",
+              "textStyle": "divRightDestinationNew-content"
+            },
+            {
+              "name": "",
+              "hoverText": "",
+              "textStyle": "divRightDestinationNew-content"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "4",
+      "loadToUnload": {
+        "sourceLeft": {
+          "loadSiteId": "140",
+          "iconInformation": {
+            "icon": "shovel_green.png",
+            "iconHoverText": "# Veh Assigned   :4<br/>Curr QLen            :0<br/>Cycle time(s)       :22<br/>Curr Disp (T/hr)  :0.0<br/>Curr Trips (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last desp at         :N/A<br/><hr noshade size=\"1\" width=\"100%\"><b>PC274770</b><br/>Capacity             :3.0 cu m<br/>Fuel level            :0.0<br/>Refuel at            :N/A<br/>Pos at                  :0<br/>Recent Data at:16:46:27<br/>Engine On          :Off<br/>Other Evt:<br/>false",
+            "pane": "RIGHT",
+            "menu": {
+              "Menu1": {
+                "name": "PC274770",
+                "items": {
+                  "27355,0": {
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "id": "27355",
+                    "value": "PC274770",
+                    "url": ""
+                  },
+                  "27355,1": {
+                    "name": "Reminder in 10 Min",
+                    "icon": "cut",
+                    "id": "27355",
+                    "value": "PC274770",
+                    "url": ""
+                  },
+                  "27355,2": {
+                    "name": "Dismiss",
+                    "icon": "edit",
+                    "id": "27355",
+                    "value": "PC274770",
+                    "url": ""
+                  }
+                }
+              }
+            },
+            "shovelWaiting": "1"
+          },
+          "sourceInformation": {
+            "text1": {
+              "name": "7th Bench E2",
+              "hoverText": "Shovel Name<hr noshade size=\"1\" width=\"100%\">Site name [Pit Name] if diff from shovel<hr noshade size=\"1\" width=\"100%\"># Vehicles Assigned / # of Vehicles in Wait / Recent Avg cycle time(s)<hr noshade size=\"1\" width=\"100%\"># Wait when current loaded comes back / Recent Tonnes/Hr Desp / Shift Tonnage Desp",
+              "textStyle": "divLeftSource-content"
+            },
+            "text2": {
+              "name": "4 / 0 / 22s ",
+              "hoverText": "",
+              "textStyle": "divLeftSource-content"
+            },
+            "text3": {
+              "name": "0 / 0.0 / 0.0",
+              "hoverText": "",
+              "textStyle": "divLeftSource-content"
+            }
+          },
+          "laneId": "PC274770"
+        },
+        "destinationLeft": [
+          {
+            "name": "OB7",
+            "hoverText": "Site Name<hr noshade size=\"1\" width=\"100%\"># Vehicles Assigned / # of Vehicles inside / Recent Avg Turnaround time(s)<hr noshade size=\"1\" width=\"100%\">Recent Tonnes/Hr recvd / Shift Tonnage Desp",
+            "textStyle": "divLeftDestinationNew-content",
+            "dumpers": [
+              {
+                "icon": "CG12S5673[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12S5673[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12S5673[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Unload,Last Op Time:N/A,Pos at:Bahanpath Garage, Gevra,0.02KM E on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "95.0",
+                "blinkSpeed": "0",
+                "loadStatus": 4,
+                "menu": {
+                  "CG12S5673[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12S5673[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27335&shovel_id="
+                  },
+                  "CG12S5673[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12S5673[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27335"
+                  },
+                  "CG12S5673[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12S5673[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27335&dur=15"
+                  }
+                }
+              },
+              {
+                "icon": "CG12S5674[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12S5674[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12S5674[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Unload,Last Op Time:N/A,Pos at:8th Bench E3,0.02KM NW on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "84.01919163861726",
+                "blinkSpeed": "0",
+                "loadStatus": 4,
+                "menu": {
+                  "CG12S5674[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12S5674[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27336&shovel_id="
+                  },
+                  "CG12S5674[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12S5674[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27336"
+                  },
+                  "CG12S5674[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12S5674[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27336&dur=15"
+                  }
+                }
+              },
+              {
+                "icon": "CG12S5675[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12S5675[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12S5675[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Unload,Last Op Time:N/A,Pos at:Rest Area Near PC Section,0.06KM W on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "95.0",
+                "blinkSpeed": "0",
+                "loadStatus": 4,
+                "menu": {
+                  "CG12S5675[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12S5675[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27337&shovel_id="
+                  },
+                  "CG12S5675[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12S5675[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27337"
+                  },
+                  "CG12S5675[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12S5675[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27337&dur=15"
+                  }
+                }
+              },
+              {
+                "icon": "CG12S5676[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12S5676[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12S5676[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Unload,Last Op Time:N/A,Pos at:3rd Bench M5 on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "65.25612600986032",
+                "blinkSpeed": "0",
+                "loadStatus": 4,
+                "menu": {
+                  "CG12S5676[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12S5676[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27338&shovel_id="
+                  },
+                  "CG12S5676[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12S5676[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27338"
+                  },
+                  "CG12S5676[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12S5676[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27338&dur=15"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "unloadToLoad": {
+        "sourceRight": [
+          {
+            "name": "PC274770",
+            "hoverText": "# Veh Assigned   :4<br/>Curr QLen            :0<br/>Cycle time(s)       :22<br/>Curr Disp (T/hr)  :0.0<br/>Curr Trips (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last desp at         :N/A<br/><hr noshade size=\"1\" width=\"100%\"><b>PC274770</b><br/>Capacity             :3.0 cu m<br/>Fuel level            :0.0<br/>Refuel at            :N/A<br/>Pos at                  :0<br/>Recent Data at:16:46:27<br/>Engine On          :Off<br/>Other Evt:<br/>false",
+            "textStyle": "divRightSource-content",
+            "dumpers": [
+              null,
+              null,
+              null,
+              null
+            ]
+          }
+        ],
+        "destinationRight": {
+          "unloadSiteId": "OB7",
+          "destinationInformation": [
+            {
+              "name": "0.0 / 0.0",
+              "hoverText": "OB7# Veh Assigned   :0<br/>Curr QLen            :0<br/>Cycle time(s)       :0<br/>Curr Recv (T/hr)  :0.0<br/>Curr Recv (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last Exit at         :N/A<br/>",
+              "textStyle": "divRightDestinationNew-content"
+            },
+            {
+              "name": "",
+              "hoverText": "",
+              "textStyle": "divRightDestinationNew-content"
+            },
+            {
+              "name": "",
+              "hoverText": "",
+              "textStyle": "divRightDestinationNew-content"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "5",
+      "loadToUnload": {
+        "sourceLeft": {
+          "loadSiteId": "140",
+          "iconInformation": {
+            "icon": "shovel_green.png",
+            "iconHoverText": "# Veh Assigned   :4<br/>Curr QLen            :0<br/>Cycle time(s)       :21<br/>Curr Disp (T/hr)  :0.0<br/>Curr Trips (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last desp at         :N/A<br/><hr noshade size=\"1\" width=\"100%\"><b>PC274771</b><br/>Capacity             :3.0 cu m<br/>Fuel level            :0.0<br/>Refuel at            :N/A<br/>Pos at                  :0<br/>Recent Data at:16:46:27<br/>Engine On          :Off<br/>Other Evt:<br/>false",
+            "pane": "RIGHT",
+            "menu": {
+              "Menu1": {
+                "name": "PC274771",
+                "items": {
+                  "27352,0": {
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "id": "27352",
+                    "value": "PC274771",
+                    "url": ""
+                  },
+                  "27352,1": {
+                    "name": "Reminder in 10 Min",
+                    "icon": "cut",
+                    "id": "27352",
+                    "value": "PC274771",
+                    "url": ""
+                  },
+                  "27352,2": {
+                    "name": "Dismiss",
+                    "icon": "edit",
+                    "id": "27352",
+                    "value": "PC274771",
+                    "url": ""
+                  }
+                }
+              }
+            },
+            "shovelWaiting": "1"
+          },
+          "sourceInformation": {
+            "text1": {
+              "name": "7th Bench E2",
+              "hoverText": "Shovel Name<hr noshade size=\"1\" width=\"100%\">Site name [Pit Name] if diff from shovel<hr noshade size=\"1\" width=\"100%\"># Vehicles Assigned / # of Vehicles in Wait / Recent Avg cycle time(s)<hr noshade size=\"1\" width=\"100%\"># Wait when current loaded comes back / Recent Tonnes/Hr Desp / Shift Tonnage Desp",
+              "textStyle": "divLeftSource-content"
+            },
+            "text2": {
+              "name": "4 / 0 / 21s ",
+              "hoverText": "",
+              "textStyle": "divLeftSource-content"
+            },
+            "text3": {
+              "name": "0 / 0.0 / 0.0",
+              "hoverText": "",
+              "textStyle": "divLeftSource-content"
+            }
+          },
+          "laneId": "PC274771"
+        },
+        "destinationLeft": [
+          {
+            "name": "OB7",
+            "hoverText": "Site Name<hr noshade size=\"1\" width=\"100%\"># Vehicles Assigned / # of Vehicles inside / Recent Avg Turnaround time(s)<hr noshade size=\"1\" width=\"100%\">Recent Tonnes/Hr recvd / Shift Tonnage Desp",
+            "textStyle": "divLeftDestinationNew-content",
+            "dumpers": [
+              null,
+              null,
+              {
+                "icon": "CG12S5670[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_left_green.png",
+                "iconText": "dumper_left_green.png",
+                "iconHoverText": "CG12S5670[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12S5670[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Load,Last Op Time:N/A,Pos at:Min left 7,0.04KM SW on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "5.812763659791027",
+                "blinkSpeed": "0",
+                "loadStatus": 0,
+                "menu": {
+                  "CG12S5670[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12S5670[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27332&shovel_id="
+                  },
+                  "CG12S5670[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12S5670[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27332"
+                  },
+                  "CG12S5670[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12S5670[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27332&dur=15"
+                  }
+                }
+              },
+              {
+                "icon": "CG12S5671[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12S5671[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12S5671[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Unload,Last Op Time:N/A,Pos at:8th Bench E3,0.03KM N on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "62.60260626619477",
+                "blinkSpeed": "0",
+                "loadStatus": 4,
+                "menu": {
+                  "CG12S5671[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12S5671[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27333&shovel_id="
+                  },
+                  "CG12S5671[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12S5671[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27333"
+                  },
+                  "CG12S5671[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12S5671[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27333&dur=15"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "unloadToLoad": {
+        "sourceRight": [
+          {
+            "name": "PC274771",
+            "hoverText": "# Veh Assigned   :4<br/>Curr QLen            :0<br/>Cycle time(s)       :21<br/>Curr Disp (T/hr)  :0.0<br/>Curr Trips (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last desp at         :N/A<br/><hr noshade size=\"1\" width=\"100%\"><b>PC274771</b><br/>Capacity             :3.0 cu m<br/>Fuel level            :0.0<br/>Refuel at            :N/A<br/>Pos at                  :0<br/>Recent Data at:16:46:27<br/>Engine On          :Off<br/>Other Evt:<br/>false",
+            "textStyle": "divRightSource-content",
+            "dumpers": [
+              {
+                "icon": "CG12S5668[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12S5668[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12S5668[SMAS],Capacity :19.0 Tonnes,Load Status:Going to Unload,Last Op Time:N/A,Pos at:OB Dump 4 on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "63.08428000642596",
+                "blinkSpeed": "0",
+                "loadStatus": 3,
+                "menu": {
+                  "CG12S5668[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12S5668[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27330&shovel_id="
+                  },
+                  "CG12S5668[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12S5668[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27330"
+                  },
+                  "CG12S5668[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12S5668[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27330&dur=15"
+                  }
+                }
+              },
+              {
+                "icon": "CG12S5669[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12S5669[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12S5669[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Unload,Last Op Time:N/A,Pos at:OB DUMP 5,0.01KM E on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "11.486693026680907",
+                "blinkSpeed": "0",
+                "loadStatus": 4,
+                "menu": {
+                  "CG12S5669[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12S5669[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27331&shovel_id="
+                  },
+                  "CG12S5669[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12S5669[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27331"
+                  },
+                  "CG12S5669[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12S5669[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27331&dur=15"
+                  }
+                }
+              },
+              null,
+              null
+            ]
+          }
+        ],
+        "destinationRight": {
+          "unloadSiteId": "OB7",
+          "destinationInformation": [
+            {
+              "name": "0.0 / 0.0",
+              "hoverText": "OB7# Veh Assigned   :0<br/>Curr QLen            :0<br/>Cycle time(s)       :0<br/>Curr Recv (T/hr)  :0.0<br/>Curr Recv (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last Exit at         :N/A<br/>",
+              "textStyle": "divRightDestinationNew-content"
+            },
+            {
+              "name": "",
+              "hoverText": "",
+              "textStyle": "divRightDestinationNew-content"
+            },
+            {
+              "name": "",
+              "hoverText": "",
+              "textStyle": "divRightDestinationNew-content"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "6",
+      "loadToUnload": {
+        "sourceLeft": {
+          "loadSiteId": "140",
+          "iconInformation": {
+            "icon": "shovel_green.png",
+            "iconHoverText": "# Veh Assigned   :3<br/>Curr QLen            :0<br/>Cycle time(s)       :23<br/>Curr Disp (T/hr)  :0.0<br/>Curr Trips (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last desp at         :N/A<br/><hr noshade size=\"1\" width=\"100%\"><b>PC273553</b><br/>Capacity             :3.0 cu m<br/>Fuel level            :0.0<br/>Refuel at            :N/A<br/>Pos at                  :0<br/>Recent Data at:16:46:27<br/>Engine On          :Off<br/>Other Evt:<br/>false",
+            "pane": "RIGHT",
+            "menu": {
+              "Menu1": {
+                "name": "PC273553",
+                "items": {
+                  "27353,0": {
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "id": "27353",
+                    "value": "PC273553",
+                    "url": ""
+                  },
+                  "27353,1": {
+                    "name": "Reminder in 10 Min",
+                    "icon": "cut",
+                    "id": "27353",
+                    "value": "PC273553",
+                    "url": ""
+                  },
+                  "27353,2": {
+                    "name": "Dismiss",
+                    "icon": "edit",
+                    "id": "27353",
+                    "value": "PC273553",
+                    "url": ""
+                  }
+                }
+              }
+            },
+            "shovelWaiting": "1"
+          },
+          "sourceInformation": {
+            "text1": {
+              "name": "7th Bench E2",
+              "hoverText": "Shovel Name<hr noshade size=\"1\" width=\"100%\">Site name [Pit Name] if diff from shovel<hr noshade size=\"1\" width=\"100%\"># Vehicles Assigned / # of Vehicles in Wait / Recent Avg cycle time(s)<hr noshade size=\"1\" width=\"100%\"># Wait when current loaded comes back / Recent Tonnes/Hr Desp / Shift Tonnage Desp",
+              "textStyle": "divLeftSource-content"
+            },
+            "text2": {
+              "name": "3 / 0 / 23s ",
+              "hoverText": "",
+              "textStyle": "divLeftSource-content"
+            },
+            "text3": {
+              "name": "0 / 0.0 / 0.0",
+              "hoverText": "",
+              "textStyle": "divLeftSource-content"
+            }
+          },
+          "laneId": "PC273553"
+        },
+        "destinationLeft": [
+          {
+            "name": "OB7",
+            "hoverText": "Site Name<hr noshade size=\"1\" width=\"100%\"># Vehicles Assigned / # of Vehicles inside / Recent Avg Turnaround time(s)<hr noshade size=\"1\" width=\"100%\">Recent Tonnes/Hr recvd / Shift Tonnage Desp",
+            "textStyle": "divLeftDestinationNew-content",
+            "dumpers": [
+              {
+                "icon": "CG12AT3974[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12AT3974[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT3974[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Unload,Last Op Time:N/A,Pos at:1st Bench M2,0.07KM E on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "95.0",
+                "blinkSpeed": "0",
+                "loadStatus": 4,
+                "menu": {
+                  "CG12AT3974[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT3974[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27320&shovel_id="
+                  },
+                  "CG12AT3974[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT3974[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27320"
+                  },
+                  "CG12AT3974[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT3974[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27320&dur=15"
+                  }
+                }
+              },
+              null,
+              {
+                "icon": "CG12S5666[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12S5666[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12S5666[SMAS],Capacity :19.0 Tonnes,Load Status:Going to Unload,Last Op Time:N/A,Pos at:8th Bench M4,0.04KM SW on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "18.96522883956145",
+                "blinkSpeed": "0",
+                "loadStatus": 3,
+                "menu": {
+                  "CG12S5666[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12S5666[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27328&shovel_id="
+                  },
+                  "CG12S5666[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12S5666[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27328"
+                  },
+                  "CG12S5666[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12S5666[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27328&dur=15"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "unloadToLoad": {
+        "sourceRight": [
+          {
+            "name": "PC273553",
+            "hoverText": "# Veh Assigned   :3<br/>Curr QLen            :0<br/>Cycle time(s)       :23<br/>Curr Disp (T/hr)  :0.0<br/>Curr Trips (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last desp at         :N/A<br/><hr noshade size=\"1\" width=\"100%\"><b>PC273553</b><br/>Capacity             :3.0 cu m<br/>Fuel level            :0.0<br/>Refuel at            :N/A<br/>Pos at                  :0<br/>Recent Data at:16:46:27<br/>Engine On          :Off<br/>Other Evt:<br/>false",
+            "textStyle": "divRightSource-content",
+            "dumpers": [
+              null,
+              {
+                "icon": "CG12AT3976[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_left_green.png",
+                "iconText": "dumper_left_green.png",
+                "iconHoverText": "CG12AT3976[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT3976[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Load,Last Op Time:N/A,Pos at:Rest Area Near PC Section,0.11KM W on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "55.9787968454573",
+                "blinkSpeed": "0",
+                "loadStatus": 0,
+                "menu": {
+                  "CG12AT3976[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT3976[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27321&shovel_id="
+                  },
+                  "CG12AT3976[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT3976[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27321"
+                  },
+                  "CG12AT3976[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT3976[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27321&dur=15"
+                  }
+                }
+              },
+              null
+            ]
+          }
+        ],
+        "destinationRight": {
+          "unloadSiteId": "OB7",
+          "destinationInformation": [
+            {
+              "name": "0.0 / 0.0",
+              "hoverText": "OB7# Veh Assigned   :0<br/>Curr QLen            :0<br/>Cycle time(s)       :0<br/>Curr Recv (T/hr)  :0.0<br/>Curr Recv (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last Exit at         :N/A<br/>",
+              "textStyle": "divRightDestinationNew-content"
+            },
+            {
+              "name": "",
+              "hoverText": "",
+              "textStyle": "divRightDestinationNew-content"
+            },
+            {
+              "name": "",
+              "hoverText": "",
+              "textStyle": "divRightDestinationNew-content"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "7",
+      "loadToUnload": {
+        "sourceLeft": {
+          "loadSiteId": "140",
+          "iconInformation": {
+            "icon": "shovel_green.png",
+            "iconHoverText": "# Veh Assigned   :3<br/>Curr QLen            :0<br/>Cycle time(s)       :21<br/>Curr Disp (T/hr)  :0.0<br/>Curr Trips (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last desp at         :N/A<br/><hr noshade size=\"1\" width=\"100%\"><b>PC274776</b><br/>Capacity             :3.0 cu m<br/>Fuel level            :0.0<br/>Refuel at            :N/A<br/>Pos at                  :0<br/>Recent Data at:16:46:27<br/>Engine On          :Off<br/>Other Evt:<br/>false",
+            "pane": "RIGHT",
+            "menu": {
+              "Menu1": {
+                "name": "PC274776",
+                "items": {
+                  "27350,0": {
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "id": "27350",
+                    "value": "PC274776",
+                    "url": ""
+                  },
+                  "27350,1": {
+                    "name": "Reminder in 10 Min",
+                    "icon": "cut",
+                    "id": "27350",
+                    "value": "PC274776",
+                    "url": ""
+                  },
+                  "27350,2": {
+                    "name": "Dismiss",
+                    "icon": "edit",
+                    "id": "27350",
+                    "value": "PC274776",
+                    "url": ""
+                  }
+                }
+              }
+            },
+            "shovelWaiting": "1"
+          },
+          "sourceInformation": {
+            "text1": {
+              "name": "7th Bench E2",
+              "hoverText": "Shovel Name<hr noshade size=\"1\" width=\"100%\">Site name [Pit Name] if diff from shovel<hr noshade size=\"1\" width=\"100%\"># Vehicles Assigned / # of Vehicles in Wait / Recent Avg cycle time(s)<hr noshade size=\"1\" width=\"100%\"># Wait when current loaded comes back / Recent Tonnes/Hr Desp / Shift Tonnage Desp",
+              "textStyle": "divLeftSource-content"
+            },
+            "text2": {
+              "name": "3 / 0 / 21s ",
+              "hoverText": "",
+              "textStyle": "divLeftSource-content"
+            },
+            "text3": {
+              "name": "0 / 0.0 / 0.0",
+              "hoverText": "",
+              "textStyle": "divLeftSource-content"
+            }
+          },
+          "laneId": "PC274776"
+        },
+        "destinationLeft": [
+          {
+            "name": "OB7",
+            "hoverText": "Site Name<hr noshade size=\"1\" width=\"100%\"># Vehicles Assigned / # of Vehicles inside / Recent Avg Turnaround time(s)<hr noshade size=\"1\" width=\"100%\">Recent Tonnes/Hr recvd / Shift Tonnage Desp",
+            "textStyle": "divLeftDestinationNew-content",
+            "dumpers": [
+              {
+                "icon": "CG12AT3978[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12AT3978[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT3978[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Unload,Last Op Time:N/A,Pos at:2nd Bench M2,0.05KM SE on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "95.0",
+                "blinkSpeed": "0",
+                "loadStatus": 4,
+                "menu": {
+                  "CG12AT3978[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT3978[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27322&shovel_id="
+                  },
+                  "CG12AT3978[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT3978[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27322"
+                  },
+                  "CG12AT3978[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT3978[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27322&dur=15"
+                  }
+                }
+              },
+              null,
+              null
+            ]
+          }
+        ]
+      },
+      "unloadToLoad": {
+        "sourceRight": [
+          {
+            "name": "PC274776",
+            "hoverText": "# Veh Assigned   :3<br/>Curr QLen            :0<br/>Cycle time(s)       :21<br/>Curr Disp (T/hr)  :0.0<br/>Curr Trips (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last desp at         :N/A<br/><hr noshade size=\"1\" width=\"100%\"><b>PC274776</b><br/>Capacity             :3.0 cu m<br/>Fuel level            :0.0<br/>Refuel at            :N/A<br/>Pos at                  :0<br/>Recent Data at:16:46:27<br/>Engine On          :Off<br/>Other Evt:<br/>false",
+            "textStyle": "divRightSource-content",
+            "dumpers": [
+              null,
+              {
+                "icon": "CG12AT3979[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_left_green.png",
+                "iconText": "dumper_left_green.png",
+                "iconHoverText": "CG12AT3979[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT3979[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Load,Last Op Time:N/A,Pos at:2nd Bench M2,0.05KM SE on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "60.87564818542916",
+                "blinkSpeed": "0",
+                "loadStatus": 0,
+                "menu": {
+                  "CG12AT3979[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT3979[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27323&shovel_id="
+                  },
+                  "CG12AT3979[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT3979[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27323"
+                  },
+                  "CG12AT3979[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT3979[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27323&dur=15"
+                  }
+                }
+              },
+              {
+                "icon": "CG12S5662[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_left_green.png",
+                "iconText": "dumper_left_green.png",
+                "iconHoverText": "CG12S5662[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12S5662[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Load,Last Op Time:N/A,Pos at:8th Bench M4 on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "64.31278313521939",
+                "blinkSpeed": "0",
+                "loadStatus": 0,
+                "menu": {
+                  "CG12S5662[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12S5662[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27325&shovel_id="
+                  },
+                  "CG12S5662[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12S5662[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27325"
+                  },
+                  "CG12S5662[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12S5662[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27325&dur=15"
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "destinationRight": {
+          "unloadSiteId": "OB7",
+          "destinationInformation": [
+            {
+              "name": "0.0 / 0.0",
+              "hoverText": "OB7# Veh Assigned   :0<br/>Curr QLen            :0<br/>Cycle time(s)       :0<br/>Curr Recv (T/hr)  :0.0<br/>Curr Recv (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last Exit at         :N/A<br/>",
+              "textStyle": "divRightDestinationNew-content"
+            },
+            {
+              "name": "",
+              "hoverText": "",
+              "textStyle": "divRightDestinationNew-content"
+            },
+            {
+              "name": "",
+              "hoverText": "",
+              "textStyle": "divRightDestinationNew-content"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "8",
+      "loadToUnload": {
+        "sourceLeft": {
+          "loadSiteId": "140",
+          "iconInformation": {
+            "icon": "shovel_green.png",
+            "iconHoverText": "# Veh Assigned   :3<br/>Curr QLen            :0<br/>Cycle time(s)       :18<br/>Curr Disp (T/hr)  :0.0<br/>Curr Trips (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last desp at         :N/A<br/><hr noshade size=\"1\" width=\"100%\"><b>PC274831</b><br/>Capacity             :3.0 cu m<br/>Fuel level            :0.0<br/>Refuel at            :N/A<br/>Pos at                  :0<br/>Recent Data at:16:46:27<br/>Engine On          :Off<br/>Other Evt:<br/>false",
+            "pane": "RIGHT",
+            "menu": {
+              "Menu1": {
+                "name": "PC274831",
+                "items": {
+                  "27401,0": {
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "id": "27401",
+                    "value": "PC274831",
+                    "url": ""
+                  },
+                  "27401,1": {
+                    "name": "Reminder in 10 Min",
+                    "icon": "cut",
+                    "id": "27401",
+                    "value": "PC274831",
+                    "url": ""
+                  },
+                  "27401,2": {
+                    "name": "Dismiss",
+                    "icon": "edit",
+                    "id": "27401",
+                    "value": "PC274831",
+                    "url": ""
+                  }
+                }
+              }
+            },
+            "shovelWaiting": "1"
+          },
+          "sourceInformation": {
+            "text1": {
+              "name": "7th Bench E2",
+              "hoverText": "Shovel Name<hr noshade size=\"1\" width=\"100%\">Site name [Pit Name] if diff from shovel<hr noshade size=\"1\" width=\"100%\"># Vehicles Assigned / # of Vehicles in Wait / Recent Avg cycle time(s)<hr noshade size=\"1\" width=\"100%\"># Wait when current loaded comes back / Recent Tonnes/Hr Desp / Shift Tonnage Desp",
+              "textStyle": "divLeftSource-content"
+            },
+            "text2": {
+              "name": "3 / 0 / 18s ",
+              "hoverText": "",
+              "textStyle": "divLeftSource-content"
+            },
+            "text3": {
+              "name": "0 / 0.0 / 0.0",
+              "hoverText": "",
+              "textStyle": "divLeftSource-content"
+            }
+          },
+          "laneId": "PC274831"
+        },
+        "destinationLeft": [
+          {
+            "name": "OB7",
+            "hoverText": "Site Name<hr noshade size=\"1\" width=\"100%\"># Vehicles Assigned / # of Vehicles inside / Recent Avg Turnaround time(s)<hr noshade size=\"1\" width=\"100%\">Recent Tonnes/Hr recvd / Shift Tonnage Desp",
+            "textStyle": "divLeftDestinationNew-content",
+            "dumpers": [
+              {
+                "icon": "CG12AT3023[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_left_green.png",
+                "iconText": "dumper_left_green.png",
+                "iconHoverText": "CG12AT3023[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT3023[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Load,Last Op Time:N/A,Pos at:2nd Bench M2,0.06KM E on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "5.0",
+                "blinkSpeed": "0",
+                "loadStatus": 0,
+                "menu": {
+                  "CG12AT3023[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT3023[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27312&shovel_id="
+                  },
+                  "CG12AT3023[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT3023[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27312"
+                  },
+                  "CG12AT3023[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT3023[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27312&dur=15"
+                  }
+                }
+              },
+              {
+                "icon": "CG12S5663[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12S5663[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12S5663[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Unload,Last Op Time:N/A,Pos at:8th Bench M3,0.05KM NE on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "94.15721316436913",
+                "blinkSpeed": "0",
+                "loadStatus": 4,
+                "menu": {
+                  "CG12S5663[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12S5663[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27326&shovel_id="
+                  },
+                  "CG12S5663[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12S5663[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27326"
+                  },
+                  "CG12S5663[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12S5663[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27326&dur=15"
+                  }
+                }
+              },
+              {
+                "icon": "CG12S5664[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12S5664[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12S5664[SMAS],Capacity :19.0 TonnesStopped Since:05:30:01,Load Status:Wait For Unload,Last Op Time:N/A,Pos at:Bahanpath Garage, Gevra,0.01KM E on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "95.0",
+                "blinkSpeed": "0",
+                "loadStatus": 4,
+                "menu": {
+                  "CG12S5664[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12S5664[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27327&shovel_id="
+                  },
+                  "CG12S5664[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12S5664[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27327"
+                  },
+                  "CG12S5664[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12S5664[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27327&dur=15"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "unloadToLoad": {
+        "sourceRight": [
+          {
+            "name": "PC274831",
+            "hoverText": "# Veh Assigned   :3<br/>Curr QLen            :0<br/>Cycle time(s)       :18<br/>Curr Disp (T/hr)  :0.0<br/>Curr Trips (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last desp at         :N/A<br/><hr noshade size=\"1\" width=\"100%\"><b>PC274831</b><br/>Capacity             :3.0 cu m<br/>Fuel level            :0.0<br/>Refuel at            :N/A<br/>Pos at                  :0<br/>Recent Data at:16:46:27<br/>Engine On          :Off<br/>Other Evt:<br/>false",
+            "textStyle": "divRightSource-content",
+            "dumpers": [
+              null,
+              null,
+              null
+            ]
+          }
+        ],
+        "destinationRight": {
+          "unloadSiteId": "OB7",
+          "destinationInformation": [
+            {
+              "name": "0.0 / 0.0",
+              "hoverText": "OB7# Veh Assigned   :0<br/>Curr QLen            :0<br/>Cycle time(s)       :0<br/>Curr Recv (T/hr)  :0.0<br/>Curr Recv (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last Exit at         :N/A<br/>",
+              "textStyle": "divRightDestinationNew-content"
+            },
+            {
+              "name": "",
+              "hoverText": "",
+              "textStyle": "divRightDestinationNew-content"
+            },
+            {
+              "name": "",
+              "hoverText": "",
+              "textStyle": "divRightDestinationNew-content"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "9",
+      "loadToUnload": {
+        "sourceLeft": {
+          "loadSiteId": "140",
+          "iconInformation": {
+            "icon": "shovel_green.png",
+            "iconHoverText": "# Veh Assigned   :3<br/>Curr QLen            :0<br/>Cycle time(s)       :24<br/>Curr Disp (T/hr)  :0.0<br/>Curr Trips (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last desp at         :N/A<br/><hr noshade size=\"1\" width=\"100%\"><b>PC272410</b><br/>Capacity             :3.0 cu m<br/>Fuel level            :0.0<br/>Refuel at            :N/A<br/>Pos at                  :0<br/>Recent Data at:16:46:27<br/>Engine On          :On<br/>Other Evt:<br/>false",
+            "pane": "RIGHT",
+            "menu": {
+              "Menu1": {
+                "name": "PC272410",
+                "items": {
+                  "27351,0": {
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "id": "27351",
+                    "value": "PC272410",
+                    "url": ""
+                  },
+                  "27351,1": {
+                    "name": "Reminder in 10 Min",
+                    "icon": "cut",
+                    "id": "27351",
+                    "value": "PC272410",
+                    "url": ""
+                  },
+                  "27351,2": {
+                    "name": "Dismiss",
+                    "icon": "edit",
+                    "id": "27351",
+                    "value": "PC272410",
+                    "url": ""
+                  }
+                }
+              }
+            },
+            "shovelWaiting": "1"
+          },
+          "sourceInformation": {
+            "text1": {
+              "name": "7th Bench E2",
+              "hoverText": "Shovel Name<hr noshade size=\"1\" width=\"100%\">Site name [Pit Name] if diff from shovel<hr noshade size=\"1\" width=\"100%\"># Vehicles Assigned / # of Vehicles in Wait / Recent Avg cycle time(s)<hr noshade size=\"1\" width=\"100%\"># Wait when current loaded comes back / Recent Tonnes/Hr Desp / Shift Tonnage Desp",
+              "textStyle": "divLeftSource-content"
+            },
+            "text2": {
+              "name": "3 / 0 / 24s ",
+              "hoverText": "",
+              "textStyle": "divLeftSource-content"
+            },
+            "text3": {
+              "name": "0 / 0.0 / 0.0",
+              "hoverText": "",
+              "textStyle": "divLeftSource-content"
+            }
+          },
+          "laneId": "PC272410"
+        },
+        "destinationLeft": [
+          {
+            "name": "OB7",
+            "hoverText": "Site Name<hr noshade size=\"1\" width=\"100%\"># Vehicles Assigned / # of Vehicles inside / Recent Avg Turnaround time(s)<hr noshade size=\"1\" width=\"100%\">Recent Tonnes/Hr recvd / Shift Tonnage Desp",
+            "textStyle": "divLeftDestinationNew-content",
+            "dumpers": [
+              null,
+              null,
+              null
+            ]
+          }
+        ]
+      },
+      "unloadToLoad": {
+        "sourceRight": [
+          {
+            "name": "PC272410",
+            "hoverText": "# Veh Assigned   :3<br/>Curr QLen            :0<br/>Cycle time(s)       :24<br/>Curr Disp (T/hr)  :0.0<br/>Curr Trips (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last desp at         :N/A<br/><hr noshade size=\"1\" width=\"100%\"><b>PC272410</b><br/>Capacity             :3.0 cu m<br/>Fuel level            :0.0<br/>Refuel at            :N/A<br/>Pos at                  :0<br/>Recent Data at:16:46:27<br/>Engine On          :On<br/>Other Evt:<br/>false",
+            "textStyle": "divRightSource-content",
+            "dumpers": [
+              {
+                "icon": "CG12AT3024[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_left_green.png",
+                "iconText": "dumper_left_green.png",
+                "iconHoverText": "CG12AT3024[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT3024[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Load,Last Op Time:N/A,Pos at:3rd Bench M4,0.04KM NW on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "91.01108928664598",
+                "blinkSpeed": "0",
+                "loadStatus": 0,
+                "menu": {
+                  "CG12AT3024[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT3024[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27313&shovel_id="
+                  },
+                  "CG12AT3024[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT3024[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27313"
+                  },
+                  "CG12AT3024[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT3024[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27313&dur=15"
+                  }
+                }
+              },
+              {
+                "icon": "CG12AT3025[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12AT3025[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT3025[SMAS],Capacity :19.0 Tonnes,Load Status:Going to Unload,Last Op Time:N/A,Pos at:OB Dump 4,0.02KM SE on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "95.0",
+                "blinkSpeed": "0",
+                "loadStatus": 3,
+                "menu": {
+                  "CG12AT3025[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT3025[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27314&shovel_id="
+                  },
+                  "CG12AT3025[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT3025[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27314"
+                  },
+                  "CG12AT3025[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT3025[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27314&dur=15"
+                  }
+                }
+              },
+              {
+                "icon": "CG12AT3026[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12AT3026[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT3026[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Unload,Last Op Time:N/A,Pos at:Rest Area Near PC Section,0.14KM W on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "29.595691999830535",
+                "blinkSpeed": "0",
+                "loadStatus": 4,
+                "menu": {
+                  "CG12AT3026[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT3026[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27315&shovel_id="
+                  },
+                  "CG12AT3026[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT3026[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27315"
+                  },
+                  "CG12AT3026[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT3026[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27315&dur=15"
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "destinationRight": {
+          "unloadSiteId": "OB7",
+          "destinationInformation": [
+            {
+              "name": "0.0 / 0.0",
+              "hoverText": "OB7# Veh Assigned   :0<br/>Curr QLen            :0<br/>Cycle time(s)       :0<br/>Curr Recv (T/hr)  :0.0<br/>Curr Recv (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last Exit at         :N/A<br/>",
+              "textStyle": "divRightDestinationNew-content"
+            },
+            {
+              "name": "",
+              "hoverText": "",
+              "textStyle": "divRightDestinationNew-content"
+            },
+            {
+              "name": "",
+              "hoverText": "",
+              "textStyle": "divRightDestinationNew-content"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "10",
+      "loadToUnload": {
+        "sourceLeft": {
+          "loadSiteId": "159",
+          "iconInformation": {
+            "icon": "shovel_green.png",
+            "iconHoverText": "# Veh Assigned   :5<br/>Curr QLen            :0<br/>Cycle time(s)       :18<br/>Curr Disp (T/hr)  :0.0<br/>Curr Trips (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last desp at         :N/A<br/><hr noshade size=\"1\" width=\"100%\"><b>PCX43640</b><br/>Capacity             :3.0 cu m<br/>Fuel level            :0.0<br/>Refuel at            :N/A<br/>Pos at                  :0<br/>Recent Data at:16:46:27<br/>Engine On          :Off<br/>Other Evt:<br/>false",
+            "pane": "RIGHT",
+            "menu": {
+              "Menu1": {
+                "name": "PCX43640",
+                "items": {
+                  "27402,0": {
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "id": "27402",
+                    "value": "PCX43640",
+                    "url": ""
+                  },
+                  "27402,1": {
+                    "name": "Reminder in 10 Min",
+                    "icon": "cut",
+                    "id": "27402",
+                    "value": "PCX43640",
+                    "url": ""
+                  },
+                  "27402,2": {
+                    "name": "Dismiss",
+                    "icon": "edit",
+                    "id": "27402",
+                    "value": "PCX43640",
+                    "url": ""
+                  }
+                }
+              }
+            },
+            "shovelWaiting": "1"
+          },
+          "sourceInformation": {
+            "text1": {
+              "name": "9th Bench M2",
+              "hoverText": "Shovel Name<hr noshade size=\"1\" width=\"100%\">Site name [Pit Name] if diff from shovel<hr noshade size=\"1\" width=\"100%\"># Vehicles Assigned / # of Vehicles in Wait / Recent Avg cycle time(s)<hr noshade size=\"1\" width=\"100%\"># Wait when current loaded comes back / Recent Tonnes/Hr Desp / Shift Tonnage Desp",
+              "textStyle": "divLeftSource-content"
+            },
+            "text2": {
+              "name": "5 / 0 / 18s ",
+              "hoverText": "",
+              "textStyle": "divLeftSource-content"
+            },
+            "text3": {
+              "name": "0 / 0.0 / 0.0",
+              "hoverText": "",
+              "textStyle": "divLeftSource-content"
+            }
+          },
+          "laneId": "PCX43640"
+        },
+        "destinationLeft": [
+          {
+            "name": "OB4",
+            "hoverText": "Site Name<hr noshade size=\"1\" width=\"100%\"># Vehicles Assigned / # of Vehicles inside / Recent Avg Turnaround time(s)<hr noshade size=\"1\" width=\"100%\">Recent Tonnes/Hr recvd / Shift Tonnage Desp",
+            "textStyle": "divLeftDestinationNew-content",
+            "dumpers": [
+              {
+                "icon": "CG12AT2630[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12AT2630[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT2630[SMAS],Capacity :19.0 TonnesStopped Since:05:30:00,Load Status:Wait For Unload,Last Op Time:N/A,Pos at:Bahanpath Garage, Gevra,0.03KM E on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "95.0",
+                "blinkSpeed": "0",
+                "loadStatus": 4,
+                "menu": {
+                  "CG12AT2630[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT2630[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27304&shovel_id="
+                  },
+                  "CG12AT2630[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT2630[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27304"
+                  },
+                  "CG12AT2630[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT2630[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27304&dur=15"
+                  }
+                }
+              },
+              {
+                "icon": "CG12AT2633[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_left_green.png",
+                "iconText": "dumper_left_green.png",
+                "iconHoverText": "CG12AT2633[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT2633[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Load,Last Op Time:N/A,Pos at:Rest Area Near PC Section,0.08KM W on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "24.039844955742357",
+                "blinkSpeed": "0",
+                "loadStatus": 0,
+                "menu": {
+                  "CG12AT2633[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT2633[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27305&shovel_id="
+                  },
+                  "CG12AT2633[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT2633[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27305"
+                  },
+                  "CG12AT2633[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT2633[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27305&dur=15"
+                  }
+                }
+              },
+              null,
+              null,
+              {
+                "icon": "CG12AT3969[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12AT3969[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT3969[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Unload,Last Op Time:N/A,Pos at:1st Bench M1,0.06KM W on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "95.0",
+                "blinkSpeed": "0",
+                "loadStatus": 4,
+                "menu": {
+                  "CG12AT3969[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT3969[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27318&shovel_id="
+                  },
+                  "CG12AT3969[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT3969[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27318"
+                  },
+                  "CG12AT3969[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT3969[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27318&dur=15"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "unloadToLoad": {
+        "sourceRight": [
+          {
+            "name": "PCX43640",
+            "hoverText": "# Veh Assigned   :5<br/>Curr QLen            :0<br/>Cycle time(s)       :18<br/>Curr Disp (T/hr)  :0.0<br/>Curr Trips (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last desp at         :N/A<br/><hr noshade size=\"1\" width=\"100%\"><b>PCX43640</b><br/>Capacity             :3.0 cu m<br/>Fuel level            :0.0<br/>Refuel at            :N/A<br/>Pos at                  :0<br/>Recent Data at:16:46:27<br/>Engine On          :Off<br/>Other Evt:<br/>false",
+            "textStyle": "divRightSource-content",
+            "dumpers": [
+              null,
+              null,
+              {
+                "icon": "CG12AT2731[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_left_green.png",
+                "iconText": "dumper_left_green.png",
+                "iconHoverText": "CG12AT2731[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT2731[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Load,Last Op Time:N/A,Pos at:9th Bench M2,0.03KM SE on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "60.978183663359495",
+                "blinkSpeed": "0",
+                "loadStatus": 0,
+                "menu": {
+                  "CG12AT2731[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT2731[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27307&shovel_id="
+                  },
+                  "CG12AT2731[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT2731[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27307"
+                  },
+                  "CG12AT2731[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT2731[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27307&dur=15"
+                  }
+                }
+              },
+              {
+                "icon": "CG12AT3968[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_left_green.png",
+                "iconText": "dumper_left_green.png",
+                "iconHoverText": "CG12AT3968[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT3968[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Load,Last Op Time:N/A,Pos at:2nd Bench M1,0.01KM W on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "68.7369381823878",
+                "blinkSpeed": "0",
+                "loadStatus": 0,
+                "menu": {
+                  "CG12AT3968[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT3968[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27317&shovel_id="
+                  },
+                  "CG12AT3968[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT3968[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27317"
+                  },
+                  "CG12AT3968[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT3968[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27317&dur=15"
+                  }
+                }
+              },
+              null
+            ]
+          }
+        ],
+        "destinationRight": {
+          "unloadSiteId": "OB4",
+          "destinationInformation": [
+            {
+              "name": "0.0 / 0.0",
+              "hoverText": "OB4# Veh Assigned   :0<br/>Curr QLen            :0<br/>Cycle time(s)       :0<br/>Curr Recv (T/hr)  :0.0<br/>Curr Recv (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last Exit at         :N/A<br/>",
+              "textStyle": "divRightDestinationNew-content"
+            },
+            {
+              "name": "",
+              "hoverText": "",
+              "textStyle": "divRightDestinationNew-content"
+            },
+            {
+              "name": "",
+              "hoverText": "",
+              "textStyle": "divRightDestinationNew-content"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "11",
+      "loadToUnload": {
+        "sourceLeft": {
+          "loadSiteId": "159",
+          "iconInformation": {
+            "icon": "shovel_green.png",
+            "iconHoverText": "# Veh Assigned   :5<br/>Curr QLen            :0<br/>Cycle time(s)       :22<br/>Curr Disp (T/hr)  :0.0<br/>Curr Trips (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last desp at         :N/A<br/><hr noshade size=\"1\" width=\"100%\"><b>PC270814</b><br/>Capacity             :3.0 cu m<br/>Fuel level            :0.0<br/>Refuel at            :N/A<br/>Pos at                  :0<br/>Recent Data at:16:46:27<br/>Engine On          :Off<br/>Other Evt:<br/>false",
+            "pane": "RIGHT",
+            "menu": {
+              "Menu1": {
+                "name": "PC270814",
+                "items": {
+                  "27365,0": {
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "id": "27365",
+                    "value": "PC270814",
+                    "url": ""
+                  },
+                  "27365,1": {
+                    "name": "Reminder in 10 Min",
+                    "icon": "cut",
+                    "id": "27365",
+                    "value": "PC270814",
+                    "url": ""
+                  },
+                  "27365,2": {
+                    "name": "Dismiss",
+                    "icon": "edit",
+                    "id": "27365",
+                    "value": "PC270814",
+                    "url": ""
+                  }
+                }
+              }
+            },
+            "shovelWaiting": "1"
+          },
+          "sourceInformation": {
+            "text1": {
+              "name": "9th Bench M2",
+              "hoverText": "Shovel Name<hr noshade size=\"1\" width=\"100%\">Site name [Pit Name] if diff from shovel<hr noshade size=\"1\" width=\"100%\"># Vehicles Assigned / # of Vehicles in Wait / Recent Avg cycle time(s)<hr noshade size=\"1\" width=\"100%\"># Wait when current loaded comes back / Recent Tonnes/Hr Desp / Shift Tonnage Desp",
+              "textStyle": "divLeftSource-content"
+            },
+            "text2": {
+              "name": "5 / 0 / 22s ",
+              "hoverText": "",
+              "textStyle": "divLeftSource-content"
+            },
+            "text3": {
+              "name": "0 / 0.0 / 0.0",
+              "hoverText": "",
+              "textStyle": "divLeftSource-content"
+            }
+          },
+          "laneId": "PC270814"
+        },
+        "destinationLeft": [
+          {
+            "name": "OB4",
+            "hoverText": "Site Name<hr noshade size=\"1\" width=\"100%\"># Vehicles Assigned / # of Vehicles inside / Recent Avg Turnaround time(s)<hr noshade size=\"1\" width=\"100%\">Recent Tonnes/Hr recvd / Shift Tonnage Desp",
+            "textStyle": "divLeftDestinationNew-content",
+            "dumpers": [
+              null,
+              {
+                "icon": "CG12AT3012[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12AT3012[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT3012[SMAS],Capacity :19.0 TonnesStopped Since:05:30:02,Load Status:Wait For Unload,Last Op Time:N/A,Pos at:Bahanpath Garage, Gevra,0.01KM SE on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "67.83651088060606",
+                "blinkSpeed": "0",
+                "loadStatus": 4,
+                "menu": {
+                  "CG12AT3012[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT3012[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27308&shovel_id="
+                  },
+                  "CG12AT3012[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT3012[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27308"
+                  },
+                  "CG12AT3012[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT3012[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27308&dur=15"
+                  }
+                }
+              },
+              null,
+              null,
+              {
+                "icon": "CG12AT3019[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12AT3019[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT3019[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Unload,Last Op Time:N/A,Pos at:3rd Bench M5,0.03KM N on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "62.16910115261371",
+                "blinkSpeed": "0",
+                "loadStatus": 4,
+                "menu": {
+                  "CG12AT3019[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT3019[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27311&shovel_id="
+                  },
+                  "CG12AT3019[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT3019[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27311"
+                  },
+                  "CG12AT3019[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT3019[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27311&dur=15"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "unloadToLoad": {
+        "sourceRight": [
+          {
+            "name": "PC270814",
+            "hoverText": "# Veh Assigned   :5<br/>Curr QLen            :0<br/>Cycle time(s)       :22<br/>Curr Disp (T/hr)  :0.0<br/>Curr Trips (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last desp at         :N/A<br/><hr noshade size=\"1\" width=\"100%\"><b>PC270814</b><br/>Capacity             :3.0 cu m<br/>Fuel level            :0.0<br/>Refuel at            :N/A<br/>Pos at                  :0<br/>Recent Data at:16:46:27<br/>Engine On          :Off<br/>Other Evt:<br/>false",
+            "textStyle": "divRightSource-content",
+            "dumpers": [
+              {
+                "icon": "CG12AT2637[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_left_green.png",
+                "iconText": "dumper_left_green.png",
+                "iconHoverText": "CG12AT2637[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT2637[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Load,Last Op Time:N/A,Pos at:3rd Bench M5,0.02KM NW on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "95.0",
+                "blinkSpeed": "0",
+                "loadStatus": 0,
+                "menu": {
+                  "CG12AT2637[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT2637[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27306&shovel_id="
+                  },
+                  "CG12AT2637[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT2637[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27306"
+                  },
+                  "CG12AT2637[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT2637[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27306&dur=15"
+                  }
+                }
+              },
+              null,
+              {
+                "icon": "CG12AT3014[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_left_green.png",
+                "iconText": "dumper_left_green.png",
+                "iconHoverText": "CG12AT3014[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT3014[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Load,Last Op Time:N/A,Pos at:2nd Bench M4,0.03KM NE on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "95.0",
+                "blinkSpeed": "0",
+                "loadStatus": 0,
+                "menu": {
+                  "CG12AT3014[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT3014[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27309&shovel_id="
+                  },
+                  "CG12AT3014[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT3014[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27309"
+                  },
+                  "CG12AT3014[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT3014[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27309&dur=15"
+                  }
+                }
+              },
+              {
+                "icon": "CG12AT3018[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_left_green.png",
+                "iconText": "dumper_left_green.png",
+                "iconHoverText": "CG12AT3018[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT3018[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Load,Last Op Time:N/A,Pos at:OB Dump 4,0.17KM SE on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "95.0",
+                "blinkSpeed": "0",
+                "loadStatus": 0,
+                "menu": {
+                  "CG12AT3018[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT3018[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27310&shovel_id="
+                  },
+                  "CG12AT3018[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT3018[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27310"
+                  },
+                  "CG12AT3018[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT3018[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27310&dur=15"
+                  }
+                }
+              },
+              null
+            ]
+          }
+        ],
+        "destinationRight": {
+          "unloadSiteId": "OB4",
+          "destinationInformation": [
+            {
+              "name": "0.0 / 0.0",
+              "hoverText": "OB4# Veh Assigned   :0<br/>Curr QLen            :0<br/>Cycle time(s)       :0<br/>Curr Recv (T/hr)  :0.0<br/>Curr Recv (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last Exit at         :N/A<br/>",
+              "textStyle": "divRightDestinationNew-content"
+            },
+            {
+              "name": "",
+              "hoverText": "",
+              "textStyle": "divRightDestinationNew-content"
+            },
+            {
+              "name": "",
+              "hoverText": "",
+              "textStyle": "divRightDestinationNew-content"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "12",
+      "loadToUnload": {
+        "sourceLeft": {
+          "loadSiteId": "159",
+          "iconInformation": {
+            "icon": "shovel_green.png",
+            "iconHoverText": "# Veh Assigned   :5<br/>Curr QLen            :0<br/>Cycle time(s)       :18<br/>Curr Disp (T/hr)  :0.0<br/>Curr Trips (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last desp at         :N/A<br/><hr noshade size=\"1\" width=\"100%\"><b>PC273556</b><br/>Capacity             :3.0 cu m<br/>Fuel level            :0.0<br/>Refuel at            :N/A<br/>Pos at                  :0<br/>Recent Data at:16:46:27<br/>Engine On          :Off<br/>Other Evt:<br/>false",
+            "pane": "RIGHT",
+            "menu": {
+              "Menu1": {
+                "name": "PC273556",
+                "items": {
+                  "27364,0": {
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "id": "27364",
+                    "value": "PC273556",
+                    "url": ""
+                  },
+                  "27364,1": {
+                    "name": "Reminder in 10 Min",
+                    "icon": "cut",
+                    "id": "27364",
+                    "value": "PC273556",
+                    "url": ""
+                  },
+                  "27364,2": {
+                    "name": "Dismiss",
+                    "icon": "edit",
+                    "id": "27364",
+                    "value": "PC273556",
+                    "url": ""
+                  }
+                }
+              }
+            },
+            "shovelWaiting": "1"
+          },
+          "sourceInformation": {
+            "text1": {
+              "name": "9th Bench M2",
+              "hoverText": "Shovel Name<hr noshade size=\"1\" width=\"100%\">Site name [Pit Name] if diff from shovel<hr noshade size=\"1\" width=\"100%\"># Vehicles Assigned / # of Vehicles in Wait / Recent Avg cycle time(s)<hr noshade size=\"1\" width=\"100%\"># Wait when current loaded comes back / Recent Tonnes/Hr Desp / Shift Tonnage Desp",
+              "textStyle": "divLeftSource-content"
+            },
+            "text2": {
+              "name": "5 / 0 / 18s ",
+              "hoverText": "",
+              "textStyle": "divLeftSource-content"
+            },
+            "text3": {
+              "name": "0 / 0.0 / 0.0",
+              "hoverText": "",
+              "textStyle": "divLeftSource-content"
+            }
+          },
+          "laneId": "PC273556"
+        },
+        "destinationLeft": [
+          {
+            "name": "OB4",
+            "hoverText": "Site Name<hr noshade size=\"1\" width=\"100%\"># Vehicles Assigned / # of Vehicles inside / Recent Avg Turnaround time(s)<hr noshade size=\"1\" width=\"100%\">Recent Tonnes/Hr recvd / Shift Tonnage Desp",
+            "textStyle": "divLeftDestinationNew-content",
+            "dumpers": [
+              {
+                "icon": "CG12AT2037[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12AT2037[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT2037[SMAS],Capacity :19.0 Tonnes,Load Status:Going to Unload,Last Op Time:N/A,Pos at:9th Bench E2,0.06KM E on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "5.0",
+                "blinkSpeed": "0",
+                "loadStatus": 3,
+                "menu": {
+                  "CG12AT2037[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT2037[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27296&shovel_id="
+                  },
+                  "CG12AT2037[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT2037[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27296"
+                  },
+                  "CG12AT2037[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT2037[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27296&dur=15"
+                  }
+                }
+              },
+              null,
+              {
+                "icon": "CG12AT2040[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12AT2040[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT2040[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Unload,Last Op Time:N/A,Pos at:7th Bench M2,0.05KM NE on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "82.3328415948639",
+                "blinkSpeed": "0",
+                "loadStatus": 4,
+                "menu": {
+                  "CG12AT2040[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT2040[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27298&shovel_id="
+                  },
+                  "CG12AT2040[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT2040[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27298"
+                  },
+                  "CG12AT2040[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT2040[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27298&dur=15"
+                  }
+                }
+              },
+              null,
+              null
+            ]
+          }
+        ]
+      },
+      "unloadToLoad": {
+        "sourceRight": [
+          {
+            "name": "PC273556",
+            "hoverText": "# Veh Assigned   :5<br/>Curr QLen            :0<br/>Cycle time(s)       :18<br/>Curr Disp (T/hr)  :0.0<br/>Curr Trips (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last desp at         :N/A<br/><hr noshade size=\"1\" width=\"100%\"><b>PC273556</b><br/>Capacity             :3.0 cu m<br/>Fuel level            :0.0<br/>Refuel at            :N/A<br/>Pos at                  :0<br/>Recent Data at:16:46:27<br/>Engine On          :Off<br/>Other Evt:<br/>false",
+            "textStyle": "divRightSource-content",
+            "dumpers": [
+              null,
+              {
+                "icon": "CG12AT2039[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_left_green.png",
+                "iconText": "dumper_left_green.png",
+                "iconHoverText": "CG12AT2039[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT2039[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Load,Last Op Time:N/A,Pos at:2nd Bench M1,0.02KM W on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "95.0",
+                "blinkSpeed": "0",
+                "loadStatus": 0,
+                "menu": {
+                  "CG12AT2039[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT2039[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27297&shovel_id="
+                  },
+                  "CG12AT2039[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT2039[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27297"
+                  },
+                  "CG12AT2039[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT2039[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27297&dur=15"
+                  }
+                }
+              },
+              null,
+              {
+                "icon": "CG12AT2599[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12AT2599[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT2599[SMAS],Capacity :19.0 Tonnes,Load Status:Going to Unload,Last Op Time:N/A,Pos at:OB Dump-3, Gevra,0.07KM S on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "95.0",
+                "blinkSpeed": "0",
+                "loadStatus": 3,
+                "menu": {
+                  "CG12AT2599[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT2599[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27299&shovel_id="
+                  },
+                  "CG12AT2599[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT2599[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27299"
+                  },
+                  "CG12AT2599[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT2599[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27299&dur=15"
+                  }
+                }
+              },
+              {
+                "icon": "CG12AT2607[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_left_green.png",
+                "iconText": "dumper_left_green.png",
+                "iconHoverText": "CG12AT2607[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT2607[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Load,Last Op Time:N/A,Pos at:OB Dump 4,0.18KM SE on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "62.86122413495122",
+                "blinkSpeed": "0",
+                "loadStatus": 0,
+                "menu": {
+                  "CG12AT2607[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT2607[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27301&shovel_id="
+                  },
+                  "CG12AT2607[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT2607[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27301"
+                  },
+                  "CG12AT2607[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT2607[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27301&dur=15"
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "destinationRight": {
+          "unloadSiteId": "OB4",
+          "destinationInformation": [
+            {
+              "name": "0.0 / 0.0",
+              "hoverText": "OB4# Veh Assigned   :0<br/>Curr QLen            :0<br/>Cycle time(s)       :0<br/>Curr Recv (T/hr)  :0.0<br/>Curr Recv (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last Exit at         :N/A<br/>",
+              "textStyle": "divRightDestinationNew-content"
+            },
+            {
+              "name": "",
+              "hoverText": "",
+              "textStyle": "divRightDestinationNew-content"
+            },
+            {
+              "name": "",
+              "hoverText": "",
+              "textStyle": "divRightDestinationNew-content"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "13",
+      "loadToUnload": {
+        "sourceLeft": {
+          "loadSiteId": "159",
+          "iconInformation": {
+            "icon": "shovel_green.png",
+            "iconHoverText": "# Veh Assigned   :5<br/>Curr QLen            :0<br/>Cycle time(s)       :17<br/>Curr Disp (T/hr)  :0.0<br/>Curr Trips (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last desp at         :N/A<br/><hr noshade size=\"1\" width=\"100%\"><b>PC274752</b><br/>Capacity             :3.0 cu m<br/>Fuel level            :0.0<br/>Refuel at            :N/A<br/>Pos at                  :0<br/>Recent Data at:16:46:27<br/>Engine On          :Off<br/>Other Evt:<br/>false",
+            "pane": "RIGHT",
+            "menu": {
+              "Menu1": {
+                "name": "PC274752",
+                "items": {
+                  "27366,0": {
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "id": "27366",
+                    "value": "PC274752",
+                    "url": ""
+                  },
+                  "27366,1": {
+                    "name": "Reminder in 10 Min",
+                    "icon": "cut",
+                    "id": "27366",
+                    "value": "PC274752",
+                    "url": ""
+                  },
+                  "27366,2": {
+                    "name": "Dismiss",
+                    "icon": "edit",
+                    "id": "27366",
+                    "value": "PC274752",
+                    "url": ""
+                  }
+                }
+              }
+            },
+            "shovelWaiting": "1"
+          },
+          "sourceInformation": {
+            "text1": {
+              "name": "9th Bench M2",
+              "hoverText": "Shovel Name<hr noshade size=\"1\" width=\"100%\">Site name [Pit Name] if diff from shovel<hr noshade size=\"1\" width=\"100%\"># Vehicles Assigned / # of Vehicles in Wait / Recent Avg cycle time(s)<hr noshade size=\"1\" width=\"100%\"># Wait when current loaded comes back / Recent Tonnes/Hr Desp / Shift Tonnage Desp",
+              "textStyle": "divLeftSource-content"
+            },
+            "text2": {
+              "name": "5 / 0 / 17s ",
+              "hoverText": "",
+              "textStyle": "divLeftSource-content"
+            },
+            "text3": {
+              "name": "0 / 0.0 / 0.0",
+              "hoverText": "",
+              "textStyle": "divLeftSource-content"
+            }
+          },
+          "laneId": "PC274752"
+        },
+        "destinationLeft": [
+          {
+            "name": "OB4",
+            "hoverText": "Site Name<hr noshade size=\"1\" width=\"100%\"># Vehicles Assigned / # of Vehicles inside / Recent Avg Turnaround time(s)<hr noshade size=\"1\" width=\"100%\">Recent Tonnes/Hr recvd / Shift Tonnage Desp",
+            "textStyle": "divLeftDestinationNew-content",
+            "dumpers": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          }
+        ]
+      },
+      "unloadToLoad": {
+        "sourceRight": [
+          {
+            "name": "PC274752",
+            "hoverText": "# Veh Assigned   :5<br/>Curr QLen            :0<br/>Cycle time(s)       :17<br/>Curr Disp (T/hr)  :0.0<br/>Curr Trips (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last desp at         :N/A<br/><hr noshade size=\"1\" width=\"100%\"><b>PC274752</b><br/>Capacity             :3.0 cu m<br/>Fuel level            :0.0<br/>Refuel at            :N/A<br/>Pos at                  :0<br/>Recent Data at:16:46:27<br/>Engine On          :Off<br/>Other Evt:<br/>false",
+            "textStyle": "divRightSource-content",
+            "dumpers": [
+              {
+                "icon": "CG12AT2027[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_left_green.png",
+                "iconText": "dumper_left_green.png",
+                "iconHoverText": "CG12AT2027[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT2027[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Load,Last Op Time:N/A,Pos at:OB Dump 4,0.04KM NE on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "95.0",
+                "blinkSpeed": "0",
+                "loadStatus": 0,
+                "menu": {
+                  "CG12AT2027[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT2027[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27290&shovel_id="
+                  },
+                  "CG12AT2027[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT2027[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27290"
+                  },
+                  "CG12AT2027[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT2027[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27290&dur=15"
+                  }
+                }
+              },
+              {
+                "icon": "CG12AT2029[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_left_green.png",
+                "iconText": "dumper_left_green.png",
+                "iconHoverText": "CG12AT2029[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT2029[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Load,Last Op Time:N/A,Pos at:PoSNpt 2,0.07KM NW on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "80.71872849980241",
+                "blinkSpeed": "0",
+                "loadStatus": 0,
+                "menu": {
+                  "CG12AT2029[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT2029[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27291&shovel_id="
+                  },
+                  "CG12AT2029[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT2029[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27291"
+                  },
+                  "CG12AT2029[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT2029[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27291&dur=15"
+                  }
+                }
+              },
+              {
+                "icon": "CG12AT2600[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12AT2600[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT2600[SMAS],Capacity :19.0 Tonnes,Load Status:Going to Unload,Last Op Time:N/A,Pos at:5th Bench M4,0.04KM E on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "95.0",
+                "blinkSpeed": "0",
+                "loadStatus": 3,
+                "menu": {
+                  "CG12AT2600[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT2600[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27300&shovel_id="
+                  },
+                  "CG12AT2600[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT2600[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27300"
+                  },
+                  "CG12AT2600[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT2600[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27300&dur=15"
+                  }
+                }
+              },
+              {
+                "icon": "CG12AT2608[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12AT2608[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT2608[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Unload,Last Op Time:N/A,Pos at:OB DUMP 4,0.08KM E on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "5.0",
+                "blinkSpeed": "0",
+                "loadStatus": 4,
+                "menu": {
+                  "CG12AT2608[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT2608[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27302&shovel_id="
+                  },
+                  "CG12AT2608[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT2608[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27302"
+                  },
+                  "CG12AT2608[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT2608[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27302&dur=15"
+                  }
+                }
+              },
+              {
+                "icon": "CG12AT2618[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12AT2618[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT2618[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Unload,Last Op Time:N/A,Pos at:OB Dump-3, Gevra,0.05KM N on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "35.635867966362625",
+                "blinkSpeed": "0",
+                "loadStatus": 4,
+                "menu": {
+                  "CG12AT2618[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT2618[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27303&shovel_id="
+                  },
+                  "CG12AT2618[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT2618[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27303"
+                  },
+                  "CG12AT2618[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT2618[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27303&dur=15"
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "destinationRight": {
+          "unloadSiteId": "OB4",
+          "destinationInformation": [
+            {
+              "name": "0.0 / 0.0",
+              "hoverText": "OB4# Veh Assigned   :0<br/>Curr QLen            :0<br/>Cycle time(s)       :0<br/>Curr Recv (T/hr)  :0.0<br/>Curr Recv (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last Exit at         :N/A<br/>",
+              "textStyle": "divRightDestinationNew-content"
+            },
+            {
+              "name": "",
+              "hoverText": "",
+              "textStyle": "divRightDestinationNew-content"
+            },
+            {
+              "name": "",
+              "hoverText": "",
+              "textStyle": "divRightDestinationNew-content"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "14",
+      "loadToUnload": {
+        "sourceLeft": {
+          "loadSiteId": "163",
+          "iconInformation": {
+            "icon": "shovel_green.png",
+            "iconHoverText": "# Veh Assigned   :5<br/>Curr QLen            :0<br/>Cycle time(s)       :27<br/>Curr Disp (T/hr)  :0.0<br/>Curr Trips (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last desp at         :N/A<br/><hr noshade size=\"1\" width=\"100%\"><b>PC273542</b><br/>Capacity             :3.0 cu m<br/>Fuel level            :0.0<br/>Refuel at            :N/A<br/>Pos at                  :0<br/>Recent Data at:16:46:27<br/>Engine On          :Off<br/>Other Evt:<br/>false",
+            "pane": "RIGHT",
+            "menu": {
+              "Menu1": {
+                "name": "PC273542",
+                "items": {
+                  "27361,0": {
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "id": "27361",
+                    "value": "PC273542",
+                    "url": ""
+                  },
+                  "27361,1": {
+                    "name": "Reminder in 10 Min",
+                    "icon": "cut",
+                    "id": "27361",
+                    "value": "PC273542",
+                    "url": ""
+                  },
+                  "27361,2": {
+                    "name": "Dismiss",
+                    "icon": "edit",
+                    "id": "27361",
+                    "value": "PC273542",
+                    "url": ""
+                  }
+                }
+              }
+            },
+            "shovelWaiting": "1"
+          },
+          "sourceInformation": {
+            "text1": {
+              "name": "6th Bench M1",
+              "hoverText": "Shovel Name<hr noshade size=\"1\" width=\"100%\">Site name [Pit Name] if diff from shovel<hr noshade size=\"1\" width=\"100%\"># Vehicles Assigned / # of Vehicles in Wait / Recent Avg cycle time(s)<hr noshade size=\"1\" width=\"100%\"># Wait when current loaded comes back / Recent Tonnes/Hr Desp / Shift Tonnage Desp",
+              "textStyle": "divLeftSource-content"
+            },
+            "text2": {
+              "name": "5 / 0 / 27s ",
+              "hoverText": "",
+              "textStyle": "divLeftSource-content"
+            },
+            "text3": {
+              "name": "0 / 0.0 / 0.0",
+              "hoverText": "",
+              "textStyle": "divLeftSource-content"
+            }
+          },
+          "laneId": "PC273542"
+        },
+        "destinationLeft": [
+          {
+            "name": "OB4",
+            "hoverText": "Site Name<hr noshade size=\"1\" width=\"100%\"># Vehicles Assigned / # of Vehicles inside / Recent Avg Turnaround time(s)<hr noshade size=\"1\" width=\"100%\">Recent Tonnes/Hr recvd / Shift Tonnage Desp",
+            "textStyle": "divLeftDestinationNew-content",
+            "dumpers": [
+              null,
+              {
+                "icon": "CG12AT2031[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12AT2031[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT2031[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Unload,Last Op Time:N/A,Pos at:OB DUMP 4,0.06KM S on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "91.78698357254268",
+                "blinkSpeed": "0",
+                "loadStatus": 4,
+                "menu": {
+                  "CG12AT2031[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT2031[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27292&shovel_id="
+                  },
+                  "CG12AT2031[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT2031[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27292"
+                  },
+                  "CG12AT2031[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT2031[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27292&dur=15"
+                  }
+                }
+              },
+              null,
+              {
+                "icon": "CG12AT2033[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12AT2033[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT2033[SMAS],Capacity :19.0 Tonnes,Load Status:Going to Unload,Last Op Time:N/A,Pos at:Rest Area Near PC Section,0.1KM W on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "48.73611017404654",
+                "blinkSpeed": "0",
+                "loadStatus": 3,
+                "menu": {
+                  "CG12AT2033[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT2033[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27294&shovel_id="
+                  },
+                  "CG12AT2033[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT2033[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27294"
+                  },
+                  "CG12AT2033[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT2033[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27294&dur=15"
+                  }
+                }
+              },
+              {
+                "icon": "CG12AT2034[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12AT2034[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT2034[SMAS],Capacity :19.0 Tonnes,Load Status:Going to Unload,Last Op Time:N/A,Pos at:Departmentel Side Right 4,0.03KM S on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "25.31364430370794",
+                "blinkSpeed": "0",
+                "loadStatus": 3,
+                "menu": {
+                  "CG12AT2034[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT2034[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27295&shovel_id="
+                  },
+                  "CG12AT2034[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT2034[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27295"
+                  },
+                  "CG12AT2034[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT2034[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27295&dur=15"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "unloadToLoad": {
+        "sourceRight": [
+          {
+            "name": "PC273542",
+            "hoverText": "# Veh Assigned   :5<br/>Curr QLen            :0<br/>Cycle time(s)       :27<br/>Curr Disp (T/hr)  :0.0<br/>Curr Trips (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last desp at         :N/A<br/><hr noshade size=\"1\" width=\"100%\"><b>PC273542</b><br/>Capacity             :3.0 cu m<br/>Fuel level            :0.0<br/>Refuel at            :N/A<br/>Pos at                  :0<br/>Recent Data at:16:46:27<br/>Engine On          :Off<br/>Other Evt:<br/>false",
+            "textStyle": "divRightSource-content",
+            "dumpers": [
+              {
+                "icon": "CG12AT2611[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12AT2611[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT2611[SMAS],Capacity :19.0 Tonnes,Load Status:Going to Unload,Last Op Time:N/A,Pos at:Bahanpath Garage, Gevra,0.02KM S on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:On,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "95.0",
+                "blinkSpeed": "0",
+                "loadStatus": 3,
+                "menu": {
+                  "CG12AT2611[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT2611[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27281&shovel_id="
+                  },
+                  "CG12AT2611[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT2611[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27281"
+                  },
+                  "CG12AT2611[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT2611[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27281&dur=15"
+                  }
+                }
+              },
+              null,
+              {
+                "icon": "CG12AT2032[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG12AT2032[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG12AT2032[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Unload,Last Op Time:N/A,Pos at:OB Dump-3, Gevra,0.05KM N on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:Off,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "49.37553315025034",
+                "blinkSpeed": "0",
+                "loadStatus": 4,
+                "menu": {
+                  "CG12AT2032[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG12AT2032[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27293&shovel_id="
+                  },
+                  "CG12AT2032[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG12AT2032[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27293"
+                  },
+                  "CG12AT2032[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG12AT2032[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27293&dur=15"
+                  }
+                }
+              },
+              null,
+              null
+            ]
+          }
+        ],
+        "destinationRight": {
+          "unloadSiteId": "OB4",
+          "destinationInformation": [
+            {
+              "name": "0.0 / 0.0",
+              "hoverText": "OB4# Veh Assigned   :0<br/>Curr QLen            :0<br/>Cycle time(s)       :0<br/>Curr Recv (T/hr)  :0.0<br/>Curr Recv (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last Exit at         :N/A<br/>",
+              "textStyle": "divRightDestinationNew-content"
+            },
+            {
+              "name": "",
+              "hoverText": "",
+              "textStyle": "divRightDestinationNew-content"
+            },
+            {
+              "name": "",
+              "hoverText": "",
+              "textStyle": "divRightDestinationNew-content"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "15",
+      "loadToUnload": {
+        "sourceLeft": {
+          "loadSiteId": "163",
+          "iconInformation": {
+            "icon": "shovel_green.png",
+            "iconHoverText": "# Veh Assigned   :5<br/>Curr QLen            :0<br/>Cycle time(s)       :16<br/>Curr Disp (T/hr)  :0.0<br/>Curr Trips (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last desp at         :N/A<br/><hr noshade size=\"1\" width=\"100%\"><b>PC274830</b><br/>Capacity             :3.0 cu m<br/>Fuel level            :0.0<br/>Refuel at            :N/A<br/>Pos at                  :0<br/>Recent Data at:16:46:27<br/>Engine On          :Off<br/>Other Evt:<br/>false",
+            "pane": "RIGHT",
+            "menu": {
+              "Menu1": {
+                "name": "PC274830",
+                "items": {
+                  "27360,0": {
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "id": "27360",
+                    "value": "PC274830",
+                    "url": ""
+                  },
+                  "27360,1": {
+                    "name": "Reminder in 10 Min",
+                    "icon": "cut",
+                    "id": "27360",
+                    "value": "PC274830",
+                    "url": ""
+                  },
+                  "27360,2": {
+                    "name": "Dismiss",
+                    "icon": "edit",
+                    "id": "27360",
+                    "value": "PC274830",
+                    "url": ""
+                  }
+                }
+              }
+            },
+            "shovelWaiting": "1"
+          },
+          "sourceInformation": {
+            "text1": {
+              "name": "6th Bench M1",
+              "hoverText": "Shovel Name<hr noshade size=\"1\" width=\"100%\">Site name [Pit Name] if diff from shovel<hr noshade size=\"1\" width=\"100%\"># Vehicles Assigned / # of Vehicles in Wait / Recent Avg cycle time(s)<hr noshade size=\"1\" width=\"100%\"># Wait when current loaded comes back / Recent Tonnes/Hr Desp / Shift Tonnage Desp",
+              "textStyle": "divLeftSource-content"
+            },
+            "text2": {
+              "name": "5 / 0 / 16s ",
+              "hoverText": "",
+              "textStyle": "divLeftSource-content"
+            },
+            "text3": {
+              "name": "0 / 0.0 / 0.0",
+              "hoverText": "",
+              "textStyle": "divLeftSource-content"
+            }
+          },
+          "laneId": "PC274830"
+        },
+        "destinationLeft": [
+          {
+            "name": "OB4",
+            "hoverText": "Site Name<hr noshade size=\"1\" width=\"100%\"># Vehicles Assigned / # of Vehicles inside / Recent Avg Turnaround time(s)<hr noshade size=\"1\" width=\"100%\">Recent Tonnes/Hr recvd / Shift Tonnage Desp",
+            "textStyle": "divLeftDestinationNew-content",
+            "dumpers": [
+              null,
+              null,
+              null,
+              null,
+              {
+                "icon": "CG10C9472[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG10C9472[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG10C9472[SMAS],Capacity :19.0 Tonnes,Load Status:Wait For Unload,Last Op Time:N/A,Pos at:OB Dump 4,0.02KM W on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:On,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "66.86655881370747",
+                "blinkSpeed": "0",
+                "loadStatus": 4,
+                "menu": {
+                  "CG10C9472[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG10C9472[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27408&shovel_id="
+                  },
+                  "CG10C9472[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG10C9472[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27408"
+                  },
+                  "CG10C9472[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG10C9472[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27408&dur=15"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "unloadToLoad": {
+        "sourceRight": [
+          {
+            "name": "PC274830",
+            "hoverText": "# Veh Assigned   :5<br/>Curr QLen            :0<br/>Cycle time(s)       :16<br/>Curr Disp (T/hr)  :0.0<br/>Curr Trips (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last desp at         :N/A<br/><hr noshade size=\"1\" width=\"100%\"><b>PC274830</b><br/>Capacity             :3.0 cu m<br/>Fuel level            :0.0<br/>Refuel at            :N/A<br/>Pos at                  :0<br/>Recent Data at:16:46:27<br/>Engine On          :Off<br/>Other Evt:<br/>false",
+            "textStyle": "divRightSource-content",
+            "dumpers": [
+              {
+                "icon": "CG10C9460[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG10C9460[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG10C9460[SMAS],Capacity :19.0 Tonnes,Load Status:Going to Unload,Last Op Time:N/A,Pos at:OB Dump 4,0.03KM NE on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:On,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "76.10864362099508",
+                "blinkSpeed": "0",
+                "loadStatus": 3,
+                "menu": {
+                  "CG10C9460[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG10C9460[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27404&shovel_id="
+                  },
+                  "CG10C9460[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG10C9460[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27404"
+                  },
+                  "CG10C9460[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG10C9460[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27404&dur=15"
+                  }
+                }
+              },
+              {
+                "icon": "CG10C9469[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG10C9469[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG10C9469[SMAS],Capacity :19.0 Tonnes,Load Status:Going to Unload,Last Op Time:N/A,Pos at:OB DUMP 4,0.06KM SW on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:On,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "78.17303846576536",
+                "blinkSpeed": "0",
+                "loadStatus": 3,
+                "menu": {
+                  "CG10C9469[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG10C9469[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27405&shovel_id="
+                  },
+                  "CG10C9469[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG10C9469[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27405"
+                  },
+                  "CG10C9469[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG10C9469[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27405&dur=15"
+                  }
+                }
+              },
+              {
+                "icon": "CG10C9470[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_right_green.png",
+                "iconText": "dumper_right_green.png",
+                "iconHoverText": "CG10C9470[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG10C9470[SMAS],Capacity :19.0 Tonnes,Load Status:Going to Unload,Last Op Time:N/A,Pos at:OB Dump 4,0.02KM W on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:On,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "57.38914180299002",
+                "blinkSpeed": "0",
+                "loadStatus": 3,
+                "menu": {
+                  "CG10C9470[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG10C9470[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27406&shovel_id="
+                  },
+                  "CG10C9470[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG10C9470[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27406"
+                  },
+                  "CG10C9470[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG10C9470[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27406&dur=15"
+                  }
+                }
+              },
+              {
+                "icon": "CG10C9471[SMAS],Capacity :19.0 Tonnes",
+                "imageName": "dumper_left_green.png",
+                "iconText": "dumper_left_green.png",
+                "iconHoverText": "CG10C9471[SMAS],Capacity :19.0 Tonnes",
+                "pophover": "CG10C9471[SMAS],Capacity :19.0 TonnesStopped Since:05:30:06,Load Status:Waitng After Unload,Last Op Time:N/A,Pos at:Rest Area Near PC Section on Other Road in KORBA,CG,Recent Data at:16:46:27,Engine On:On,Trips per Hour:0,Shift # Trips:0,Tonnage KM per Hour:0.0",
+                "pane": "RIGHT",
+                "percentLegCompleted": "0.0",
+                "blinkSpeed": "0",
+                "loadStatus": 6,
+                "menu": {
+                  "CG10C9471[SMAS],0": {
+                    "id": "0",
+                    "name": "Re-Assign",
+                    "icon": "play",
+                    "value": "CG10C9471[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=reassign&dumper_id=27407&shovel_id="
+                  },
+                  "CG10C9471[SMAS],1": {
+                    "id": "1",
+                    "name": "Release",
+                    "icon": "edit",
+                    "value": "CG10C9471[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=release&dumper_id=27407"
+                  },
+                  "CG10C9471[SMAS],2": {
+                    "id": "2",
+                    "name": "Dismiss Alert 15 Mins",
+                    "icon": "refresh",
+                    "value": "CG10C9471[SMAS]",
+                    "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss&dumper_id=27407&dur=15"
+                  }
+                }
+              },
+              null
+            ]
+          }
+        ],
+        "destinationRight": {
+          "unloadSiteId": "OB4",
+          "destinationInformation": [
+            {
+              "name": "0.0 / 0.0",
+              "hoverText": "OB4# Veh Assigned   :0<br/>Curr QLen            :0<br/>Cycle time(s)       :0<br/>Curr Recv (T/hr)  :0.0<br/>Curr Recv (#/hr)  :0.0<br/>Shift Tonne           :0.0<br/>Last Exit at         :N/A<br/>",
+              "textStyle": "divRightDestinationNew-content"
+            },
+            {
+              "name": "",
+              "hoverText": "",
+              "textStyle": "divRightDestinationNew-content"
+            },
+            {
+              "name": "",
+              "hoverText": "",
+              "textStyle": "divRightDestinationNew-content"
+            }
+          ]
+        }
+      }
+    }
+  ]

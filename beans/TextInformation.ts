@@ -1,7 +1,7 @@
 class TextInformation {
-    private _text1: Information;
-    private _text2: Information;
-    private _text3: Information;
+    private _text1: Information = null;
+    private _text2: Information = null;
+    private _text3: Information = null;
 
     public get text1(): Information {
         return this._text1;

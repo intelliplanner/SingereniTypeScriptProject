@@ -5,7 +5,7 @@
    public static imagePath:string="images/";
    //    public static imagePath = "/static/TypeScripts/images/";
     public static rightCanvasloadStatus:number = 4;
-    public static canvasWidth:number=430;
+    public static canvasWidth:number=450;
    // public static canvasHeightDefault:number=0;
     public static dumperImageWidth = 20;
     public static dumperImageHeight = 20;
