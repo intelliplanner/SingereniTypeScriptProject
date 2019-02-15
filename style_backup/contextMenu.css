@@ -14,23 +14,70 @@
  *
  * Date: 2016-07-17T19:45:35.350Z
  */
+
 @font-face {
   font-family: "context-menu-icons";
-  font-style: normal; 
+  font-style: normal;
   font-weight: normal;
 }
 
-.context-menu-item { 
-	min-height: 18px; background-repeat: no-repeat; background-position: 4px 4px; 
+.context-menu-item {
+  min-height: 18px;
+  background-repeat: no-repeat;
+  background-position: 4px 4px;
 }
-.context-menu-icon-add:before {
- 
+
+.context-menu-icon-add:before {}
+
+.context-menu-item.context-menu-icon-refresh {
+  background-image: url("images/arrow_refresh.png");
 }
-.context-menu-item.context-menu-icon-refresh { background-image: url("images/arrow_refresh.png"); }
-.context-menu-item.context-menu-icon-add { background-image: url("images/add.png"); }
-.context-menu-item.context-menu-icon-delete { background-image: url("images/application_delete.png"); }
-.context-menu-item.context-menu-icon-edit { background-image: url("images/application_edit.png"); }
-.context-menu-item.context-menu-icon-play { background-image: url("images/control_play.png"); }
+
+.context-menu-item.context-menu-icon-add {
+  background-image: url("images/add.png");
+}
+
+.context-menu-item.context-menu-icon-delete {
+  background-image: url("images/application_delete.png");
+}
+
+.context-menu-item.context-menu-icon-edit {
+  background-image: url("images/application_edit.png");
+}
+
+.context-menu-item.context-menu-icon-play {
+  background-image: url("images/control_play.png");
+}
+
+.context-menu-item.context-menu-icon-reassign{
+  background-image: url("images/reassign.png");
+}
+.context-menu-item.context-menu-icon-dismiss{
+  background-image: url("images/dismiss.png");
+}
+.context-menu-item.context-menu-icon-teabreak{
+  background-image: url("images/teabreak.png");
+}
+.context-menu-item.context-menu-icon-release{
+  background-image: url("images/release.png");
+}
+.context-menu-item.context-menu-icon-takefuel{
+  background-image: url("images/takefuel.png");
+}
+
+.context-menu-item.context-menu-icon-stop{
+  background-image: url("images/stop.png");
+}
+.context-menu-item.context-menu-icon-unavailable{
+  background-image: url("images/unavailable.png");
+}
+.context-menu-item.context-menu-icon-resume{
+  background-image: url("images/resume.png");
+}
+
+
+
+
 .context-menu-icon-copy:before {
   content: "\EA02";
 }
@@ -59,7 +106,7 @@
   position: absolute;
   top: 50%;
   left: 0;
-  width: 2em; 
+  width: 2em;
   font-family: "context-menu-icons";
   font-size: 1em;
   font-style: normal;
@@ -68,10 +115,9 @@
   color: #2980b9;
   text-align: center;
   -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-       -o-transform: translateY(-50%);
-          transform: translateY(-50%);
-
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -87,11 +133,12 @@
 .context-menu-icon.context-menu-icon--fa {
   display: list-item;
 }
+
 .context-menu-icon.context-menu-icon--fa::before {
   position: absolute;
   top: 50%;
   left: 0;
-  width: 2em; 
+  width: 2em;
   font-family: FontAwesome;
   font-size: 1em;
   font-style: normal;
@@ -100,22 +147,23 @@
   color: #2980b9;
   text-align: center;
   -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-       -o-transform: translateY(-50%);
-          transform: translateY(-50%);
-
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 .context-menu-icon.context-menu-icon--fa.context-menu-hover:before {
   color: #fff;
 }
+
 .context-menu-icon.context-menu-icon--fa.context-menu-disabled::before {
   color: #bbb;
 }
 
 .context-menu-list {
-  position: absolute; 
+  position: absolute;
   display: inline-block;
   min-width: 13em;
   max-width: 26em;
@@ -128,7 +176,7 @@
   border: 1px solid #bebebe;
   border-radius: .2em;
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
-          box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
 }
 
 .context-menu-item {
@@ -136,35 +184,34 @@
   padding: .2em 2em;
   color: #2f2f2f;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none; 
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   background-color: #fff;
 }
 
 .context-menu-separator {
-  padding: 0; 
+  padding: 0;
   margin: .35em 0;
   border-bottom: 1px solid #e6e6e6;
 }
 
-.context-menu-item > label > input,
-.context-menu-item > label > textarea {
+.context-menu-item>label>input, .context-menu-item>label>textarea {
   -webkit-user-select: text;
-     -moz-user-select: text;
-      -ms-user-select: text;
-          user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
 }
 
 .context-menu-item.context-menu-hover {
   color: #fff;
-  cursor: pointer; 
+  cursor: pointer;
   background-color: #2980b9;
 }
 
 .context-menu-item.context-menu-disabled {
   color: #bbb;
-  cursor: default; 
+  cursor: default;
   background-color: #fff;
 }
 
@@ -176,7 +223,7 @@
   position: absolute;
   top: 50%;
   right: .5em;
-  z-index: 1; 
+  z-index: 1;
   width: 0;
   height: 0;
   content: '';
@@ -184,58 +231,57 @@
   border-style: solid;
   border-width: .25em 0 .25em .25em;
   -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-       -o-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 /**
  * Inputs
  */
+
 .context-menu-item.context-menu-input {
   padding: .3em .6em;
 }
 
 /* vertically align inside labels */
-.context-menu-input > label > * {
+
+.context-menu-input>label>* {
   vertical-align: top;
 }
 
 /* position checkboxes and radios as icons */
-.context-menu-input > label > input[type="checkbox"],
-.context-menu-input > label > input[type="radio"] {
+
+.context-menu-input>label>input[type="checkbox"], .context-menu-input>label>input[type="radio"] {
   position: relative;
-  top: .12em; 
+  top: .12em;
   margin-right: .4em;
 }
 
-.context-menu-input > label {
+.context-menu-input>label {
   margin: 0;
 }
 
-.context-menu-input > label,
-.context-menu-input > label > input[type="text"],
-.context-menu-input > label > textarea,
-.context-menu-input > label > select {
+.context-menu-input>label, .context-menu-input>label>input[type="text"], .context-menu-input>label>textarea, .context-menu-input>label>select {
   display: block;
-  width: 100%; 
+  width: 100%;
   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.context-menu-input > label > textarea {
+.context-menu-input>label>textarea {
   height: 7em;
 }
 
-.context-menu-item > .context-menu-list {
-  top: .3em; 
+.context-menu-item>.context-menu-list {
+  top: .3em;
   /* re-positioned by js */
   right: -.3em;
   display: none;
 }
 
-.context-menu-item.context-menu-visible > .context-menu-list {
+.context-menu-item.context-menu-visible>.context-menu-list {
   display: block;
 }
 

@@ -68,6 +68,10 @@ var Misc = /** @class */ (function () {
         var str = strVal != null && strVal.length > strLen ? strVal.substring(0, strLen) : strVal;
         return str;
     };
+    Misc.add = function (val1, val2) {
+        var number = val1 + val2;
+        return number;
+    };
     Misc.intVal = -1111111;
     return Misc;
 }());

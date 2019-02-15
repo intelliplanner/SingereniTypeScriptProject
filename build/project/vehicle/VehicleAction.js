@@ -8,7 +8,7 @@ var VehicleAction = /** @class */ (function () {
         for (var x in vehicleBeanArr) {
             var trData = "<tr ><td width='3%' class='tmTableDataCell'><input type='checkbox' name='checkbox' value='" + vehicleBeanArr[x].VehicleName + "' checked='checked' onclick=''></td>"
                 + " <td class='tmTableDataCell'><span name='vehicleName' id='vehicleName' value='" + vehicleBeanArr[x].VehicleName + "'  onmouseover=''  onmouseout='' >"
-                + vehicleBeanArr[x].VehicleName
+                + (Number(x) + Number(1)) + ": " + vehicleBeanArr[x].VehicleName
                 + "</span></td>"
                 + " <td class='tmTableDataCell'><img src='" + Common.imagePath + "cancel.gif' onclick='VehicleAction.deleteVehicleFromDB(" + Misc.getSubString(vehicleBeanArr[x].VehicleName, 4) + ")'></td>"
                 + "</tr>";

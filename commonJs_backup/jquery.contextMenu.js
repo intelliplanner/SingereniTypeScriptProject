@@ -135,7 +135,20 @@
                 iconDelete: 'context-menu-icon-delete',
                 iconAdd: 'context-menu-icon-add',
                 iconQuit: 'context-menu-icon-quit',
-                iconLoadingClass: 'context-menu-icon-loading'
+                iconLoadingClass: 'context-menu-icon-loading',
+                iconReassign: 'context-menu-icon-reassign',
+                iconDismiss : 'context-menu-icon-dismiss',
+                iconTeaBreak : 'context-menu-icon-tea',
+                iconRelease: 'context-menu-icon-release',
+                iconFuel:  'context-menu-icon-fuel',
+                iconStop: 'context-menu-icon-stop',
+                iconUnavailable:'context-menu-icon-unavailable',
+                iconResumeWork:'context-menu-icon-resumework'
+                  
+                
+               
+                  
+
             },
 
             // determine position to show menu at

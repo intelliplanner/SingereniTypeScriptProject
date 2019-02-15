@@ -2,13 +2,13 @@
  * Created by admin on 5/28/2017.
  */
  class Common{
-   public static imagePath:string="images/";
-   //    public static imagePath = "/static/TypeScripts/images/";
+    public static imagePath:string="images/";
+    // public static imagePath = "/static/TypeScripts/images/";
     public static rightCanvasloadStatus:number = 4;
     public static canvasWidth:number=450;
    // public static canvasHeightDefault:number=0;
     public static dumperImageWidth = 20;
-    public static dumperImageHeight = 20;
+    public static dumperImageHeight = 18;
 
     public static leftSourceImageWidth = 32;
     public static leftSourceImageHeight = 27;

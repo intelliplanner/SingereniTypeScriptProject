@@ -16,13 +16,13 @@ var TimerTask = /** @class */ (function () {
                 Temple.refreshLanes();
             }
         };
-        xhttp.open("GET", "jsonData/jsonDataNew.json", true);
+        xhttp.open("GET", "jsonData/jsonData.json", true);
         xhttp.send();
     };
-    TimerTask.getDataFromServer = function () {
-        this.getLaneData();
-        this.getShowelJsonList();
-    };
+    // public static getDataFromServer() {
+    //     this.getLaneData();
+    //     this.getShowelJsonList();   
+    // }
     TimerTask.getDataFromJsonFile = function () {
         this.getLaneDataJson();
         this.getShowelDataFromJson();

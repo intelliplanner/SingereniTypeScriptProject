@@ -191,12 +191,12 @@ var Common = /** @class */ (function () {
         return vehicleCount;
     };
     Common.imagePath = "images/";
-    //    public static imagePath = "/static/TypeScripts/images/";
+    // public static imagePath = "/static/TypeScripts/images/";
     Common.rightCanvasloadStatus = 4;
     Common.canvasWidth = 450;
     // public static canvasHeightDefault:number=0;
     Common.dumperImageWidth = 20;
-    Common.dumperImageHeight = 20;
+    Common.dumperImageHeight = 18;
     Common.leftSourceImageWidth = 32;
     Common.leftSourceImageHeight = 27;
     Common.laneDivId = "LANE";

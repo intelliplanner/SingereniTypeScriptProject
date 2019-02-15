@@ -14,74 +14,21 @@ var MenuAction = /** @class */ (function () {
         }
     };
     MenuAction.eventShowelReassign = function (_items, _event) {
-        Dialog.openDialog(_items, _event);
-    };
-    MenuAction.eventDismiss = function (_items, _event) {
-        // alert(_event);
-        if (this.cofirmationAlert(_event)) {
-            Dialog.sendAction(_items, _event);
-        }
-        else {
-            console.log("false");
-        }
-    };
-    MenuAction.eventTeaBreak = function (_items, _event) {
-        // alert(_event);
-        if (this.cofirmationAlert(_event)) {
-            Dialog.sendAction(_items, _event);
-        }
-        else {
-            console.log("false");
-        }
-    };
-    MenuAction.eventRelease = function (_items, _event) {
-        // alert(_event);
-        if (this.cofirmationAlert(_event)) {
-            Dialog.sendAction(_items, _event);
-        }
-        else {
-            console.log("false");
-        }
-    };
-    MenuAction.eventStopImmediate = function (_items, _event) {
-        // alert(_event);
-        if (this.cofirmationAlert(_event)) {
-            Dialog.sendAction(_items, _event);
-        }
-        else {
-            console.log("false");
-        }
-    };
-    MenuAction.eventTakeFuel = function (_items, _event) {
-        // alert(_event);
-        if (this.cofirmationAlert(_event)) {
-            Dialog.sendAction(_items, _event);
-        }
-        else {
-            console.log("false");
-        }
-    };
-    MenuAction.eventMakeUnavailable = function (_items, _event) {
-        // alert(_event);
-        if (this.cofirmationAlert(_event)) {
-            Dialog.sendAction(_items, _event);
-        }
-        else {
-            console.log("false");
-        }
-    };
-    MenuAction.eventResumeWork = function (_items, _event) {
-        // alert(_event);
-        if (this.cofirmationAlert(_event)) {
-            Dialog.sendAction(_items, _event);
-        }
-        else {
-            console.log("false");
-        }
+        Dialog.openDialog(_items, _event, Dialog.reAssignShowel);
     };
     MenuAction.cofirmationAlert = function (_str) {
         var status = confirm("Do you want to " + _str + "?");
         return status;
+    };
+    MenuAction.eventAction = function (_items, _event) {
+        //alert(_event);
+        var alert = "Do you want '" + _event + "' to dumper '" + _items.value + "' ?.";
+        Dialog.openConfirmationDialog(_items, _event, alert, Dialog.sendAction);
+    };
+    MenuAction.showelEventAction = function (_items, _event) {
+        //alert(_event);
+        var alert = "Do you want '" + _event + "' to showel '" + _items.value + "' ?.";
+        Dialog.openConfirmationDialog(_items, _event, alert, Dialog.sendAction);
     };
     return MenuAction;
 }());

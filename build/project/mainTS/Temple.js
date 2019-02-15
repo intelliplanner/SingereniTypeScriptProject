@@ -2,10 +2,14 @@ var Temple = /** @class */ (function () {
     function Temple() {
     }
     Temple.start = function () {
-        //var objTimers = new TimerTask(this._interval);
-        //   objTimers.scheduleRequest();
-        TimerTask.getDataFromServer();
-        // TimerTask.getDataFromJsonFile();
+        if (this.isServer) { // data get from server
+            var objTimers = new TimerTask(this._interval);
+            objTimers.scheduleRequest();
+            TimerTask.getShowelJsonList();
+        }
+        else { // data get from json file
+            TimerTask.getDataFromJsonFile();
+        }
     };
     Temple.setJsonToTypeScriptObject = function () {
         var isTrue = false;
@@ -32,6 +36,7 @@ var Temple = /** @class */ (function () {
     };
     Temple._interval = 15000;
     Temple.vehiclePositionList = [];
+    Temple.isServer = true;
     return Temple;
 }());
 //# sourceMappingURL=Temple.js.map

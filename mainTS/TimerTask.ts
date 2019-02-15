@@ -33,15 +33,14 @@ class TimerTask {
                 Temple.refreshLanes();
             }
         };
-        xhttp.open("GET", "jsonData/jsonDataNew.json", true);
+        xhttp.open("GET", "jsonData/jsonData.json", true);
         xhttp.send();
     }
 
-    public static getDataFromServer() {
-        this.getLaneData();
-        this.getShowelJsonList();
-        
-    }
+    // public static getDataFromServer() {
+    //     this.getLaneData();
+    //     this.getShowelJsonList();   
+    // }
     public static getDataFromJsonFile(){
          this.getLaneDataJson();
          this.getShowelDataFromJson();
@@ -76,7 +75,7 @@ class TimerTask {
         xmlHttp.send();
     }
 
-    private static GetXmlHttpObject() {
+    public static GetXmlHttpObject() {
         var xmlHttp = null;
         try {
             xmlHttp = new XMLHttpRequest();

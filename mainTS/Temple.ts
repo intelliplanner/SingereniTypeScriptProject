@@ -7,13 +7,16 @@ class Temple {
     public static laneParserObj: Parser;
     public static vehiclePositionList = [];
     public static showelList: Showel[];
+    public static isServer: boolean = true;
 
     public static start(): void {
-        //var objTimers = new TimerTask(this._interval);
-        //   objTimers.scheduleRequest();
-        TimerTask.getDataFromServer();
-
-        // TimerTask.getDataFromJsonFile();
+        if (this.isServer) { // data get from server
+            var objTimers = new TimerTask(this._interval);
+            objTimers.scheduleRequest();
+            TimerTask.getShowelJsonList();
+        } else { // data get from json file
+            TimerTask.getDataFromJsonFile();
+        }
     }
 
     public static setJsonToTypeScriptObject(): boolean {

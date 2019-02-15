@@ -13,32 +13,32 @@ var MouseEventList = /** @class */ (function () {
                 trigger: paneSide.toLowerCase(),
                 callback: function (key, options) {
                     var m = "clicked: " + key;
-                    alert(m);
-                    console.log(m);
+                    // alert(m);
+                    // console.log(m);
                     var res = key.split(",");
                     var _name = res[0];
                     var _event = Number(res[1]);
                     switch (_event) {
                         case MouseEventList.EVENT_REASSIGN:
-                            MenuAction.eventShowelReassign(options.items[key], MouseEventList.eventReassign);
+                            MenuAction.eventShowelReassign(options.items["Menu1"].items[key], MouseEventList.eventReassign);
                             break;
                         case MouseEventList.EVENT_DISMISS:
-                            MenuAction.eventDismiss(options.items[key], MouseEventList.eventDismiss);
+                            MenuAction.showelEventAction(options.items["Menu1"].items[key], MouseEventList.eventDismiss);
                             break;
                         case MouseEventList.EVENT_TEA_BREAK:
-                            MenuAction.eventTeaBreak(options.items[key], MouseEventList.eventTeaBreak);
+                            MenuAction.showelEventAction(options.items["Menu1"].items[key], MouseEventList.eventTeaBreak);
                             break;
                         case MouseEventList.EVENT_RESUME_WORK:
-                            MenuAction.eventResumeWork(options.items[key], MouseEventList.eventResumeWork);
+                            MenuAction.showelEventAction(options.items["Menu1"].items[key], MouseEventList.eventResumeWork);
                             break;
                         case MouseEventList.EVENT_MAKE_UNAVAILABLE:
-                            MenuAction.eventMakeUnavailable(options.items[key], MouseEventList.eventMakeUnavailable);
+                            MenuAction.showelEventAction(options.items["Menu1"].items[key], MouseEventList.eventMakeUnavailable);
                             break;
                         case MouseEventList.EVENT_TAKE_FUEL:
-                            MenuAction.eventTakeFuel(options.items[key], MouseEventList.eventTakeFuel);
+                            MenuAction.showelEventAction(options.items["Menu1"].items[key], MouseEventList.eventTakeFuel);
                             break;
                         case MouseEventList.EVENT_STOP_IMMEDIATE:
-                            MenuAction.eventStopImmediate(options.items[key], MouseEventList.eventStopImmediate);
+                            MenuAction.showelEventAction(options.items["Menu1"].items[key], MouseEventList.eventStopImmediate);
                             break;
                         default:
                             break;

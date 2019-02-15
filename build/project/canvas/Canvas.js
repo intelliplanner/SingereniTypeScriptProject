@@ -75,25 +75,25 @@ var Canvas = /** @class */ (function () {
                                                     MenuAction.eventShowelReassign(options.items[key], MouseEventList.eventReassign);
                                                     break;
                                                 case MouseEventList.EVENT_DISMISS:
-                                                    MenuAction.eventDismiss(options.items[key], MouseEventList.eventDismiss);
+                                                    MenuAction.eventAction(options.items[key], MouseEventList.eventDismiss);
                                                     break;
                                                 case MouseEventList.EVENT_TEA_BREAK:
-                                                    MenuAction.eventTeaBreak(options.items[key], MouseEventList.eventTeaBreak);
+                                                    MenuAction.eventAction(options.items[key], MouseEventList.eventTeaBreak);
                                                     break;
                                                 case MouseEventList.EVENT_RESUME_WORK:
-                                                    MenuAction.eventResumeWork(options.items[key], MouseEventList.eventResumeWork);
+                                                    MenuAction.eventAction(options.items[key], MouseEventList.eventResumeWork);
                                                     break;
                                                 case MouseEventList.EVENT_MAKE_UNAVAILABLE:
-                                                    MenuAction.eventMakeUnavailable(options.items[key], MouseEventList.eventMakeUnavailable);
+                                                    MenuAction.eventAction(options.items[key], MouseEventList.eventMakeUnavailable);
                                                     break;
                                                 case MouseEventList.EVENT_TAKE_FUEL:
-                                                    MenuAction.eventTakeFuel(options.items[key], MouseEventList.eventTakeFuel);
+                                                    MenuAction.eventAction(options.items[key], MouseEventList.eventTakeFuel);
                                                     break;
                                                 case MouseEventList.EVENT_STOP_IMMEDIATE:
-                                                    MenuAction.eventStopImmediate(options.items[key], MouseEventList.eventStopImmediate);
+                                                    MenuAction.eventAction(options.items[key], MouseEventList.eventStopImmediate);
                                                     break;
                                                 case MouseEventList.EVENT_RELEASE:
-                                                    MenuAction.eventRelease(options.items[key], MouseEventList.eventRelease);
+                                                    MenuAction.eventAction(options.items[key], MouseEventList.eventRelease);
                                                     break;
                                                 default:
                                                     break;
@@ -170,25 +170,25 @@ var Canvas = /** @class */ (function () {
                                                     MenuAction.eventShowelReassign(options.items[key], MouseEventList.eventReassign);
                                                     break;
                                                 case MouseEventList.EVENT_DISMISS:
-                                                    MenuAction.eventDismiss(options.items[key], MouseEventList.eventDismiss);
+                                                    MenuAction.eventAction(options.items[key], MouseEventList.eventDismiss);
                                                     break;
                                                 case MouseEventList.EVENT_TEA_BREAK:
-                                                    MenuAction.eventTeaBreak(options.items[key], MouseEventList.eventTeaBreak);
+                                                    MenuAction.eventAction(options.items[key], MouseEventList.eventTeaBreak);
                                                     break;
                                                 case MouseEventList.EVENT_RESUME_WORK:
-                                                    MenuAction.eventResumeWork(options.items[key], MouseEventList.eventResumeWork);
+                                                    MenuAction.eventAction(options.items[key], MouseEventList.eventResumeWork);
                                                     break;
                                                 case MouseEventList.EVENT_MAKE_UNAVAILABLE:
-                                                    MenuAction.eventMakeUnavailable(options.items[key], MouseEventList.eventMakeUnavailable);
+                                                    MenuAction.eventAction(options.items[key], MouseEventList.eventMakeUnavailable);
                                                     break;
                                                 case MouseEventList.EVENT_TAKE_FUEL:
-                                                    MenuAction.eventTakeFuel(options.items[key], MouseEventList.eventTakeFuel);
+                                                    MenuAction.eventAction(options.items[key], MouseEventList.eventTakeFuel);
                                                     break;
                                                 case MouseEventList.EVENT_STOP_IMMEDIATE:
-                                                    MenuAction.eventStopImmediate(options.items[key], MouseEventList.eventStopImmediate);
+                                                    MenuAction.eventAction(options.items[key], MouseEventList.eventStopImmediate);
                                                     break;
                                                 case MouseEventList.EVENT_RELEASE:
-                                                    MenuAction.eventRelease(options.items[key], MouseEventList.eventRelease);
+                                                    MenuAction.eventAction(options.items[key], MouseEventList.eventRelease);
                                                     break;
                                                 default:
                                                     break;
@@ -226,6 +226,8 @@ var Canvas = /** @class */ (function () {
         // var verLineToY = 60;
         var imageObj = null;
         var isTrue = false;
+        var loadToUnload_dumper_ypoint = 14;
+        var UnloadToLoad_dumper_ypoint = 30;
         if (this.canvasLeft != null && this.canvasRight != null)
             isTrue = true;
         var leftDestinations = this.laneBean.loadToUnload.destinationLeft == null ? 0 : this.laneBean.loadToUnload.destinationLeft.length;
@@ -246,7 +248,7 @@ var Canvas = /** @class */ (function () {
         if (leftLaneChecked && rightLaneChecked) {
             for (var destinationInfo in this.laneBean.loadToUnload.destinationLeft) {
                 //  var yPoint = Canvas.getImageYPointOnCanvas(this.laneBean.loadToUnload.destinationLeft.length,this.laneBean.unloadToLoad.sourceRight.length,Number(destinationInfo)+1);
-                var yPoint = 13; //Canvas.getImageYPointOnCanvas(leftDestinations, rightDestinations, Number(destinationInfo) + 1);
+                var yPoint; //Canvas.getImageYPointOnCanvas(leftDestinations, rightDestinations, Number(destinationInfo) + 1);
                 var vehicles = this.laneBean.loadToUnload.destinationLeft[destinationInfo].dumpers;
                 for (var vehicleInfo in vehicles) {
                     if (vehicles[vehicleInfo] == null) {
@@ -257,14 +259,16 @@ var Canvas = /** @class */ (function () {
                     imageObj.height = Common.dumperImageHeight; //Misc.getImageHeight(isTrue);
                     var _vehicle = vehicles[vehicleInfo];
                     imageObj.src = Common.getSourceImage(_vehicle.imageName);
-                    if (_vehicle.loadStatus >= Common.rightCanvasloadStatus) {
+                    if (_vehicle.loadStatus > Common.rightCanvasloadStatus) {
                         var _percentLegCompletedNew = Number(_vehicle.percentLegCompleted) < 5 ? 5 : _vehicle.percentLegCompleted;
                         var xPoint = Number(Common.canvasWidth) - Number(Canvas.getImageXPointOnCanvas(Common.canvasWidth, _percentLegCompletedNew));
                         // console.log("right Canvas vehicle" + _vehicle.icon + ", ImageXPoint: " + xPoint + "," + yPoint);
+                        yPoint = UnloadToLoad_dumper_ypoint;
                     }
                     else {
                         var xPoint = Canvas.getImageXPointOnCanvas(Common.canvasWidth, _vehicle.percentLegCompleted);
                         // console.log("left Canvas vehicle" + _vehicle.icon + " , ImageXPoint: " + xPoint + "," + yPoint);
+                        yPoint = loadToUnload_dumper_ypoint;
                     }
                     var imageXPoint = Number(xPoint) + Number(imageObj.width);
                     var imageYPoint = Number(yPoint) + Number(imageObj.height);
@@ -291,7 +295,7 @@ var Canvas = /** @class */ (function () {
                 }
             }
             for (var sourceInfoRight in this.laneBean.unloadToLoad.sourceRight) {
-                var yPoint = Canvas.getImageYPointOnCanvas(leftDestinations, rightDestinations, Number(sourceInfoRight) + 1);
+                var yPoint; //= Canvas.getImageYPointOnCanvas(leftDestinations, rightDestinations, Number(sourceInfoRight) + 1);
                 var vehicles = this.laneBean.unloadToLoad.sourceRight[sourceInfoRight].dumpers;
                 for (var vehicleInfo in vehicles) {
                     if (vehicles[vehicleInfo] == null) {
@@ -302,14 +306,16 @@ var Canvas = /** @class */ (function () {
                     imageObj.height = Common.dumperImageHeight; //Misc.getImageHeight(isTrue);
                     var _vehicle = vehicles[vehicleInfo];
                     imageObj.src = Common.getSourceImage(_vehicle.imageName);
-                    if (_vehicle.loadStatus >= Common.rightCanvasloadStatus) { // right Canvas
+                    if (_vehicle.loadStatus > Common.rightCanvasloadStatus) { // right Canvas
                         var _percentLegCompletedNew = Number(_vehicle.percentLegCompleted) < 5 ? 5 : _vehicle.percentLegCompleted;
                         var xPoint = Number(Common.canvasWidth) - Number(Canvas.getImageXPointOnCanvas(Common.canvasWidth, _percentLegCompletedNew));
                         // console.log("right Canvas vehicle" + _vehicle.icon + " , ImageXPoint: " + xPoint + "," + yPoint);
+                        yPoint = UnloadToLoad_dumper_ypoint;
                     }
                     else { //left Canvas
                         var xPoint = Number(Canvas.getImageXPointOnCanvas(Common.canvasWidth, _vehicle.percentLegCompleted));
                         // console.log("left Canvas vehicle" + _vehicle.icon + " , ImageXPoint: " + xPoint + "," + yPoint);
+                        yPoint = loadToUnload_dumper_ypoint;
                     }
                     var imageXPoint = Number(xPoint) + Number(imageObj.width);
                     var imageYPoint = Number(yPoint) + Number(imageObj.height);
