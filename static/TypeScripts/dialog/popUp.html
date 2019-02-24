@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+    <div id="dialog_form" style="display: none;">
+
+        <form id="data_form" ACTION="#">
+            <br>
+            <table>
+                <tbody>
+                    <tr>
+
+                        <td class="sh" align="right">Dumper:</td>
+                        <td nowrap="nowrap" align="left" class="tn">
+                            <div id="dumper" class="tn"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td nowrap="nowrap" Assign class="sh" align="right">Assign to Showel:</td>
+                        <td nowrap="nowrap" align="left" class="tn">
+                            <select class="tn" name="showel" id="showel">
+                            </select></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br>
+        </form>
+        <div id="errors"></div>
+    </div>
+
+
+    <div id="div_customize_showel_list_id" style="display: none;">
+
+        <form id="form_customize_showel_list_id" ACTION="#">
+            <br>
+            <table width="50%"" border=" 1" cellspacing="0" cellpadding="3" bordercolor="#003366"
+                id="customize_showel_table" name="customize_showel_table">
+                <thead>
+                    <tr>
+                        <td class="tmTableSmallHeaderCell">
+                            <input class="showelCheckbox" type="checkbox" id="showelCheckbox" name="showelCheckbox" value="1" onclick="Dialog.toogleCheckBox(this.id);"
+                                ></td>
+                        <td class="tmTableSmallHeaderCell">Showel Name </td>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+
+            <br>
+        </form>
+        <div id="errors"></div>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!-- https://bootsnipp.com/snippets/Ekd8P -->
+<html>
+
+<head>
+    <!-- <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
+    <script src="/static/TypeScripts/commonJs/jquery.min.js"></script>
+    <link href="/static/TypeScripts/style/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="/static/TypeScripts/commonJs/bootstrap.min.js"></script>
+    <script src="/static/TypeScripts/commonJs/multiSelect.js"></script>
+    <link rel="stylesheet" href="/static/TypeScripts/style/multiSelect.css">
+</head>
+
+<body>
+    <div class="form-group">
+        <div class="col-md-4">
+            <select id="selected_showel" class="multiselect-ui form-control" class="tn" multiple="multiple"
+                name="selected_showel">
+                
+            </select>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        $(function () {
+            $('.multiselect-ui').multiselect({
+                includeSelectAllOption: true
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -3,88 +3,65 @@
 <head>
     <title>Insert title here</title>
 
-    <!--contextMenu start-->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-    <script src="build/commonJs/jquery.min.js"></script> 
-    <link rel="stylesheet" href="build/style/contextMenu.css">
-    <script src="build/commonJs/jquery-ui.min.js"></script>
-    <script src="build/commonJs/jquery.contextMenu.js"></script>
-    <link rel="stylesheet" href="build/style/jquery_custom.css">
-    <script src="build/commonJs/jquery.ui.position.min.js"></script>
-    <script src="build/project/mouseEvent/MouseEventList.js"></script>
+    <!-- Contect menu End    <script> var exports = {}; </script> -->
+    <script src="/static/TypeScripts/commonJs/jquery.min.js"></script>
+    <script <script type='text/javascript' src="/static/TypeScripts/mainTS/StartApplication.js"></script>
+    <link rel="stylesheet" href="/static/TypeScripts/style/contextMenu.css">
+    <script src="/static/TypeScripts/commonJs/jquery-ui.min.js"></script>
+    <script src="/static/TypeScripts/commonJs/jquery.contextMenu.js"></script>
+    <link rel="stylesheet" href="/static/TypeScripts/style/jquery_custom.css">
+    <script src="/static/TypeScripts/commonJs/jquery.ui.position.min.js"></script>
+    <script src="/static/TypeScripts/mouseEvent/MouseEventList.js"></script>
 
     <!-- Contect menu End    <script> var exports = {}; </script> -->
 
-    <link rel="stylesheet" href="build/style/common.css">
-    <link rel="stylesheet" href="build/style/styleCss.css">
-    <script src="build/project/constant/TempleConstant.js"></script>
-    <script src="build/project/constant/Misc.js"></script>
-    <script src="build/project/constant/Common.js"></script>
-    
+    <link rel="stylesheet" href="/static/TypeScripts/style/common.css">
+    <link rel="stylesheet" href="/static/TypeScripts/style/styleCss.css">
+    <script src="/static/TypeScripts/constant/TempleConstant.js"></script>
+    <script src="/static/TypeScripts/constant/Misc.js"></script>
+    <script src="/static/TypeScripts/constant/Common.js"></script>
+    <script src="/static/TypeScripts/dialog/Dialog.js"></script>
+    <link rel="stylesheet" href="/static/TypeScripts/style/tmcss.css">
+    <script src="/static/TypeScripts/MenuEvent/MenuAction.js"></script>
+    <script src="/static/TypeScripts/beans/MenuList.js"></script>
+    <script src="/static/TypeScripts/vehicle/VehicleAlerts.js"></script>
+    <script src="/static/TypeScripts/beans/Parser.js"></script>
+    <script src="/static/TypeScripts/mainTS/TimerTask.js"></script>
+    <script src="/static/TypeScripts/mouseEvent/MouseEventList.js"></script>
+    <script src="/static/TypeScripts/canvas/Canvas.js"></script>
+    <script src="/static/TypeScripts/canvas/CanvasEvent.js"></script>
+    <script src="/static/TypeScripts/vehicle/VehicleAction.js"></script>
+    <script src="/static/TypeScripts/mainTS/Temple.js"></script>
+    <script src="/static/TypeScripts/lane/LaneSites.js"></script>
+    <script src="/static/TypeScripts/lane/LaneAction.js"></script>
+
     <script>
         $(function () {
-            $("#includedContent").load("popUp.html");
+            $("#includedContent").load("/static/TypeScripts/dialog/popUp.html");
         });
-  
+
         $(function () {
-            $("#includedConfirmationDialog").load("ConfirmationDialog.html");
+            $("#includedConfirmationDialog").load("/static/TypeScripts/dialog/ConfirmationDialog.html");
         });
-       
+
     </script>
 
-    <script src="build/project/dialog/Dialog.js"></script>
-
-
-    <style>
-        .vehicleToolTip {
-            background-color: white;
-            border: 1px solid grey;
-            position: absolute;
-            left: -200px;
-            top: 100px;
-            z-index: 1;
-        }
-
-        .multipleVehicleToolTip {
-            background-color: white;
-            border: 1px solid grey;
-            position: absolute;
-            left: -200px;
-            top: 100px;
-            z-index: 1;
-        }
-    </style>
-
-    <link rel="stylesheet" href="build/style/tmcss.css">
-    <script src="build/project/MenuEvent/MenuAction.js"></script>
-    <script src="build/project/MenuEvent/MenuList.js"></script>
-    <script src="build/project/test/VehicleAlerts.js"></script>
-    <script src="build/project/beans/Parser.js"></script>
-    <script src="build/project/mainTS/TimerTask.js"></script>
-    <script src="build/project/mouseEvent/MouseEventList.js"></script>
-    <script src="build/project/canvas/Canvas.js"></script>
-    <script src="build/project/canvas/CanvasEvent.js"></script>
-    <script src="build/project/vehicle/VehicleAction.js"></script>
-    <script src="build/project/mainTS/Temple.js"></script>
-    <script src="build/project/lane/LaneSites.js"></script>
-    <script src="build/project/lane/LaneAction.js"></script>
-
-<!-- -Start Multi Select CheckBox- -->
-
-<!-- --------End Multi Select CheckBox---------------------------------------- -->
 
 </head>
 
-<body onload="Temple.start()">
+<body onload="StartApplication.start()">
     <form>
+
         <canvas id="vehicleToolTip" width=200 height=80 class="vehicleToolTip"></canvas>
         <canvas id="multipleVehicleToolTip" width=200 class="multipleVehicleToolTip"></canvas>
         <!--<canvas id="tip" width=100 height=25></canvas>-->
         <div>
-            
+
         </div>
         <div class="divSideMenuContainer">
-
+                <!-- <div class="divCustomizeScreen"><a class="noprint"  href="javascript:Dialog.customizeShowelData()">Customize </a></div> -->
+        
             <input type="checkbox" style="display: none;" checked="checked" name="leftLaneCheckBox"
                 id="leftLaneCheckBox" value="" onclick="Common.selectOneCheckBox(this)">
             <!-- Left Lane -->
@@ -94,8 +71,10 @@
             <input type="button" value="MENU" onclick="" style="display: none">
             <div class="divContainerSettingImagePosition"><span class='context-menu-one btn btn-neutral'
                     id="settingImage">
-                    <img src="images/setting.jpg"
-                        onclick="MouseEventList.addLeftClickEvent('settingImage',TempleConstant.leftClickMenu);" />
+                    <img src="/static/TypeScripts/images/setting.jpg"
+                        onclick="MouseEventList.addGlobalMenuList('settingImage', 'left' , Temple.menuListGlobal);" />
+                    <!-- onclick="MouseEventList.addLeftClickEvent('settingImage',TempleConstant.leftClickMenu);" /> -->
+
                 </span>
             </div>
         </div>
@@ -111,8 +90,7 @@
                     <thead>
                         <tr>
                             <td class="tmTableSmallHeaderCell">
-                                <input class="tmNormalText" type="checkbox" name="select_checkbox" value="1" onclick=""
-                                    checked="checked"></td>
+                                <input class="vehicleCheckbox" type="checkbox" name="vehicleCheckbox" id="vehicleCheckbox" value="1"  onclick="Dialog.toogleCheckBox(this.id);""  checked="checked" ></td>
                             <td class="tmTableSmallHeaderCell">Vehicle Name </td>
                             <td width="3%" class="tmTableSmallHeaderCell"><a href="javascript:void(0)" class="closebtn"
                                     onclick="Common.closeNav()">&times;</a></td>
@@ -126,7 +104,7 @@
         <div id="includedContent" style="display: none;">
         </div>
         <div id="includedConfirmationDialog" style="display: none;">
-            </div>
+        </div>
     </form>
 </body>
 

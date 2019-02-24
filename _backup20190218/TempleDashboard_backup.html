@@ -1,0 +1,136 @@
+<html>
+
+<head>
+    <title>Insert title here</title>
+
+    <!--contextMenu start-->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    
+    <script src="./commonJs/jquery.min.js"></script> 
+    <link rel="stylesheet" href="./style/contextMenu.css">
+    <script src="./commonJs/jquery-ui.min.js"></script>
+    <script src="./commonJs/jquery.contextMenu.js"></script>
+    <link rel="stylesheet" href="./style/jquery_custom.css">
+    <script src="./commonJs/jquery.ui.position.min.js"></script>
+    <script src="./mouseEvent/MouseEventList.js"></script>
+
+    <!-- Contect menu End    <script> var exports = {}; </script> -->
+
+    <link rel="stylesheet" href="./style/common.css">
+    <link rel="stylesheet" href="./style/styleCss.css">
+    <script src="./constant/TempleConstant.js"></script>
+    <script src="./constant/Misc.js"></script>
+    <script src="./constant/Common.js"></script>
+    
+    <script>
+        $(function () {
+            $("#includedContent").load("popUp.html");
+        });
+  
+        $(function () {
+            $("#includedConfirmationDialog").load("ConfirmationDialog.html");
+        });
+       
+    </script>
+
+    <script src="./dialog/Dialog.js"></script>
+
+
+    <style>
+        .vehicleToolTip {
+            background-color: white;
+            border: 1px solid grey;
+            position: absolute;
+            left: -200px;
+            top: 100px;
+            z-index: 1;
+        }
+
+        .multipleVehicleToolTip {
+            background-color: white;
+            border: 1px solid grey;
+            position: absolute;
+            left: -200px;
+            top: 100px;
+            z-index: 1;
+        }
+    </style>
+
+    <link rel="stylesheet" href="./style/tmcss.css">
+    <script src="./MenuEvent/MenuAction.js"></script>
+    <script src="./beans/MenuList.js"></script>
+    <script src="./test/VehicleAlerts.js"></script>
+    <script src="./beans/Parser.js"></script>
+    <script src="./mainTS/TimerTask.js"></script>
+    <script src="./mouseEvent/MouseEventList.js"></script>
+    <script src="./canvas/Canvas.js"></script>
+    <script src="./canvas/CanvasEvent.js"></script>
+    <script src="./vehicle/VehicleAction.js"></script>
+    <script src="./mainTS/Temple.js"></script>
+    <script src="./lane/LaneSites.js"></script>
+    <script src="./lane/LaneAction.js"></script>
+
+<!-- -Start Multi Select CheckBox- -->
+
+<!-- --------End Multi Select CheckBox---------------------------------------- -->
+
+</head>
+
+<body onload="Temple.start()">
+    <form>
+        <canvas id="vehicleToolTip" width=200 height=80 class="vehicleToolTip"></canvas>
+        <canvas id="multipleVehicleToolTip" width=200 class="multipleVehicleToolTip"></canvas>
+        <!--<canvas id="tip" width=100 height=25></canvas>-->
+        <div>
+            
+        </div>
+        <div class="divSideMenuContainer">
+
+            <input type="checkbox" style="display: none;" checked="checked" name="leftLaneCheckBox"
+                id="leftLaneCheckBox" value="" onclick="Common.selectOneCheckBox(this)">
+            <!-- Left Lane -->
+            <input type="checkbox" style="display: none;" checked="checked" name="rightLaneCheckBox"
+                id="rightLaneCheckBox" value="" onclick="Common.selectOneCheckBox(this)">
+            <!-- Right Lane -->
+            <input type="button" value="MENU" onclick="" style="display: none">
+            <div class="divContainerSettingImagePosition"><span class='context-menu-one btn btn-neutral'
+                    id="settingImage">
+                    <img src="images/setting.jpg"
+                        onclick="MouseEventList.addGlobalMenuList('settingImage', 'left' , Temple.menuListGlobal);" />
+                        <!-- onclick="MouseEventList.addLeftClickEvent('settingImage',TempleConstant.leftClickMenu);" /> -->
+                        
+                </span>
+            </div>
+        </div>
+        <!-- <img id="scream" src="images
+   /green-truck-horizontal-right.png"  style="display: none">-->
+        <div class="mainContainer">
+            <div class="divLaneContainer" id="laneContainer" oncontextmenu="return false;">
+                <div></div>
+            </div>
+            <span onclick="Common.openNav()" class="openDiv">&#9776;</span>
+            <div class="divSideNavigation" id="sideNavigation">
+                <table width="100%"" border=" 1" cellspacing="0" cellpadding="3" bordercolor="#003366" id="tableData">
+                    <thead>
+                        <tr>
+                            <td class="tmTableSmallHeaderCell">
+                                <input class="tmNormalText" type="checkbox" name="select_checkbox" value="1" onclick=""
+                                    checked="checked"></td>
+                            <td class="tmTableSmallHeaderCell">Vehicle Name </td>
+                            <td width="3%" class="tmTableSmallHeaderCell"><a href="javascript:void(0)" class="closebtn"
+                                    onclick="Common.closeNav()">&times;</a></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="includedContent" style="display: none;">
+        </div>
+        <div id="includedConfirmationDialog" style="display: none;">
+            </div>
+    </form>
+</body>
+
+</html>

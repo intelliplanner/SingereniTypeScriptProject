@@ -1,0 +1,160 @@
+{
+  "ShowelList": [
+    {
+      "id": "27350",
+      "name": "PC274776"
+    },
+    {
+      "id": "27351",
+      "name": "PC272410"
+    },
+    {
+      "id": "27352",
+      "name": "PC274771"
+    },
+    {
+      "id": "27353",
+      "name": "PC273553"
+    },
+    {
+      "id": "27354",
+      "name": "PC274768"
+    },
+    {
+      "id": "27355",
+      "name": "PC274770"
+    },
+    {
+      "id": "27356",
+      "name": "PC274828"
+    },
+    {
+      "id": "27357",
+      "name": "PC274767"
+    },
+    {
+      "id": "27358",
+      "name": "PC274856"
+    },
+    {
+      "id": "27360",
+      "name": "PC274830"
+    },
+    {
+      "id": "27361",
+      "name": "PC273542"
+    },
+    {
+      "id": "27363",
+      "name": "PC271925"
+    },
+    {
+      "id": "27364",
+      "name": "PC273556"
+    },
+    {
+      "id": "27365",
+      "name": "PC270814"
+    },
+    {
+      "id": "27366",
+      "name": "PC274752"
+    },
+    {
+      "id": "27367",
+      "name": "PC271923"
+    },
+    {
+      "id": "27401",
+      "name": "PC274831"
+    },
+    {
+      "id": "27402",
+      "name": "PCX43640"
+    },
+    {
+      "id": "27403",
+      "name": "PCX43654"
+    }
+  ],
+  "AlertList": [
+    {
+      "id": "82554",
+      "name": "Avg Load Lead(Dumper)"
+    },
+    {
+      "id": "82556",
+      "name": "Avg UnLoad Lead (Dumper)"
+    },
+    {
+      "id": "82622",
+      "name": "Stoppage Duration with Window(Dumper)"
+    },
+    {
+      "id": "82624",
+      "name": "Stoppage at Load Site(Dumper)"
+    },
+    {
+      "id": "82628",
+      "name": "Frwd Avg Speed(Dumper)"
+    },
+    {
+      "id": "82680",
+      "name": "Bkwd Avg Speed(Dumper)"
+    },
+    {
+      "id": "82682",
+      "name": "Wait After Unload Gate Out(Dumper)"
+    },
+    {
+      "id": "82686",
+      "name": "LoadGateOut-Adjusted LoadGateOut Duration(Dumper)"
+    },
+    {
+      "id": "82688",
+      "name": "Stoppage without Window(Dumper)"
+    },
+    {
+      "id": "82616",
+      "name": "No Of Cycles(Shovel)"
+    },
+    {
+      "id": "82533",
+      "name": "Idle Time(Shovel)"
+    },
+    {
+      "id": "82684",
+      "name": "Shovel Queue waiting"
+    }
+  ],
+  "GloabalMenu": {
+    "Menu,2": {
+      "name": "Tea Break[Global]",
+      "icon": "teabreak",
+      "id": "2",
+      "value": "all",
+      "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=teabreak_all"
+    },
+    "Menu,1": {
+      "name": "Dismiss Alert(s) [Global]",
+      "icon": "dismiss",
+      "id": "1",
+      "value": "all",
+      "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss_all&dur="
+    },
+    "Menu,3": {
+      "name": "Resume Work[Global]",
+      "icon": "resume",
+      "id": "3",
+      "value": "all",
+      "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=resume_all"
+    },
+    "Menu,6": {
+      "name": "Stop Immidiate[Global]",
+      "icon": "stop",
+      "id": "6",
+      "value": "all",
+      "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=stopimmidiate_all"
+    }
+  }
+}
