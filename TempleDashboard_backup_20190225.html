@@ -36,16 +36,6 @@
     <script src="/static/TypeScripts/lane/LaneSites.js"></script>
     <script src="/static/TypeScripts/lane/LaneAction.js"></script>
 
-<!-- ----Responsive Menu New------------------------------------------------------------------------------------------------------------- -->
-
-    <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
-    <link href="/static/TypeScripts/style/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> 
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    
-    <link rel="stylesheet" href="/static/TypeScripts/style/responsiveNavigationMenu.css">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    
-<!-- ============================================================================================================================ -->
     <script>
         $(function () {
             $("#includedContent").load("/static/TypeScripts/dialog/popUp.html");
@@ -62,6 +52,7 @@
 
 <body onload="StartApplication.start()">
     <form>
+
         <canvas id="vehicleToolTip" width=200 height=80 class="vehicleToolTip"></canvas>
         <canvas id="multipleVehicleToolTip" width=200 class="multipleVehicleToolTip"></canvas>
         <!--<canvas id="tip" width=100 height=25></canvas>-->
@@ -69,7 +60,7 @@
 
         </div>
         <div class="divSideMenuContainer">
-            <div class="divCustomizeScreen"><a class="noprint"  href="javascript:Dialog.customizeShowelData()">Customize </a></div>
+                <!-- <div class="divCustomizeScreen"><a class="noprint"  href="javascript:Dialog.customizeShowelData()">Customize </a></div> -->
         
             <input type="checkbox" style="display: none;" checked="checked" name="leftLaneCheckBox"
                 id="leftLaneCheckBox" value="" onclick="Common.selectOneCheckBox(this)">
@@ -95,62 +86,19 @@
             </div>
             <span onclick="Common.openNav()" class="openDiv">&#9776;</span>
             <div class="divSideNavigation" id="sideNavigation">
-       
-    <div class="nav-side-menu">
-            <div class="brand"></div>
-            <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
-            <div class="menu-list">
-                <ul id="menu-content" class="menu-content collapse out">
-                    <li data-toggle="collapse" data-target="#workingDumpers" class="collapsed active"  id="headingWorkingDumpers">
-                        <a href="#"><i class="fa  fa-lg"></i>  <font color="#FFFFFF">Working Dumpers </font><span class="arrow"></span></a>
-                        <a href="javascript:void(0)" class="closebtn" onclick="Common.closeNav()">&times;</a>
-                    </li>
-                    <ul class="sub-menu collapse" id="workingDumpers">
-                        <!-- <li class="active"><a href="#">CSS3 Animation</a></li> -->
-                        <!-- // add Available Vehicles Dynamically -->
-                    </ul>
-    
-                    <li data-toggle="collapse" data-target="#availableDumpers" class="collapsed"  id="headingAvailableDumpers">
-                        <a href="#"><i class="fa fa-lg"></i>  <font color="#FFFFFF">Other Available Dumper(s)</font> <span class="arrow"></span></a>
-                    </li>
-                    <ul class="sub-menu collapse" id="availableDumpers">
-                            <!-- // add Unavailable Vehicles Dynamically -->
-                    </ul>
-    
-    
-                    <li data-toggle="collapse" data-target="#availableShowels" class="collapsed" id="headingAvailableShowels">
-                        <a href="#"><i class="fa  fa-lg"></i> <font color="#FFFFFF">Available Shovel(s)</font> <span class="arrow"></span></a>
-                    </li>
-                    <ul class="sub-menu collapse" id="availableShowels">
-                        <!-- // add Unknown Vehicles Dynamically -->
-                    </ul>
-    
-    
-    				<li data-toggle="collapse" data-target="#ghostDumpers" class="collapsed" id="headingGhostDumpers">
-                        <a href="#"><i class="fa  fa-lg"></i> <font color="#FFFFFF">Ghost Dumper(s)</font> <span class="arrow"></span></a>
-                    </li>
-                    <ul class="sub-menu collapse" id="ghostDumpers">
-                        <!-- // add Unknown Vehicles Dynamically -->
-                    </ul>
-    
-                    <li data-toggle="collapse" data-target="#countAvailableDumpers" class="collapsed" id="headingCountAvailableDumpers">
-                        <a href="#"><i class="fa  fa-lg"></i> <font color="#FFFFFF">No of Dumpers Available</font> <span class="arrow"></span></a>
-                    </li>
-                    <ul class="sub-menu collapse" id="countAvailableDumpers">
-                        <!-- // add Unknown Vehicles Dynamically -->
-                    </ul>
-                    
-                    <li data-toggle="collapse" data-target="#requiredDumpers" class="collapsed" id="headingRequiredDumpers">
-                        <a href="#"><i class="fa  fa-lg"></i> <font color="#FFFFFF">No of Dumpers Required</font> <span class="arrow"></span></a>
-                    </li>
-                    <ul class="sub-menu collapse" id="requiredDumpers">
-                        <!-- // add Unknown Vehicles Dynamically -->
-                    </ul>
-    
-                </ul>
-            </div>
-        </div>       
-
+                <table width="100%"" border=" 1" cellspacing="0" cellpadding="3" bordercolor="#003366" id="tableData">
+                    <thead>
+                        <tr>
+                            <td class="tmTableSmallHeaderCell">
+                                <input class="vehicleCheckbox" type="checkbox" name="vehicleCheckbox" id="vehicleCheckbox" value="1"  onclick="Dialog.toogleCheckBox(this.id);""  checked="checked" ></td>
+                            <td class="tmTableSmallHeaderCell">Vehicle Name </td>
+                            <td width="3%" class="tmTableSmallHeaderCell"><a href="javascript:void(0)" class="closebtn"
+                                    onclick="Common.closeNav()">&times;</a></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
             </div>
         </div>
         <div id="includedContent" style="display: none;">

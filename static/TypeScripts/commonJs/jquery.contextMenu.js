@@ -134,6 +134,8 @@
                 iconPaste: 'context-menu-icon-paste',
                 iconDelete: 'context-menu-icon-delete',
                 iconAdd: 'context-menu-icon-add',
+                iconIn: 'context-menu-icon-in',
+                iconOut: 'context-menu-icon-out',
                 iconQuit: 'context-menu-icon-quit',
                 iconLoadingClass: 'context-menu-icon-loading',
                 iconReassign: 'context-menu-icon-reassign',

@@ -3,6 +3,8 @@
  */
 var LaneAction = /** @class */ (function () {
     function LaneAction(laneBean) {
+        this.laneBean = null;
+        this.canvasObj = null;
         this.laneBean = laneBean;
     }
     LaneAction.prototype.addLane = function (removeAllLane) {
@@ -56,11 +58,21 @@ var LaneAction = /** @class */ (function () {
         this.canvasObj = new Canvas(this.laneBean);
         this.canvasObj.drawImagesOnCanvas();
     };
-    LaneAction.removeAllLane = function (laneBeanList) {
+    LaneAction.removeAllLanes = function (laneBeanList) {
         if (laneBeanList != null && laneBeanList.length > 0) {
             for (var entry in laneBeanList) {
                 var laneBean = laneBeanList[entry];
                 this.removeLane(Common.getDivId(laneBean.id, Common.laneDivId));
+            }
+        }
+    };
+    LaneAction.removeAllLanesNew = function (laneBeanList) {
+        if (laneBeanList != null && laneBeanList.length > 0) {
+            var list = document.getElementById("laneContainer");
+            var c = document.getElementById("laneContainer").childElementCount;
+            while (c != 1) {
+                list.removeChild(list.childNodes[c]);
+                c = document.getElementById("laneContainer").childElementCount;
             }
         }
     };

@@ -24,8 +24,8 @@ var CanvasEvent = /** @class */ (function () {
         //  }
         //  ctx.fillRect(newLat,longitude,10,10);
         ctx.fillStyle = "black";
-        ctx.font = "15px Arial";
-        ctx.fillText(textStr, newLat + 5, longitude + 15);
+        ctx.font = "10px Arial";
+        ctx.fillText(textStr, newLat, longitude);
         //  ctx.drawImage(newLat, longitude , imageObj.height);
     };
     return CanvasEvent;

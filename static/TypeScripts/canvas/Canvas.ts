@@ -86,12 +86,18 @@ class Canvas {
                                             var _name = res[0];
                                             var _event = Number(res[1]);
                                             switch (_event) {
+                                                case MouseEventList.EVENT_IN:
+                                                    MenuAction.eventAction(options.items[key], MouseEventList.eventIn);
+                                                    break; 
+                                                case MouseEventList.EVENT_OUT:
+                                                    MenuAction.eventAction(options.items[key], MouseEventList.eventOut);
+                                                    break;
                                                 case MouseEventList.EVENT_REASSIGN:
                                                     // Dialog.popolateShowelList();
                                                     MenuAction.eventShowelReassign(options.items[key], MouseEventList.eventReassign);
                                                     break;
                                                 case MouseEventList.EVENT_DISMISS:
-                                                    MenuAction.eventAction(options.items[key], MouseEventList.eventDismiss);
+                                                    MenuAction.globalEventAction(options.items[key], MouseEventList.eventDismiss, Temple.alertListDumper);
                                                     break;
                                                 case MouseEventList.EVENT_TEA_BREAK:
                                                     MenuAction.eventAction(options.items[key], MouseEventList.eventTeaBreak);
@@ -190,12 +196,18 @@ class Canvas {
                                             var _name = res[0];
                                             var _event = Number(res[1]);
                                             switch (_event) {
+                                                case MouseEventList.EVENT_IN:
+                                                    MenuAction.eventAction(options.items[key], MouseEventList.eventIn);
+                                                    break;
+                                                case MouseEventList.EVENT_OUT:
+                                                    MenuAction.eventAction(options.items[key], MouseEventList.eventOut);
+                                                    break;
                                                 case MouseEventList.EVENT_REASSIGN:
                                                     // Dialog.popolateShowelList();
                                                     MenuAction.eventShowelReassign(options.items[key], MouseEventList.eventReassign);
                                                     break;
                                                 case MouseEventList.EVENT_DISMISS:
-                                                    MenuAction.eventAction(options.items[key], MouseEventList.eventDismiss);
+                                                    MenuAction.globalEventAction(options.items[key], MouseEventList.eventDismiss, Temple.alertListDumper);
                                                     break;
                                                 case MouseEventList.EVENT_TEA_BREAK:
                                                     MenuAction.eventAction(options.items[key], MouseEventList.eventTeaBreak);
@@ -258,10 +270,11 @@ class Canvas {
         // var verLineToY = 60;
 
         var imageObj = null;
+        var imageTextObj = null;
         var isTrue = false;
 
-        var loadToUnload_dumper_ypoint = 14;
-        var UnloadToLoad_dumper_ypoint = 30;
+        var loadToUnload_dumper_ypoint = 10;
+        var UnloadToLoad_dumper_ypoint = 40;
 
         if (this.canvasLeft != null && this.canvasRight != null)
             isTrue = true;
@@ -301,14 +314,19 @@ class Canvas {
                     imageObj.src = Common.getSourceImage(_vehicle.imageName);
 
                     if (_vehicle.loadStatus > Common.rightCanvasloadStatus) {
-                        var _percentLegCompletedNew = Number(_vehicle.percentLegCompleted) < 5 ? 5 : _vehicle.percentLegCompleted;
+                        var _percentLegCompletedNew = Number(_vehicle.percentLegCompleted) < 5 ? 5 : Number(_vehicle.percentLegCompleted) > 95 ? 95 : _vehicle.percentLegCompleted;
+                        
                         var xPoint = Number(Common.canvasWidth) - Number(Canvas.getImageXPointOnCanvas(Common.canvasWidth, _percentLegCompletedNew));
-                        // console.log("right Canvas vehicle" + _vehicle.icon + ", ImageXPoint: " + xPoint + "," + yPoint);
+                        // console.log("[Right Canvas _vehicle.percentLegCompleted: " + _vehicle.percentLegCompleted +", New percentLegCompleted: "+  _percentLegCompletedNew + ", ImageXPoint: " + xPoint + " ]");
+                        //  console.log("right Canvas vehicle" + _vehicle.icon + ", ImageXPoint: " + xPoint + "," + yPoint);
                         yPoint = UnloadToLoad_dumper_ypoint;
                     }
-                    else {
-                        var xPoint = Canvas.getImageXPointOnCanvas(Common.canvasWidth, _vehicle.percentLegCompleted);
-                        // console.log("left Canvas vehicle" + _vehicle.icon + " , ImageXPoint: " + xPoint + "," + yPoint);
+                    else { // Left Canvas
+                        var _percentLegCompletedNew = Number(_vehicle.percentLegCompleted) < 0 ? 0 : Number(_vehicle.percentLegCompleted) > 95 ? 95 : _vehicle.percentLegCompleted;
+                        
+                        var xPoint = Canvas.getImageXPointOnCanvas(Common.canvasWidth, _percentLegCompletedNew);
+                        // console.log("[Left Canvas _vehicle.percentLegCompleted: " + _vehicle.percentLegCompleted +", New percentLegCompleted:"+  _percentLegCompletedNew + ", ImageXPoint: " + xPoint +" ]");
+                        //  console.log("left Canvas vehicle" + _vehicle.icon + " , ImageXPoint: " + xPoint + "," + yPoint);
                         yPoint = loadToUnload_dumper_ypoint;
                     }
 
@@ -335,7 +353,8 @@ class Canvas {
                         LongitudeNew: imageYPoint
                     });
 
-                    this.quickDrawCanvas(this.canvasLeft, this.ctxLeft, _vehicle.blinkSpeed, xPoint, yPoint, imageObj, imageXPoint, imageYPoint);
+                    // this.quickDrawCanvas(this.canvasLeft, this.ctxLeft, _vehicle.blinkSpeed, xPoint, yPoint, imageObj, imageXPoint, imageYPoint);
+                    this.quickDrawCanvas(this.canvasLeft, this.ctxLeft, 0, xPoint, yPoint, imageObj, imageXPoint, imageYPoint,_vehicle.iconText);
                 }
 
             }
@@ -387,7 +406,8 @@ class Canvas {
                         LattitudeNew: imageXPoint,
                         LongitudeNew: imageYPoint
                     });
-                    this.quickDrawCanvas(this.canvasRight, this.ctxRight, _vehicle.blinkSpeed, xPoint, yPoint, imageObj, imageXPoint, imageYPoint);
+                    // this.quickDrawCanvas(this.canvasRight, this.ctxRight, _vehicle.blinkSpeed, xPoint, yPoint, imageObj, imageXPoint, imageYPoint);
+                    this.quickDrawCanvas(this.canvasRight, this.ctxRight, 0, xPoint, yPoint, imageObj, imageXPoint, imageYPoint, _vehicle.iconText);
                 }
             }
         }
@@ -400,7 +420,7 @@ class Canvas {
 
     }
 
-    public quickDrawCanvas(canvas: HTMLCanvasElement, context: CanvasRenderingContext2D, blinkRate: number, lattitude: number, longitude: number, imageObj: HTMLImageElement, imageXPoint: number, imageYPoint: number) {
+    public quickDrawCanvas(canvas: HTMLCanvasElement, context: CanvasRenderingContext2D, blinkRate: number, lattitude: number, longitude: number, imageObj: HTMLImageElement, imageXPoint: number, imageYPoint: number, _vehicleName:String) {
         var noOfVehiclesAtSamePosition = Common.getVehiclesAtSamePosition(lattitude, longitude, imageXPoint, imageYPoint);
         if (blinkRate > 0) {
             var blinker = new VehicleAlerts(canvas, context, 800, lattitude, longitude, imageObj, noOfVehiclesAtSamePosition);
@@ -409,6 +429,7 @@ class Canvas {
         else {
             var canvasEve = new CanvasEvent();
             canvasEve.drawImage(context, imageObj, lattitude, longitude, imageObj.src);
+            canvasEve.drawText(context, lattitude, longitude, blinkRate, _vehicleName);
         }
     }
 

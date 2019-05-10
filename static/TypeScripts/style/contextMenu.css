@@ -29,6 +29,8 @@
 
 .context-menu-icon-add:before {}
 
+
+/*  Add context-menu-icon-add to jquery.contextMenu.js file */
 .context-menu-item.context-menu-icon-refresh {
   background-image: url("images/arrow_refresh.png");
 }
@@ -74,7 +76,12 @@
 .context-menu-item.context-menu-icon-resume{
   background-image: url("images/resume.png");
 }
-
+.context-menu-item.context-menu-icon-in {
+  background-image: url("images/in.png");
+}
+.context-menu-item.context-menu-icon-out {
+  background-image: url("images/out.png");
+}
 
 
 

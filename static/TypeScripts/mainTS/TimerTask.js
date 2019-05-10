@@ -12,7 +12,11 @@ var TimerTask = /** @class */ (function () {
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
-                Temple.jsonObj = eval(this.responseText);
+                // Temple.jsonObj = eval(this.responseText);
+                var _jsondata = JSON.parse(xhttp.responseText);
+                Temple.jsonObj = _jsondata.Dashboard;
+                Temple.dumperList = _jsondata.VehicleList;
+                VehicleAction.populateVehicles();
                 Temple.setJsonToTypeScriptObject();
                 Temple.refreshLanes();
             }
@@ -27,11 +31,19 @@ var TimerTask = /** @class */ (function () {
     TimerTask.getDataFromJsonFile = function () {
         this.getLaneDataJson();
         this.getDataFromJson();
-        this.getMenuDataFromJson();
+        // this.getMenuDataFromJson();
     };
     TimerTask.getLaneData = function () {
+        var _url = "";
+        if (Temple.getSelectedShowelId() != null && (Temple.getSelectedShowelId()).length > 0) {
+            _url = StartApplication.url_lane_data_list + "?showelIdList=" + Temple.getSelectedShowelId();
+        }
+        else {
+            _url = StartApplication.url_lane_data_list;
+        }
+        console.log("StartApplication.url_lane_data_list:" + _url);
         var xmlHttp;
-        var jsonObj;
+        // var jsonObj;
         xmlHttp = this.GetXmlHttpObject();
         if (xmlHttp == null) {
             alert("Your browser does not support AJAX!");
@@ -39,19 +51,16 @@ var TimerTask = /** @class */ (function () {
         }
         xmlHttp.onreadystatechange = function () {
             if (xmlHttp.readyState == 4) {
-                // this.laneList = eval(xmlHttp.responseText);
-                // Main.parseJsonToTypeScript(this.laneList);
-                Temple.jsonObj = eval(xmlHttp.responseText);
+                LaneAction.removeAllLanes(Temple.laneBeanListObj);
+                var _jsondata = JSON.parse(xmlHttp.responseText);
+                Temple.jsonObj = _jsondata.Dashboard;
+                Temple.dumperList = _jsondata.VehicleList;
+                VehicleAction.populateVehicles();
                 Temple.setJsonToTypeScriptObject();
                 Temple.refreshLanes();
-                //   var refresh = new Ti();
-                // TimerTask.refreshLanes();
-                //   console.log(jsonObj);
-                // document.getElementById("testId").innerHTML =document.getElementById("testId").innerHTML + "</br>" + jsonObj;
-                // return jsonObj;
             }
         };
-        xmlHttp.open("POST", StartApplication.url_lane_data_list, true);
+        xmlHttp.open("POST", _url, true);
         // var params = "action=something";
         xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
         xmlHttp.send();
@@ -79,7 +88,7 @@ var TimerTask = /** @class */ (function () {
         xhttp = this.GetXmlHttpObject();
         xhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
-                Temple.menuListGlobal = JSON.parse(this.responseText).GloabalMenu;
+                Temple.menuListGlobal = JSON.parse(xhttp.responseText).GloabalMenu;
             }
         };
         xhttp.open("GET", _url, true);
@@ -94,8 +103,16 @@ var TimerTask = /** @class */ (function () {
             if (this.readyState == 4 && this.status == 200) {
                 //this.jsonObj = JSON.parse(xhttp.responseText);
                 //jsonData  = eval(this.responseText);
-                Temple.showelList = JSON.parse(this.responseText).ShowelList;
-                Temple.alertList = JSON.parse(this.responseText).AlertList;
+                // Temple.showelList = JSON.parse(this.responseText).ShowelList;
+                // Temple.alertListDumper = JSON.parse(this.responseText).AlertList;
+                // Temple.dumperList = JSON.parse(this.responseText).VehicleList;
+                var jsonDataObj = JSON.parse(xhttp.responseText);
+                Temple.showelList = jsonDataObj.ShovelList;
+                Temple.menuListGlobal = jsonDataObj.GlobalMenu;
+                Temple.alertListDumper = jsonDataObj.AlertList_D;
+                Temple.alertListShowel = jsonDataObj.AlertList_S;
+                Temple.alertListAll = jsonDataObj.AlertList_All;
+                Temple.routeList = jsonDataObj.RouteList;
             }
         };
         xhttp.open("GET", _url, true);
@@ -112,7 +129,7 @@ var TimerTask = /** @class */ (function () {
         xmlHttp.onreadystatechange = function () {
             if (xmlHttp.readyState == 4) {
                 // jsonObj = eval(xmlHttp.responseText);
-                Temple.menuListGlobal = JSON.parse(this.responseText).GloabalMenu;
+                Temple.menuListGlobal = JSON.parse(xmlHttp.responseText).GloabalMenu;
                 // console.log(Temple.showelList);
             }
         };
@@ -131,12 +148,29 @@ var TimerTask = /** @class */ (function () {
         }
         xmlHttp.onreadystatechange = function () {
             if (xmlHttp.readyState == 4) {
-                // jsonObj = eval(xmlHttp.responseText);
-                Temple.alertList = JSON.parse(this.responseText).AlertList;
-                // console.log(Temple.showelList);
+                Temple.alertListDumper = JSON.parse(xmlHttp.responseText).AlertList;
             }
         };
         xmlHttp.open("POST", StartApplication.url_alert_list, true);
+        // var params = "action=something";
+        xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xmlHttp.send();
+    };
+    TimerTask.getDumperListJson = function () {
+        var xmlHttp;
+        var jsonObj;
+        xmlHttp = this.GetXmlHttpObject();
+        if (xmlHttp == null) {
+            alert("Your browser does not support AJAX!");
+            return;
+        }
+        xmlHttp.onreadystatechange = function () {
+            if (xmlHttp.readyState == 4) {
+                Temple.dumperList = JSON.parse(xmlHttp.responseText).VehicleList;
+                VehicleAction.populateVehicles();
+            }
+        };
+        xmlHttp.open("POST", StartApplication.url_dumper_list, true);
         // var params = "action=something";
         xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
         xmlHttp.send();
@@ -151,7 +185,7 @@ var TimerTask = /** @class */ (function () {
         }
         xmlHttp.onreadystatechange = function () {
             if (xmlHttp.readyState == 4) {
-                Temple.showelList = JSON.parse(this.responseText).ShovelList;
+                Temple.showelList = JSON.parse(xmlHttp.responseText).ShovelList;
             }
         };
         xmlHttp.open("POST", StartApplication.url_showel_list, true);
@@ -175,12 +209,16 @@ var TimerTask = /** @class */ (function () {
         xmlHttp.onreadystatechange = function () {
             if (xmlHttp.readyState == 4) {
                 // jsonObj = eval(xmlHttp.responseText);
-                var jsonDataObj = JSON.parse(this.responseText);
+                var jsonDataObj = JSON.parse(xmlHttp.responseText);
                 Temple.showelList = jsonDataObj.ShovelList;
-                Temple.menuListGlobal = jsonDataObj.GloabalMenu;
-                Temple.alertList = jsonDataObj.AlertList;
+                Temple.menuListGlobal = jsonDataObj.GlobalMenu;
+                Temple.alertListDumper = jsonDataObj.AlertList_D;
+                Temple.alertListShowel = jsonDataObj.AlertList_S;
+                Temple.alertListAll = jsonDataObj.AlertList_All;
+                Temple.routeList = jsonDataObj.RouteList;
             }
         };
+        console.log("StartApplication.url_all_processing_data_list: " + StartApplication.url_all_processing_data_list);
         xmlHttp.open("POST", StartApplication.url_all_processing_data_list, true);
         // var params = "action=something";
         xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");

@@ -4,6 +4,12 @@
 var TempleConstant = /** @class */ (function () {
     function TempleConstant() {
     }
+    TempleConstant.WORKING_DUMPERS = 0;
+    TempleConstant.AVAILABLE_DUMPERS = 1;
+    TempleConstant.AVAILABLE_SHOWELS = 2;
+    TempleConstant.GHOST_DUMPERS = 3;
+    TempleConstant.COUNT_AVAILABLE_DUMPERS = 3;
+    TempleConstant.REQUIRED_DUMPERS = 3;
     TempleConstant.imageWidth = 20;
     TempleConstant.imageHeight = 25;
     TempleConstant.newImageWidth = 10;

@@ -1,5 +1,6 @@
 class StartApplication {
     private static isServer: boolean = true;   // change when deploy on server otherwise data get from json file
+    public static stopCustomization: boolean = false;  
     private static _interval: number = 15000;
     public static TYPESCRIPT_BASE = "/static/TypeScripts/";
     public static imagePath = "/static/TypeScripts/images/";
@@ -8,23 +9,27 @@ class StartApplication {
     public static url_showel_list: string = "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=get_shovel_list";
     public static url_global_menu_list: string = "http://203.197.197.16:9680//LocTracker/TempleDashboardData.jsp?action_p=global_menu_list";
     public static url_alert_list: string = "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=get_alert_params&veh=all";
-    public static url_all_processing_data_list: string = "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?actionShowelList=get_shovel_list&actionGlobalMenu=global_menu_list&actionAlertList=get_alert_params";
+    // public static url_all_processing_data_list: string = "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?actionShowelList=get_shovel_list&actionGlobalMenu=global_menu_list&actionAlertList=get_alert_params";
+    public static url_all_processing_data_list: string = "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=global_json";
     public static url_global_event: string = "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=globalEvent";
-
+    public static url_dumper_list: string = "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=get_dumper_list";
+    
     public static customize_showelList = [];
+    
+    public static  rightDestList=[];
 
     public static start(): void {
         // this.initializeScripts();
-        this.addDivDynamically();
+        // this.addDivDynamically();
         if (this.isServer) { // data get from server
+            console.log("Data Get From Server");
             var objTimers = new TimerTask(this._interval);
             objTimers.scheduleRequest();
-            TimerTask.getShowelJsonList();
-            TimerTask.getGloabalMenuJsonList();
-            TimerTask.getAlertListJson();
-            
-            // TimerTask.getProcessingData();
+
+            // TimerTask.getLaneData();
+            TimerTask.getProcessingData();
         } else { // data get from json file
+            console.log("Data Get From Json File");
             TimerTask.getDataFromJsonFile();
         }
     }

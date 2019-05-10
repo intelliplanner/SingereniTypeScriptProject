@@ -39,7 +39,7 @@
     position: fixed;
     /* overflow-y: auto;*/
     top: 25px;
-    right: 0px;
+    right: 1px;
     z-index: 1;
     /* Stay on top */
     transition: 0.5s;
@@ -56,11 +56,11 @@
 
 .divSideNavigation .closebtn {
     position: absolute;
-    top: 2px;
+    top: 0px;
     right: 7px;
-    font-size: 25px;
+    font-size: 18px;
     margin-left: 0px;
-    color: #000000;
+    color: #FFFFFF;
 }
 
 .divLeftSource {

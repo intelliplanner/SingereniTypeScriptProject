@@ -2,8 +2,8 @@
  * Created by admin on 10/11/2017.
  */
 class LaneAction {
-    laneBean: Lane;
-    canvasObj: Canvas;
+    laneBean: Lane = null;
+    canvasObj: Canvas = null;
     constructor(laneBean: Lane) {
         this.laneBean = laneBean;
 
@@ -62,18 +62,29 @@ class LaneAction {
         newdiv1 += "</div>";
         $('#laneContainer').children().last().append(newdiv1);
 
-
         this.canvasObj = new Canvas(this.laneBean);
         this.canvasObj.drawImagesOnCanvas();
 
     }
 
 
-    public static removeAllLane(laneBeanList: Lane[]) {
+    public static removeAllLanes(laneBeanList: Lane[]) {
         if (laneBeanList != null && laneBeanList.length > 0) {
             for (let entry in laneBeanList) {
                 var laneBean = laneBeanList[entry];
                 this.removeLane(Common.getDivId(laneBean.id, Common.laneDivId));
+            }
+        }
+
+    }
+
+    public static removeAllLanesNew(laneBeanList: Lane[]) {
+        if (laneBeanList != null && laneBeanList.length > 0) {
+            var list = document.getElementById("laneContainer");
+            var c = document.getElementById("laneContainer").childElementCount;
+            while (c != 1) {
+                list.removeChild(list.childNodes[c]);
+                c = document.getElementById("laneContainer").childElementCount;
             }
         }
     }

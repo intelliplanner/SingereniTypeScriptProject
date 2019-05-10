@@ -5,6 +5,8 @@
 class LaneSites {
     laneBeanObj: Lane;
     leftSourceImageId: string;
+
+
     constructor(laneBeanObj: Lane) {
         this.laneBeanObj = laneBeanObj;
     }
@@ -55,17 +57,7 @@ class LaneSites {
                     data = data + "<div class='tooltipRightLeftSource'><span class='tooltipContent'>" + text3.hoverText + "</span>" + Misc.getSubString(text3.name, 12) + "</div>"
                 }
             }
-
-
-
-
             data = data + "</div>";
-
-
-
-
-
-
             if (sourceObj.iconInformation != undefined) {
                 var menuLen = sourceObj.iconInformation.showelWaiting == undefined ? "0" : sourceObj.iconInformation.showelWaiting;//sourceObj.iconInformation.menu.length > 0 ? sourceObj.iconInformation.menu.length : "0"  ;
                 var mouseEvent = new MouseEventList();
@@ -76,7 +68,6 @@ class LaneSites {
                 data = data + "<img  title='' id='" + this.leftSourceImageId + "' title='' oncontextmenu ='" + mouseEvent.addMenuList(this.leftSourceImageId, this.laneBeanObj.loadToUnload.sourceLeft.iconInformation.pane, this.laneBeanObj.loadToUnload.sourceLeft.iconInformation.menu) + "'";
                 data = data + " style='width:"+Common.leftSourceImageWidth+"px;height:"+Common.leftSourceImageHeight+"px;'  src='" + Common.getSourceImage(sourceObj.iconInformation.icon) + "'></a>";
                 data = data + "</div>";
-
             }
 
             innerData.innerHTML = data;
@@ -143,8 +134,17 @@ class LaneSites {
         if (divId == null && divId.length == 0)
             return;
 
-        var innerData = document.getElementById(divId);
+        if(StartApplication.rightDestList != null && StartApplication.rightDestList.length > 0){
+            for (let index = 0; index < StartApplication.rightDestList.length; index++) {
+                if(StartApplication.rightDestList[index] == this.laneBeanObj.unloadToLoad.destinationRight.unloadSiteId){
+                        return;
+                }
+            }
+        }
+        
+        StartApplication.rightDestList.push(this.laneBeanObj.unloadToLoad.destinationRight.unloadSiteId);
 
+        var innerData = document.getElementById(divId);
         innerData.style.borderTop = "1px solid grey";
 
         var data = "<div class='divRightDestination-div1' >" + Misc.getSubString(this.laneBeanObj.unloadToLoad.destinationRight.unloadSiteId, 15) + "</div>";

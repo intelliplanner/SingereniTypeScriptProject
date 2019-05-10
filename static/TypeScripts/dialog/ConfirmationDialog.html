@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-<!-- <style>
+    <!-- <style>
 .ui-dialog-titlebar {
     display: none;
 }
@@ -12,18 +12,18 @@
 </head>
 
 <body>
-      
+
     <div id="div_dialog_id" style="display: none">
 
         <form id="form_dialog_id" ACTION="#">
-                <br>
+            <br>
             <table>
                 <tbody>
                     <tr>
-                            <td nowrap="nowrap"   class="tn" align="left">
-                                <!-- <div id="alertMsg" style="font-family: Arial Bold ;font-size: 17px; font-style: normal; font-variant: normal; font-weight: 500;"></div> -->
-                                <div id="alertMsg" class="tn"  style="font-size: 15px;"></div>
-                            </td>
+                        <td nowrap="nowrap" class="tn" align="left">
+                            <!-- <div id="alertMsg" style="font-family: Arial Bold ;font-size: 17px; font-style: normal; font-variant: normal; font-weight: 500;"></div> -->
+                            <div id="alertMsg" class="tn" style="font-size: 15px;"></div>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -35,125 +35,201 @@
 
     <div id="div_alert_dialog" style="display: none">
 
-            <form id="form_alert_dialog_id" ACTION="#">
-                    <br>
+        <form id="form_alert_dialog_id" ACTION="#">
+            <br>
+            <table>
+                <tbody>
+                    <tr>
+                        <td nowrap="nowrap" align="left" class="sh">Duration:</td>
+                        <td nowrap="nowrap" align="left" class="tn">
+                            <Select class="tn" id="hours" name="hours" style="width:50px;">
+                                <!-- <option value="0">Hours</option> -->
+                                <option value="0">00</option>
+                                <option value="1">01</option>
+                                <option value="2">02</option>
+                                <option value="3">03</option>
+                                <option value="4">04</option>
+                                <option value="5">05</option>
+                                <option value="6">06</option>
+                                <option value="7">07</option>
+                                <option value="8">08</option>
+                                <option value="9">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                            </Select>
+                            Hrs
+                            &nbsp;
+                            <Select class="tn" id="minute" name="minute" style="width:50px;">
+                                <option value="0">00</option>
+                                <option value="1">01</option>
+                                <option value="2">02</option>
+                                <option value="3">03</option>
+                                <option value="4">04</option>
+                                <option value="5">05</option>
+                                <option value="6">06</option>
+                                <option value="7">07</option>
+                                <option value="8">08</option>
+                                <option value="9">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                                <option value="32">32</option>
+                                <option value="33">33</option>
+                                <option value="34">34</option>
+                                <option value="35">35</option>
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                                <option value="43">43</option>
+                                <option value="44">44</option>
+                                <option value="45">45</option>
+                                <option value="46">46</option>
+                                <option value="47">47</option>
+                                <option value="48">48</option>
+                                <option value="49">49</option>
+                                <option value="50">50</option>
+                                <option value="51">51</option>
+                                <option value="52">52</option>
+                                <option value="53">53</option>
+                                <option value="54">54</option>
+                                <option value="55">55</option>
+                                <option value="56">56</option>
+                                <option value="57">57</option>
+                                <option value="58">58</option>
+                                <option value="59">59</option>
+                                <option value="60">60</option>
+                            </Select>
+                            Min
+                        </td>
+                        <td nowrap="nowrap" align="left">
+
+                        </td>
+                    <tr>
+                        <td nowrap="nowrap" align="right" class="sh">Alerts:</td>
+                        <td nowrap="nowrap" align="left" class="tn">
+                            <select class="tn" name="alerts" id="alerts" required>
+                            </select>
+                        </td>
+                        <td nowrap="nowrap" align="left"></td>
+                    </tr>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+        <div id="errorsDialog2"></div>
+    </div>
+
+
+
+    <div id="div_route_dialog_id" style="display:none">
+
+        <form id="form_route_dialog_id" ACTION="#">
+                <br>
                 <table>
                     <tbody>
                         <tr>
-                                <td nowrap="nowrap" align="left" class="sh">Duration:</td>
-                                <td nowrap="nowrap"  align="left" class="tn">
-                                    <Select class="tn" id="hours" name="hours" style="width:50px;">
-                                         <!-- <option value="0">Hours</option> -->
-                                         <option value="0">00</option>
-                                         <option value="1">01</option>
-                                         <option value="2">02</option>
-                                         <option value="3">03</option>
-                                         <option value="4">04</option>
-                                         <option value="5">05</option>
-                                         <option value="6">06</option>
-                                         <option value="7">07</option>
-                                         <option value="8">08</option>
-                                         <option value="9">09</option>
-                                         <option value="10">10</option>
-                                         <option value="11">11</option>
-                                         <option value="12">12</option>
-                                         <option value="13">13</option>
-                                         <option value="14">14</option>
-                                         <option value="15">15</option>
-                                         <option value="16">16</option>
-                                         <option value="17">17</option>
-                                         <option value="18">18</option>
-                                         <option value="19">19</option>
-                                         <option value="20">20</option>
-                                         <option value="21">21</option>
-                                         <option value="22">22</option>
-                                         <option value="23">23</option>
-                                         <option value="24">24</option>                                    
-                                    </Select>
-                                    Hrs
-                                    &nbsp;
-                                    <Select class="tn" id="minute" name="minute" style="width:50px;">
-                                            <option value="0">00</option>
-                                            <option value="1">01</option>
-                                            <option value="2">02</option>
-                                            <option value="3">03</option>
-                                            <option value="4">04</option>
-                                            <option value="5">05</option>
-                                            <option value="6">06</option>
-                                            <option value="7">07</option>
-                                            <option value="8">08</option>
-                                            <option value="9">09</option>
-                                            <option value="10">10</option>
-                                            <option value="11">11</option>
-                                            <option value="12">12</option>
-                                            <option value="13">13</option>
-                                            <option value="14">14</option>
-                                            <option value="15">15</option>
-                                            <option value="16">16</option>
-                                            <option value="17">17</option>
-                                            <option value="18">18</option>
-                                            <option value="19">19</option>
-                                            <option value="20">20</option>
-                                            <option value="21">21</option>
-                                            <option value="22">22</option>
-                                            <option value="23">23</option>
-                                            <option value="24">24</option>                                    
-                                            <option value="25">25</option>
-                                            <option value="26">26</option>
-                                            <option value="27">27</option>
-                                            <option value="28">28</option>
-                                            <option value="29">29</option>
-                                            <option value="30">30</option>
-                                            <option value="31">31</option>
-                                            <option value="32">32</option>
-                                            <option value="33">33</option>
-                                            <option value="34">34</option>
-                                            <option value="35">35</option>
-                                            <option value="36">36</option>
-                                            <option value="37">37</option>
-                                            <option value="38">38</option>
-                                            <option value="39">39</option>
-                                            <option value="40">40</option>
-                                            <option value="41">41</option>
-                                            <option value="42">42</option>
-                                            <option value="43">43</option>
-                                            <option value="44">44</option>
-                                            <option value="45">45</option>
-                                            <option value="46">46</option>
-                                            <option value="47">47</option>
-                                            <option value="48">48</option>
-                                            <option value="49">49</option>
-                                            <option value="50">50</option>
-                                            <option value="51">51</option>
-                                            <option value="52">52</option>
-                                            <option value="53">53</option>
-                                            <option value="54">54</option>
-                                            <option value="55">55</option>
-                                            <option value="56">56</option>
-                                            <option value="57">57</option>
-                                            <option value="58">58</option>
-                                            <option value="59">59</option>
-                                            <option value="60">60</option>
-                                       </Select>
-                                       Min
-                                </td>
-                                <td nowrap="nowrap" align="left">
-                                    
-                                </td>
-                               <tr><td nowrap="nowrap" align="right" class="sh">Alerts:</td>
+                            <td nowrap="nowrap" colspan=2 class="tn" align="left">
+                                <!-- <div id="alertMsg" style="font-family: Arial Bold ;font-size: 17px; font-style: normal; font-variant: normal; font-weight: 500;"></div> -->
+                                <div id="routeMsg" class="tn" style="font-size: 15px;"></div>
+                            </td>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr>
+                                <td nowrap="nowrap" align="left" class="sh">Select Route:</td>
                                 <td nowrap="nowrap" align="left" class="tn">
-                                    <select class="tn" name="alerts" id="alerts" required>
+                                    <select class="tn" name="routeId" id="routeId" required>
                                     </select>
                                 </td>
                                 <td nowrap="nowrap" align="left"></td>
-                               </tr>
-                        </tr>
+                            </tr>
                     </tbody>
                 </table>
-            </form>
-            <div id="errorsDialog2"></div>
-        </div>
-    
+        </form>
+        <div id="errorsDialog3"></div>
+    </div>
+
+    <div id="div_ghost_dumper_dialog_id" style="display:none">
+
+        <form id="form_ghost_dumper_dialog_id" ACTION="#">
+                <br>
+                <table>
+                    <tbody>
+                       
+                        <tr>
+                                <td nowrap="nowrap" align="left" class="sh">Dumper:</td>
+                                <td nowrap="nowrap" align="left" class="tn">
+                                        <div id="ghostDumperMsg" class="tn"></div>
+                                </td>
+                                <td nowrap="nowrap" align="left"></td>
+                        </tr>
+                       
+                        <tr></tr>
+                        <tr></tr>
+                        
+                        <tr>
+                                <td nowrap="nowrap" align="left" class="sh">Select Action:</td>
+                                <td nowrap="nowrap" align="left" class="tn">
+                                    <select class="tn" name="actionId" id="actionId" required onchange="Common.displayBlock();">
+                                        <option value="0" selected>Out</option>
+                                        <option value="1">Manually Re-Assign</option>
+                                        <option></option>
+                                    </select>
+                                </td>
+                                <td nowrap="nowrap" align="left"></td>
+                        </tr>
+                     
+                        <tr id="showShowel" style="display: none;">
+                            <td nowrap="nowrap" align="left" class="sh">Select Showel:</td>
+                            <td nowrap="nowrap" align="left" class="tn">
+                                <select class="tn" name="showelId" id="showelId" required>
+                                </select>
+                            </td>
+                            <td nowrap="nowrap" align="left"></td>
+                        </tr> 
+                    
+                    
+                </tbody>
+                </table>
+        </form>
+        <div id="errorsDialog4"></div>
+    </div>
 
 </body>
 

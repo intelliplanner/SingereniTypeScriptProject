@@ -1,5 +1,35 @@
 {
-  "ShowelList": [
+  "GlobalMenu": {
+    "Menu,2": {
+      "name": "Tea Break[Global]",
+      "icon": "teabreak",
+      "id": "2",
+      "value": "all",
+      "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=teabreak_all"
+    },
+    "Menu,1": {
+      "name": "Dismiss Alert(s) [Global]",
+      "icon": "dismiss",
+      "id": "1",
+      "value": "all",
+      "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss_all&dur="
+    },
+    "Menu,3": {
+      "name": "Resume Work[Global]",
+      "icon": "resume",
+      "id": "3",
+      "value": "all",
+      "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=resume_all"
+    },
+    "Menu,6": {
+      "name": "Stop Immidiate[Global]",
+      "icon": "stop",
+      "id": "6",
+      "value": "all",
+      "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=stopimmidiate_all"
+    }
+  },
+  "ShovelList": [
     {
       "id": "27350",
       "name": "PC274776"
@@ -45,10 +75,6 @@
       "name": "PC273542"
     },
     {
-      "id": "27363",
-      "name": "PC271925"
-    },
-    {
       "id": "27364",
       "name": "PC273556"
     },
@@ -59,10 +85,6 @@
     {
       "id": "27366",
       "name": "PC274752"
-    },
-    {
-      "id": "27367",
-      "name": "PC271923"
     },
     {
       "id": "27401",
@@ -77,7 +99,71 @@
       "name": "PCX43654"
     }
   ],
-  "AlertList": [
+  "AlertList_D": [
+    {
+      "id": "-1111111",
+      "name": "All Alerts"
+    },
+    {
+      "id": "82554",
+      "name": "Avg Load Lead(Dumper)"
+    },
+    {
+      "id": "82556",
+      "name": "Avg UnLoad Lead (Dumper)"
+    },
+    {
+      "id": "82622",
+      "name": "Stoppage Duration with Window(Dumper)"
+    },
+    {
+      "id": "82624",
+      "name": "Stoppage at Load Site(Dumper)"
+    },
+    {
+      "id": "82628",
+      "name": "Frwd Avg Speed(Dumper)"
+    },
+    {
+      "id": "82680",
+      "name": "Bkwd Avg Speed(Dumper)"
+    },
+    {
+      "id": "82682",
+      "name": "Wait After Unload Gate Out(Dumper)"
+    },
+    {
+      "id": "82686",
+      "name": "LoadGateOut-Adjusted LoadGateOut Duration(Dumper)"
+    },
+    {
+      "id": "82688",
+      "name": "Stoppage without Window(Dumper)"
+    }
+  ],
+  "AlertList_S": [
+    {
+      "id": "-1111111",
+      "name": "All Alerts"
+    },
+    {
+      "id": "82616",
+      "name": "No Of Cycles(Shovel)"
+    },
+    {
+      "id": "82533",
+      "name": "Idle Time(Shovel)"
+    },
+    {
+      "id": "82684",
+      "name": "Shovel Queue waiting"
+    }
+  ],
+  "AlertList_All": [
+    {
+      "id": "-1111111",
+      "name": "All Alerts"
+    },
     {
       "id": "82554",
       "name": "Avg Load Lead(Dumper)"
@@ -127,34 +213,810 @@
       "name": "Shovel Queue waiting"
     }
   ],
-  "GloabalMenu": {
-    "Menu,2": {
-      "name": "Tea Break[Global]",
-      "icon": "teabreak",
-      "id": "2",
-      "value": "all",
-      "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=teabreak_all"
+  "RouteList": [
+    {
+      "id": 1332,
+      "name": "9th E3 -1->OB3"
     },
-    "Menu,1": {
-      "name": "Dismiss Alert(s) [Global]",
-      "icon": "dismiss",
-      "id": "1",
-      "value": "all",
-      "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=dismiss_all&dur="
+    {
+      "id": 1331,
+      "name": "9th E3 -1->OB7"
     },
-    "Menu,3": {
-      "name": "Resume Work[Global]",
-      "icon": "resume",
-      "id": "3",
-      "value": "all",
-      "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=resume_all"
+    {
+      "id": 68,
+      "name": "9th Bench M4->OB3"
     },
-    "Menu,6": {
-      "name": "Stop Immidiate[Global]",
-      "icon": "stop",
-      "id": "6",
-      "value": "all",
-      "url": "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=stopimmidiate_all"
+    {
+      "id": 10,
+      "name": "9th Bench M4->OB7"
+    },
+    {
+      "id": 42,
+      "name": "9th Bench M3->OB3"
+    },
+    {
+      "id": 11,
+      "name": "9th Bench M3->OB7"
+    },
+    {
+      "id": 44,
+      "name": "9th Bench M2->OB3"
+    },
+    {
+      "id": 43,
+      "name": "9th Bench M2->OB7"
+    },
+    {
+      "id": 46,
+      "name": "9th Bench M1->OB3"
+    },
+    {
+      "id": 45,
+      "name": "9th Bench M1->OB7"
+    },
+    {
+      "id": 104,
+      "name": "9th Bench E3->OB3"
+    },
+    {
+      "id": 103,
+      "name": "9th Bench E3->OB7"
+    },
+    {
+      "id": 95,
+      "name": "9th Bench E2->OB7"
+    },
+    {
+      "id": 94,
+      "name": "9th Bench E2->OB3"
+    },
+    {
+      "id": 1370,
+      "name": "8th M4 -1->OB5"
+    },
+    {
+      "id": 1330,
+      "name": "8th M2 -1->OB3"
+    },
+    {
+      "id": 1329,
+      "name": "8th M2 -1->OB7"
+    },
+    {
+      "id": 1328,
+      "name": "8th E2 -2->OB3"
+    },
+    {
+      "id": 1327,
+      "name": "8th E2 -2->OB7"
+    },
+    {
+      "id": 1326,
+      "name": "8th E2 -1->OB3"
+    },
+    {
+      "id": 1325,
+      "name": "8th E2 -1->OB7"
+    },
+    {
+      "id": 269,
+      "name": "8th Bench M5->OB5"
+    },
+    {
+      "id": 270,
+      "name": "8th Bench M5->OB4"
+    },
+    {
+      "id": 120,
+      "name": "8th Bench M4->OB3"
+    },
+    {
+      "id": 119,
+      "name": "8th Bench M4->OB7"
+    },
+    {
+      "id": 36,
+      "name": "8th Bench M3->OB3"
+    },
+    {
+      "id": 35,
+      "name": "8th Bench M3->OB7"
+    },
+    {
+      "id": 37,
+      "name": "8th Bench M2->OB7"
+    },
+    {
+      "id": 206,
+      "name": "8th Bench M2->OB4"
+    },
+    {
+      "id": 38,
+      "name": "8th Bench M2->OB3"
+    },
+    {
+      "id": 40,
+      "name": "8th Bench M1->OB3"
+    },
+    {
+      "id": 39,
+      "name": "8th Bench M1->OB7"
+    },
+    {
+      "id": 9,
+      "name": "8th Bench E3->OB3"
+    },
+    {
+      "id": 41,
+      "name": "8th Bench E3->OB7"
+    },
+    {
+      "id": 8,
+      "name": "8th Bench E2->OB3"
+    },
+    {
+      "id": 24,
+      "name": "8th Bench E2->OB7"
+    },
+    {
+      "id": 1323,
+      "name": "7th M3 -1->OB7"
+    },
+    {
+      "id": 1324,
+      "name": "7th M3 -1->OB3"
+    },
+    {
+      "id": 23,
+      "name": "7th Bench M4->OB7"
+    },
+    {
+      "id": 54,
+      "name": "7th Bench M4->OB3"
+    },
+    {
+      "id": 155,
+      "name": "7th Bench M3->OB3"
+    },
+    {
+      "id": 154,
+      "name": "7th Bench M3->OB7"
+    },
+    {
+      "id": 56,
+      "name": "7th Bench M2->OB3"
+    },
+    {
+      "id": 55,
+      "name": "7th Bench M2->OB7"
+    },
+    {
+      "id": 153,
+      "name": "7th Bench M1->OB3"
+    },
+    {
+      "id": 152,
+      "name": "7th Bench M1->OB7"
+    },
+    {
+      "id": 226,
+      "name": "7th Bench E3->OB3"
+    },
+    {
+      "id": 225,
+      "name": "7th Bench E3->OB7"
+    },
+    {
+      "id": 223,
+      "name": "7th Bench E2->OB7"
+    },
+    {
+      "id": 224,
+      "name": "7th Bench E2->OB3"
+    },
+    {
+      "id": 118,
+      "name": "7th Bench E1->OB7"
+    },
+    {
+      "id": 117,
+      "name": "7th Bench E1->OB3"
+    },
+    {
+      "id": 268,
+      "name": "6th Bench W3->OB5"
+    },
+    {
+      "id": 267,
+      "name": "6th Bench W3->OB4"
+    },
+    {
+      "id": 255,
+      "name": "6th Bench M5->OB5"
+    },
+    {
+      "id": 254,
+      "name": "6th Bench M5->OB4"
+    },
+    {
+      "id": 30,
+      "name": "6th Bench M4->OB5"
+    },
+    {
+      "id": 262,
+      "name": "6th Bench M4->OB7"
+    },
+    {
+      "id": 29,
+      "name": "6th Bench M4->OB4"
+    },
+    {
+      "id": 261,
+      "name": "6th Bench M4->OB3"
+    },
+    {
+      "id": 872,
+      "name": "6th Bench M3->OB5"
+    },
+    {
+      "id": 875,
+      "name": "6th Bench M3->OB4"
+    },
+    {
+      "id": 222,
+      "name": "6th Bench M1->OB3"
+    },
+    {
+      "id": 221,
+      "name": "6th Bench M1->OB7"
+    },
+    {
+      "id": 160,
+      "name": "6th Bench E3->OB7"
+    },
+    {
+      "id": 159,
+      "name": "6th Bench E3->OB3"
+    },
+    {
+      "id": 158,
+      "name": "6th Bench E3->OB4"
+    },
+    {
+      "id": 57,
+      "name": "6th Bench E2->OB7"
+    },
+    {
+      "id": 22,
+      "name": "6th Bench E2->OB3"
+    },
+    {
+      "id": 100,
+      "name": "6th Bench E1->OB5"
+    },
+    {
+      "id": 7,
+      "name": "6th Bench E1->OB4"
+    },
+    {
+      "id": 321,
+      "name": "6th Bench E1->OB3"
+    },
+    {
+      "id": 1320,
+      "name": "5th M4 -1->OB5"
+    },
+    {
+      "id": 1319,
+      "name": "5th M3 -1->OB5"
+    },
+    {
+      "id": 1318,
+      "name": "5th M2 -1->OB5"
+    },
+    {
+      "id": 1317,
+      "name": "5th E2 -2->OB5"
+    },
+    {
+      "id": 1316,
+      "name": "5th E2 -1->OB5"
+    },
+    {
+      "id": 93,
+      "name": "5th Bench W3->OB5"
+    },
+    {
+      "id": 92,
+      "name": "5th Bench W3->OB4"
+    },
+    {
+      "id": 26,
+      "name": "5th Bench W2->OB4"
+    },
+    {
+      "id": 25,
+      "name": "5th Bench W2->OB5"
+    },
+    {
+      "id": 90,
+      "name": "5th Bench W1->OB4"
+    },
+    {
+      "id": 91,
+      "name": "5th Bench W1->OB5"
+    },
+    {
+      "id": 179,
+      "name": "5th Bench M5->OB4"
+    },
+    {
+      "id": 180,
+      "name": "5th Bench M5->OB5"
+    },
+    {
+      "id": 28,
+      "name": "5th Bench M4->OB5"
+    },
+    {
+      "id": 27,
+      "name": "5th Bench M4->OB4"
+    },
+    {
+      "id": 264,
+      "name": "5th Bench M3->OB5"
+    },
+    {
+      "id": 263,
+      "name": "5th Bench M3->OB4"
+    },
+    {
+      "id": 1168,
+      "name": "5th Bench M2->OB4"
+    },
+    {
+      "id": 1167,
+      "name": "5th Bench M2->OB5"
+    },
+    {
+      "id": 373,
+      "name": "5th Bench M1->OB5"
+    },
+    {
+      "id": 372,
+      "name": "5th Bench M1->OB4"
+    },
+    {
+      "id": 266,
+      "name": "5th Bench E3->OB5"
+    },
+    {
+      "id": 265,
+      "name": "5th Bench E3->OB4"
+    },
+    {
+      "id": 556,
+      "name": "5th Bench E2->OB5"
+    },
+    {
+      "id": 555,
+      "name": "5th Bench E2->OB4"
+    },
+    {
+      "id": 1372,
+      "name": "4th M3 -1->OB5"
+    },
+    {
+      "id": 1390,
+      "name": "4th E3 -2->OB5"
+    },
+    {
+      "id": 1366,
+      "name": "4th E3 -1->OB5"
+    },
+    {
+      "id": 1315,
+      "name": "4th E2 -1->OB5"
+    },
+    {
+      "id": 47,
+      "name": "4th Bench W3->OB4"
+    },
+    {
+      "id": 48,
+      "name": "4th Bench W3->OB5"
+    },
+    {
+      "id": 89,
+      "name": "4th Bench W2->OB5"
+    },
+    {
+      "id": 88,
+      "name": "4th Bench W2->OB4"
+    },
+    {
+      "id": 87,
+      "name": "4th Bench W1->OB4"
+    },
+    {
+      "id": 86,
+      "name": "4th Bench W1->OB5"
+    },
+    {
+      "id": 138,
+      "name": "4th Bench M5->OB5"
+    },
+    {
+      "id": 137,
+      "name": "4th Bench M5->OB4"
+    },
+    {
+      "id": 101,
+      "name": "4th Bench M4->OB4"
+    },
+    {
+      "id": 102,
+      "name": "4th Bench M4->OB5"
+    },
+    {
+      "id": 156,
+      "name": "4th Bench M3->OB4"
+    },
+    {
+      "id": 157,
+      "name": "4th Bench M3->OB5"
+    },
+    {
+      "id": 184,
+      "name": "4th Bench M2->OB5"
+    },
+    {
+      "id": 183,
+      "name": "4th Bench M2->OB4"
+    },
+    {
+      "id": 182,
+      "name": "4th Bench M1->OB5"
+    },
+    {
+      "id": 181,
+      "name": "4th Bench M1->OB4"
+    },
+    {
+      "id": 190,
+      "name": "4th Bench E3->OB5"
+    },
+    {
+      "id": 189,
+      "name": "4th Bench E3->OB4"
+    },
+    {
+      "id": 188,
+      "name": "4th Bench E2->OB5"
+    },
+    {
+      "id": 187,
+      "name": "4th Bench E2->OB4"
+    },
+    {
+      "id": 185,
+      "name": "4th Bench E1->OB4"
+    },
+    {
+      "id": 186,
+      "name": "4th Bench E1->OB5"
+    },
+    {
+      "id": 1373,
+      "name": "3rd M4 -1->OB5"
+    },
+    {
+      "id": 1333,
+      "name": "3rd M3 -1->OB5"
+    },
+    {
+      "id": 1314,
+      "name": "3rd M1 -1->OB5"
+    },
+    {
+      "id": 1367,
+      "name": "3rd E2 -1->OB5"
+    },
+    {
+      "id": 1313,
+      "name": "3rd E1 -1->OB5"
+    },
+    {
+      "id": 85,
+      "name": "3rd Bench W3->OB5"
+    },
+    {
+      "id": 84,
+      "name": "3rd Bench W3->OB4"
+    },
+    {
+      "id": 4,
+      "name": "3rd Bench W2->OB5"
+    },
+    {
+      "id": 73,
+      "name": "3rd Bench W2->OB4"
+    },
+    {
+      "id": 83,
+      "name": "3rd Bench W1->OB5"
+    },
+    {
+      "id": 82,
+      "name": "3rd Bench W1->OB4"
+    },
+    {
+      "id": 81,
+      "name": "3rd Bench M5->OB5"
+    },
+    {
+      "id": 80,
+      "name": "3rd Bench M5->OB4"
+    },
+    {
+      "id": 79,
+      "name": "3rd Bench M4->OB5"
+    },
+    {
+      "id": 78,
+      "name": "3rd Bench M4->OB4"
+    },
+    {
+      "id": 77,
+      "name": "3rd Bench M3->OB5"
+    },
+    {
+      "id": 76,
+      "name": "3rd Bench M3->OB4"
+    },
+    {
+      "id": 72,
+      "name": "3rd Bench M2->OB5"
+    },
+    {
+      "id": 6,
+      "name": "3rd Bench M2->OB4"
+    },
+    {
+      "id": 34,
+      "name": "3rd Bench M1->OB5"
+    },
+    {
+      "id": 33,
+      "name": "3rd Bench M1->OB4"
+    },
+    {
+      "id": 74,
+      "name": "3rd Bench E3->OB5"
+    },
+    {
+      "id": 75,
+      "name": "3rd Bench E3->OB4"
+    },
+    {
+      "id": 53,
+      "name": "3rd Bench E2->OB5"
+    },
+    {
+      "id": 5,
+      "name": "3rd Bench E2->OB4"
+    },
+    {
+      "id": 20,
+      "name": "3rd Bench E1->OB4"
+    },
+    {
+      "id": 71,
+      "name": "3rd Bench E1->OB5"
+    },
+    {
+      "id": 1368,
+      "name": "2nd M3 -1->OB5"
+    },
+    {
+      "id": 1369,
+      "name": "2nd E3 -1->OB5"
+    },
+    {
+      "id": 18,
+      "name": "2nd Bench W3->OB5"
+    },
+    {
+      "id": 49,
+      "name": "2nd Bench W3->OB4"
+    },
+    {
+      "id": 3,
+      "name": "2nd Bench W2->OB5"
+    },
+    {
+      "id": 51,
+      "name": "2nd Bench W2->OB4"
+    },
+    {
+      "id": 52,
+      "name": "2nd Bench W1->OB4"
+    },
+    {
+      "id": 19,
+      "name": "2nd Bench W1->OB5"
+    },
+    {
+      "id": 69,
+      "name": "2nd Bench M5->OB4"
+    },
+    {
+      "id": 50,
+      "name": "2nd Bench M5->OB5"
+    },
+    {
+      "id": 21,
+      "name": "2nd Bench M4->OB4"
+    },
+    {
+      "id": 2,
+      "name": "2nd Bench M4->OB5"
+    },
+    {
+      "id": 67,
+      "name": "2nd Bench M3->OB5"
+    },
+    {
+      "id": 66,
+      "name": "2nd Bench M3->OB4"
+    },
+    {
+      "id": 31,
+      "name": "2nd Bench M2->OB5"
+    },
+    {
+      "id": 32,
+      "name": "2nd Bench M2->OB4"
+    },
+    {
+      "id": 65,
+      "name": "2nd Bench M1->OB5"
+    },
+    {
+      "id": 64,
+      "name": "2nd Bench M1->OB4"
+    },
+    {
+      "id": 63,
+      "name": "2nd Bench E3->OB5"
+    },
+    {
+      "id": 62,
+      "name": "2nd Bench E3->OB4"
+    },
+    {
+      "id": 151,
+      "name": "2nd Bench E2->OB3"
+    },
+    {
+      "id": 58,
+      "name": "2nd Bench E2->OB4"
+    },
+    {
+      "id": 59,
+      "name": "2nd Bench E2->OB5"
+    },
+    {
+      "id": 61,
+      "name": "2nd Bench E1->OB5"
+    },
+    {
+      "id": 60,
+      "name": "2nd Bench E1->OB4"
+    },
+    {
+      "id": 1371,
+      "name": "11th E3 -1->OB3"
+    },
+    {
+      "id": 1375,
+      "name": "11th E3 -1->OB7"
+    },
+    {
+      "id": 874,
+      "name": "11th Bench M1->OB3"
+    },
+    {
+      "id": 873,
+      "name": "11th Bench M1->OB7"
+    },
+    {
+      "id": 558,
+      "name": "11th Bench E3->OB3"
+    },
+    {
+      "id": 557,
+      "name": "11th Bench E3->OB7"
+    },
+    {
+      "id": 1,
+      "name": "11th Bench E2->OB3"
+    },
+    {
+      "id": 70,
+      "name": "11th Bench E2->OB7"
+    },
+    {
+      "id": 205,
+      "name": "11th Bench E2->OB4"
+    },
+    {
+      "id": 136,
+      "name": "11th Bench E1->OB3"
+    },
+    {
+      "id": 135,
+      "name": "11th Bench E1->OB7"
+    },
+    {
+      "id": 1312,
+      "name": "10th M1 -1->OB3"
+    },
+    {
+      "id": 1311,
+      "name": "10th M1 -1->OB7"
+    },
+    {
+      "id": 1310,
+      "name": "10th E3 -1->OB3"
+    },
+    {
+      "id": 1309,
+      "name": "10th E3 -1->OB7"
+    },
+    {
+      "id": 1374,
+      "name": "10th E3 -1->OB7"
+    },
+    {
+      "id": 259,
+      "name": "10th Bench M3->OB7"
+    },
+    {
+      "id": 260,
+      "name": "10th Bench M3->OB3"
+    },
+    {
+      "id": 97,
+      "name": "10th Bench M1->OB3"
+    },
+    {
+      "id": 96,
+      "name": "10th Bench M1->OB7"
+    },
+    {
+      "id": 99,
+      "name": "10th Bench E3->OB3"
+    },
+    {
+      "id": 98,
+      "name": "10th Bench E3->OB7"
+    },
+    {
+      "id": 116,
+      "name": "10th Bench E2->OB3"
+    },
+    {
+      "id": 115,
+      "name": "10th Bench E2->OB7"
+    },
+    {
+      "id": 133,
+      "name": "10th Bench E1->OB7"
+    },
+    {
+      "id": 134,
+      "name": "10th Bench E1->OB3"
     }
-  }
+  ]
 }

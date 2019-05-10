@@ -216,6 +216,16 @@
 
     }
 
+
+    public static displayBlock(){
+        var _val = (<HTMLInputElement>document.getElementById("actionId")).value;
+        if(_val != '0'){
+            document.getElementById("showShowel").style.display="";
+        }else{
+            document.getElementById("showShowel").style.display='none';
+        }
+    }
+
     public static openNav() {
         document.getElementById("sideNavigation").style.width = "269.8px";
     }

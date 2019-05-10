@@ -174,6 +174,15 @@ var Common = /** @class */ (function () {
         }
         Temple.refreshLanes();
     };
+    Common.displayBlock = function () {
+        var _val = document.getElementById("actionId").value;
+        if (_val != '0') {
+            document.getElementById("showShowel").style.display = "";
+        }
+        else {
+            document.getElementById("showShowel").style.display = 'none';
+        }
+    };
     Common.openNav = function () {
         document.getElementById("sideNavigation").style.width = "269.8px";
     };

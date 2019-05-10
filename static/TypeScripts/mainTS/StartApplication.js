@@ -3,16 +3,16 @@ var StartApplication = /** @class */ (function () {
     }
     StartApplication.start = function () {
         // this.initializeScripts();
-        this.addDivDynamically();
+        // this.addDivDynamically();
         if (this.isServer) { // data get from server
+            console.log("Data Get From Server");
             var objTimers = new TimerTask(this._interval);
             objTimers.scheduleRequest();
-            TimerTask.getShowelJsonList();
-            TimerTask.getGloabalMenuJsonList();
-            TimerTask.getAlertListJson();
-            // TimerTask.getProcessingData();
+            // TimerTask.getLaneData();
+            TimerTask.getProcessingData();
         }
         else { // data get from json file
+            console.log("Data Get From Json File");
             TimerTask.getDataFromJsonFile();
         }
     };
@@ -58,6 +58,7 @@ var StartApplication = /** @class */ (function () {
         $(".divSideMenuContainer").before(newDiv);
     };
     StartApplication.isServer = true; // change when deploy on server otherwise data get from json file
+    StartApplication.stopCustomization = false;
     StartApplication._interval = 15000;
     StartApplication.TYPESCRIPT_BASE = "/static/TypeScripts/";
     StartApplication.imagePath = "/static/TypeScripts/images/";
@@ -65,9 +66,12 @@ var StartApplication = /** @class */ (function () {
     StartApplication.url_showel_list = "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=get_shovel_list";
     StartApplication.url_global_menu_list = "http://203.197.197.16:9680//LocTracker/TempleDashboardData.jsp?action_p=global_menu_list";
     StartApplication.url_alert_list = "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=get_alert_params&veh=all";
-    StartApplication.url_all_processing_data_list = "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?actionShowelList=get_shovel_list&actionGlobalMenu=global_menu_list&actionAlertList=get_alert_params";
+    // public static url_all_processing_data_list: string = "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?actionShowelList=get_shovel_list&actionGlobalMenu=global_menu_list&actionAlertList=get_alert_params";
+    StartApplication.url_all_processing_data_list = "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=global_json";
     StartApplication.url_global_event = "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=globalEvent";
+    StartApplication.url_dumper_list = "http://203.197.197.16:9680/LocTracker/TempleDashboardData.jsp?action_p=get_dumper_list";
     StartApplication.customize_showelList = [];
+    StartApplication.rightDestList = [];
     return StartApplication;
 }());
 //# sourceMappingURL=StartApplication.js.map

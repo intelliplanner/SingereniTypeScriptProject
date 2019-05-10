@@ -5,6 +5,8 @@ var dialogDataForm: any;
 var menuOptions: any = null;
 var _eventName: string = null;
 var isChecked = false;
+var _vehicleId: string;
+var _workingOrAvalable: number;
 class Dialog {
     public static openDialog(_items: any, _event: string, handler) {
         document.getElementById("dumper").innerHTML = _items.value;
@@ -15,10 +17,34 @@ class Dialog {
         // $(".ui-dialog-titlebar" ).css("display", "block" );
     }
 
+    public static openDialogOnVehicles(vehicleId: string, _event: string, _alertMsg: string, workingOrAvalable: number, handler) {
+        document.getElementById("alertMsg").innerHTML = _alertMsg;
+        _eventName = _event;
+        _vehicleId = vehicleId;
+        _workingOrAvalable = workingOrAvalable;
+        dialogDataForm = this.showInputDialougeExt("Confirmation", 180, 550, document.forms['form_dialog_id'], '#div_dialog_id', handler);
+    }
+
+    public static openConfirmationDialogOnVehicles(vehicleId: string, _event: string, _alertMsg: string, workingOrAvalable: number, handler) {
+         document.getElementById("routeMsg").innerHTML = _alertMsg;
+        _eventName = _event;
+        _vehicleId = vehicleId;
+        _workingOrAvalable = workingOrAvalable;
+        dialogDataForm = this.showInputDialougeExt(_event, 200, 500, document.forms['form_route_dialog_id'], '#div_route_dialog_id', handler);
+    }
+
+    public static openConfirmationDialogOnGhostVehicles(vehicleId: string, _event: string, _alertMsg: string, workingOrAvalable: number, handler) {
+        document.getElementById("ghostDumperMsg").innerHTML = _alertMsg;
+       _eventName = _event;
+       _vehicleId = vehicleId;
+       _workingOrAvalable = workingOrAvalable;
+       dialogDataForm = this.showInputDialougeExt(_event, 200, 500, document.forms['form_ghost_dumper_dialog_id'], '#div_ghost_dumper_dialog_id', handler);
+
+   }
+
     public static openConfirmationDialogGlobal(_items: any, _event: string, handler) {
         _eventName = _event;
         menuOptions = _items;
-        // dialogDataForm =  this.confirmationDialog(_event,180,550,document.forms['form_alert_dialog_id'],'#div_alert_dialog',handler);
         dialogDataForm = this.showInputDialougeExt(_event, 200, 500, document.forms['form_alert_dialog_id'], '#div_alert_dialog', handler);
     }
 
@@ -121,13 +147,23 @@ class Dialog {
             $('#showel').append(optionData);
         }
     }
-    public static popolateAlertList() {
+  /*  public static popolateAlertList(alertList: any) {
         $('#alerts').find("option").remove();
         var optionData = "";
         $('#alerts').append("<option value='-1' >--Select--</option>");
-        for (let x in Temple.alertList) {
-            optionData = "<option value=" + Temple.alertList[x].id + " >" + Temple.alertList[x].name + "</option>";
+        for (let x in alertList) {
+            optionData = "<option value=" + alertList[x].id + " >" + alertList[x].name + "</option>";
             $('#alerts').append(optionData);
+        }
+    }
+*/
+    public static popolateList(_id:String,_list: any) {
+        $('#'+_id).find("option").remove();  // routeId       showelId
+        var optionData = "";
+        $('#'+_id).append("<option value='-1' >--Select--</option>");
+        for (let x in _list) {
+            optionData = "<option value=" + _list[x].id + " >" + _list[x].name + "</option>";
+            $('#'+_id).append(optionData);
         }
     }
 
@@ -149,6 +185,28 @@ class Dialog {
         xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
         xmlHttp.send();
     }
+
+    public static sendActionOnShowel() {
+        var url = menuOptions.url;
+        var xmlHttp;
+        xmlHttp = TimerTask.GetXmlHttpObject();
+        if (xmlHttp == null) {
+            alert("Your browser does not support AJAX!");
+            return;
+        }
+        xmlHttp.onreadystatechange = function () {
+            if (xmlHttp.readyState == 4) {
+                // Temple.refreshLanes();
+                dialogDataForm.dialog("close");
+                // window.location.reload();
+            }
+        };
+        xmlHttp.open("POST", url, true);
+        xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xmlHttp.send();
+    }
+
+
     public static sendGlobalAction() {
         var _min = (<HTMLInputElement>document.getElementById("minute")).value;
         var _hours = (<HTMLInputElement>document.getElementById("hours")).value;
@@ -161,7 +219,7 @@ class Dialog {
             return;
         }
         //  var url=StartApplication.url_global_event + "&duration=" +duration+"&alertType="+_alert;
-        var url = menuOptions.url + "&duration=" + duration + "&alertType=" + _alert;;
+        var url = menuOptions.url + "&duration=" + duration + "&alertType=" + _alert;
         var xmlHttp;
         xmlHttp = TimerTask.GetXmlHttpObject();
         if (xmlHttp == null) {
@@ -179,7 +237,67 @@ class Dialog {
         xmlHttp.send();
     }
 
+    public static sendActionOnVehicles() {
+        var url = StartApplication.url_lane_data_list + "?action_p=in_out&vehicle_id=" + _vehicleId + "&type=" + _workingOrAvalable;
+        // var url = "localhost:8080/" + "?action_p=in_out&vehicle_id=" + _vehicleId + "&type=" + _workingOrAvalable;
+        if (_workingOrAvalable == TempleConstant.AVAILABLE_SHOWELS) {
+            var _routeType = (<HTMLInputElement>document.getElementById("routeId")).value;
+            if (_routeType == '' || _routeType == '-1') {
+                alert("Please Select Route.");
+                return;
+            }
+            url = url + "&routeType="+_routeType;
+        }
+        console.log("[ sendActionOnVehicles(): url= " + url + "]");
+        var xmlHttp;
+        xmlHttp = TimerTask.GetXmlHttpObject();
+        if (xmlHttp == null) {
+            alert("Your browser does not support AJAX!");
+            return;
+        }
+        xmlHttp.onreadystatechange = function () {
+            if (xmlHttp.readyState == 4) {
+                // Temple.refreshLanes();
+                dialogDataForm.dialog("close");
+            }
+        };
+        xmlHttp.open("POST", url, true);
+        xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xmlHttp.send();
+    }
 
+    public static sendActionOnGhostVehicles() {
+        var url = StartApplication.url_lane_data_list + "?action_p=in_out&vehicle_id=" + _vehicleId + "&type=" + _workingOrAvalable + "&shovel_id="; 
+        
+        var _actionId = (<HTMLInputElement>document.getElementById("actionId")).value;
+        var _showelId = (<HTMLInputElement>document.getElementById("showelId")).value;
+        
+        if (_actionId == '1'  &&  _showelId == '-1') {
+            alert("Please Select Showel.");
+            return;
+        }else if(_actionId == '0'){
+            _showelId = "-1";
+        }
+    
+        url = url + _showelId;
+
+        console.log("[ sendActionOnVehicles(): url= " + url + "]");
+        var xmlHttp;
+        xmlHttp = TimerTask.GetXmlHttpObject();
+        if (xmlHttp == null) {
+            alert("Your browser does not support AJAX!");
+            return;
+        }
+        xmlHttp.onreadystatechange = function () {
+            if (xmlHttp.readyState == 4) {
+                // Temple.refreshLanes();
+                dialogDataForm.dialog("close");
+            }
+        };
+        xmlHttp.open("POST", url, true);
+        xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xmlHttp.send();
+    }
 
 
 
@@ -244,12 +362,12 @@ class Dialog {
     }
 
     public static toogleCheckBox(checkIdAndClass: any): void {
-        if ($('#'+checkIdAndClass).prop("checked")) {
-            $('.'+checkIdAndClass).each(function(){
+        if ($('#' + checkIdAndClass).prop("checked")) {
+            $('.' + checkIdAndClass).each(function () {
                 this.checked = true;
             })
         } else {
-            $('.'+checkIdAndClass).each(function(){
+            $('.' + checkIdAndClass).each(function () {
                 this.checked = false;
             })
         }
@@ -273,11 +391,15 @@ class Dialog {
 
     public static isShowelExist(showelName: string): boolean {
         var status = false;
+
         for (let x in StartApplication.customize_showelList) {
             if (showelName == StartApplication.customize_showelList[x]) {
                 status = true;
                 break;
             }
+        }
+        if (StartApplication.customize_showelList.length == 0) {
+            status = true;
         }
         return status;
     }
@@ -286,6 +408,6 @@ class Dialog {
         $('#customize_showel_table').find("tbody tr").remove();
     }
 
-    // 
+
 
 }

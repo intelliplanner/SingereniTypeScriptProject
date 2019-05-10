@@ -110,6 +110,14 @@ var LaneSites = /** @class */ (function () {
         // Pan.rightClickMenu(divId, test );
         if (divId == null && divId.length == 0)
             return;
+        if (StartApplication.rightDestList != null && StartApplication.rightDestList.length > 0) {
+            for (var index = 0; index < StartApplication.rightDestList.length; index++) {
+                if (StartApplication.rightDestList[index] == this.laneBeanObj.unloadToLoad.destinationRight.unloadSiteId) {
+                    return;
+                }
+            }
+        }
+        StartApplication.rightDestList.push(this.laneBeanObj.unloadToLoad.destinationRight.unloadSiteId);
         var innerData = document.getElementById(divId);
         innerData.style.borderTop = "1px solid grey";
         var data = "<div class='divRightDestination-div1' >" + Misc.getSubString(this.laneBeanObj.unloadToLoad.destinationRight.unloadSiteId, 15) + "</div>";

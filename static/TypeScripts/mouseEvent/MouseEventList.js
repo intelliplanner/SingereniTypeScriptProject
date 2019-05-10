@@ -23,7 +23,7 @@ var MouseEventList = /** @class */ (function () {
                             MenuAction.eventShowelReassign(options.items["Menu1"].items[key], MouseEventList.eventReassign);
                             break;
                         case MouseEventList.EVENT_DISMISS:
-                            MenuAction.showelEventAction(options.items["Menu1"].items[key], MouseEventList.eventDismiss);
+                            MenuAction.globalEventAction(options.items["Menu1"].items[key], MouseEventList.eventDismiss, Temple.alertListShowel);
                             break;
                         case MouseEventList.EVENT_TEA_BREAK:
                             MenuAction.showelEventAction(options.items["Menu1"].items[key], MouseEventList.eventTeaBreak);
@@ -39,6 +39,12 @@ var MouseEventList = /** @class */ (function () {
                             break;
                         case MouseEventList.EVENT_STOP_IMMEDIATE:
                             MenuAction.showelEventAction(options.items["Menu1"].items[key], MouseEventList.eventStopImmediate);
+                            break;
+                        case MouseEventList.EVENT_IN:
+                            MenuAction.showelEventAction(options.items["Menu1"].items[key], MouseEventList.eventIn);
+                            break;
+                        case MouseEventList.EVENT_OUT:
+                            MenuAction.showelEventAction(options.items["Menu1"].items[key], MouseEventList.eventOut);
                             break;
                         default:
                             break;
@@ -209,14 +215,14 @@ var MouseEventList = /** @class */ (function () {
             this.wrapText(tipCtx, msg);
         }
     };
-    MouseEventList.drawToolTipOnCanvasForMultipleVehicle = function (mousePos, evt, msg, hit) {
+    MouseEventList.drawToolTipOnCanvasForMultipleVehicleOld = function (mousePos, evt, msg, hit) {
         var tipCanvas = document.getElementById("vehicleToolTip");
         var tipCtx = tipCanvas.getContext("2d");
         // var maxWidth = 10;
         // var lineHeight =0;
         var x = 2; //(tipCanvas.width - maxWidth) / 2;
         var y = 15;
-        var initialHeight = 220;
+        var initialHeight = 240;
         tipCanvas.height = initialHeight * (msg.length > 3 ? 3 : msg.length);
         if (!hit) {
             tipCanvas.style.left = "-200px";
@@ -236,25 +242,60 @@ var MouseEventList = /** @class */ (function () {
             tipCtx.fillStyle = "#D3D3D3";
             tipCtx.fillRect(5, 5, 190, 18);
             if (msg.length > 1) {
-                var yPos = initialHeight - 17;
+                var yPos = initialHeight - 20;
                 tipCtx.fillRect(5, yPos, 190, 18);
                 tipCtx.fillRect(5, 417, 190, 18);
             }
-            // fill close sign
-            // tipCtx.beginPath();
-            // tipCtx.moveTo(184, 10);
-            // tipCtx.lineTo(190, 17);
-            // tipCtx.moveTo(190, 10);
-            // tipCtx.lineTo(184, 17);
-            // tipCtx.stroke();
-            // tipCtx.beginPath();
-            // tipCtx.moveTo(184, 10);
-            // tipCtx.lineTo(190, 17);
-            // tipCtx.moveTo(190, 10);
-            // tipCtx.lineTo(184, 17);
-            // tipCtx.stroke();
             this.wrapTextforMultiVehicles(tipCtx, hoverText);
         }
+    };
+    MouseEventList.drawToolTipOnCanvasForMultipleVehicle = function (mousePos, evt, msg, hit) {
+        var tipCanvas = document.getElementById("vehicleToolTip");
+        var tipCtx = tipCanvas.getContext("2d");
+        var x = 2; //(tipCanvas.width - maxWidth) / 2;
+        var y = 15;
+        tipCtx.fillStyle = "#D3D3D3";
+        tipCtx.fillRect(5, 5, 190, 18);
+        tipCanvas.height = this.getToolTipHeight(msg);
+        if (!hit) {
+            tipCanvas.style.left = "-200px";
+        }
+        else {
+            tipCanvas.style.left = (evt.clientX + 20) + "px"; // (list[i][1])
+            tipCanvas.style.top = (evt.clientY - 20) + "px"; // (list[i][2]-50) +
+            tipCtx.clearRect(0, 0, tipCanvas.width, tipCanvas.height);
+            var hoverText = "";
+            for (var i in msg) {
+                if (Number(i) > 2) {
+                    break;
+                }
+                hoverText = hoverText + msg[i];
+            }
+            // fill background color
+            tipCtx.fillStyle = "#D3D3D3";
+            var intialToolHeight = 5;
+            for (var i in msg) {
+                if (Number(i) > 2)
+                    break;
+                tipCtx.fillRect(5, intialToolHeight, 190, 18);
+                var text = msg[i].split(",");
+                intialToolHeight = (intialToolHeight - 18) + text.length * 18;
+            }
+            this.wrapTextforMultiVehicles(tipCtx, hoverText);
+        }
+    };
+    MouseEventList.getToolTipHeight = function (msg) {
+        var tollTipheight = 0;
+        for (var i in msg) {
+            if (Number(i) > 2)
+                break;
+            var hoverText = msg[i];
+            if (hoverText == null || hoverText == "")
+                continue;
+            var words = hoverText.split(',');
+            tollTipheight = tollTipheight + (words.length - 1) * 18;
+        }
+        return tollTipheight + 18;
     };
     MouseEventList.wrapText = function (context, text) {
         var words = text == null ? "" : text.split(',');
@@ -282,7 +323,7 @@ var MouseEventList = /** @class */ (function () {
         // context.fillStyle = '#000066';
         for (var n = 0; n < words.length; n++) {
             var y = (n + 1) * 18; //n == 0 ? 18 : n == 1 ? 36  : n == 2 ? 48 : n == 3 ? 60 : n == 4 ? 74 : 88;
-            line = n == 0 ? this.addSpaces(words[n], 27) : words[n];
+            line = words[n]; //n == 0 ? this.addSpaces(words[n], 27) : words[n];
             context.fillText(line, x, y);
         }
     };
@@ -318,28 +359,34 @@ var MouseEventList = /** @class */ (function () {
                     var _event = Number(res[1]);
                     switch (_event) {
                         case MouseEventList.EVENT_REASSIGN:
-                            MenuAction.globalEventAction(options.items[key], MouseEventList.eventReassign);
+                            MenuAction.globalEventAction(options.items[key], MouseEventList.eventReassign, Temple.alertListAll);
                             break;
                         case MouseEventList.EVENT_DISMISS:
-                            MenuAction.globalEventAction(options.items[key], MouseEventList.eventDismiss);
+                            MenuAction.globalEventAction(options.items[key], MouseEventList.eventDismiss, Temple.alertListAll);
                             break;
                         case MouseEventList.EVENT_TEA_BREAK:
-                            MenuAction.globalEventAction(options.items[key], MouseEventList.eventTeaBreak);
+                            MenuAction.globalEventAction(options.items[key], MouseEventList.eventTeaBreak, Temple.alertListAll);
                             break;
                         case MouseEventList.EVENT_RESUME_WORK:
-                            MenuAction.globalEventAction(options.items[key], MouseEventList.eventResumeWork);
+                            MenuAction.globalEventAction(options.items[key], MouseEventList.eventResumeWork, Temple.alertListAll);
                             break;
                         case MouseEventList.EVENT_MAKE_UNAVAILABLE:
-                            MenuAction.globalEventAction(options.items[key], MouseEventList.eventMakeUnavailable);
+                            MenuAction.globalEventAction(options.items[key], MouseEventList.eventMakeUnavailable, Temple.alertListAll);
                             break;
                         case MouseEventList.EVENT_TAKE_FUEL:
-                            MenuAction.globalEventAction(options.items[key], MouseEventList.eventTakeFuel);
+                            MenuAction.globalEventAction(options.items[key], MouseEventList.eventTakeFuel, Temple.alertListAll);
                             break;
                         case MouseEventList.EVENT_STOP_IMMEDIATE:
-                            MenuAction.globalEventAction(options.items[key], MouseEventList.eventStopImmediate);
+                            MenuAction.globalEventAction(options.items[key], MouseEventList.eventStopImmediate, Temple.alertListAll);
                             break;
                         case MouseEventList.EVENT_RELEASE:
-                            MenuAction.globalEventAction(options.items[key], MouseEventList.eventRelease);
+                            MenuAction.globalEventAction(options.items[key], MouseEventList.eventRelease, Temple.alertListAll);
+                            break;
+                        case MouseEventList.EVENT_IN:
+                            MenuAction.globalEventAction(options.items[key], MouseEventList.eventIn, Temple.alertListAll);
+                            break;
+                        case MouseEventList.EVENT_OUT:
+                            MenuAction.globalEventAction(options.items[key], MouseEventList.eventOut, Temple.alertListAll);
                             break;
                         default:
                             break;
@@ -364,6 +411,11 @@ var MouseEventList = /** @class */ (function () {
     MouseEventList.eventTakeFuel = "TAKE_FUEL";
     MouseEventList.eventStopImmediate = "STOP_IMMEDIATE";
     MouseEventList.eventRelease = "RELEASE";
+    MouseEventList.eventIn = "IN";
+    MouseEventList.eventOut = "OUT";
+    MouseEventList.eventManualReassign = "MANUAL_REASSIGN";
+    MouseEventList.eventOnDumpers = "ACTION ON DUMPER";
+    MouseEventList.eventOnShowels = "ACTION ON SHOWEL";
     MouseEventList.EVENT_REASSIGN = 0;
     MouseEventList.EVENT_DISMISS = 1;
     MouseEventList.EVENT_TEA_BREAK = 2;
@@ -372,6 +424,8 @@ var MouseEventList = /** @class */ (function () {
     MouseEventList.EVENT_TAKE_FUEL = 5;
     MouseEventList.EVENT_STOP_IMMEDIATE = 6;
     MouseEventList.EVENT_RELEASE = 7;
+    MouseEventList.EVENT_IN = 8;
+    MouseEventList.EVENT_OUT = 9;
     return MouseEventList;
 }());
 //# sourceMappingURL=MouseEventList.js.map
